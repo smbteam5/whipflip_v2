@@ -552,4 +552,37 @@
             width: 250px;
         }
     }
+    .faqWrapper{
+        .accordion-header{
+            button{
+                border: none;
+                background-color: #fff;
+                width: 100%;
+                outline: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                color: #201F2D;
+                &::before{
+                    position: absolute;
+                    content: "\f107";
+                    width: 20px;
+                    height: 20px;
+                    right: 0;
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                }
+            }
+        }
+        .accordion-item{
+            border-bottom: 1px solid #D5D5DC;
+            padding: 32px 0px;
+        }        
+    }
+}
+.moreLoad{
+    margin-top: 30px;
 }

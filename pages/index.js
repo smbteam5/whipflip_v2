@@ -329,9 +329,15 @@ function index() {
             </h2>
           </div>
           <div className="faqWrapper">
-            <Faq/>
+            <div className="container">
+              <Faq/>
+              <div className="moreReviews text-center moreLoad">
+                <span>Want to see more raving reviews? Visit our <a href="#">customers reviews page</a></span>
+              </div>
+            </div>
           </div>
       </div>
+      
     </>
   )
 }
