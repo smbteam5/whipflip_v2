@@ -1,4 +1,9 @@
 @mixin responsive($breakpoint){
+    @if $breakpoint == Exsmall355{
+        @media only screen and (max-width:355px){
+            @content
+        };
+    }
   @if $breakpoint == Exsmall{
       @media only screen and (max-width:474px){
           @content
@@ -14,6 +19,11 @@
           @content
       };
   }
+  @if $breakpoint == tab-port-min{
+    @media only screen and (min-width:992px){
+        @content
+    };
+}
   @if $breakpoint == tab-port-1024{
       @media only screen and (max-width:1024px){
           @content

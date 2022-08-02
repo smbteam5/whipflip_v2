@@ -21,16 +21,19 @@ function HappyCustomersSlider() {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                initialSlide: 2
+                centerMode: true,
+                focusOnSelect: true
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                centerMode: true,
+                focusOnSelect: true
               }
             }
         ]

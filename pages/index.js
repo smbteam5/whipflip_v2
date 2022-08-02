@@ -12,7 +12,7 @@ function index() {
             <path d="M26.625 27.5C24.8333 27.5 23.0869 27.1006 21.3858 26.3017C19.6842 25.5033 18.1772 24.4478 16.865 23.135C15.5522 21.8228 14.4967 20.3158 13.6983 18.6142C12.8994 16.9131 12.5 15.1667 12.5 13.375C12.5 13.125 12.5833 12.9167 12.75 12.75C12.9167 12.5833 13.125 12.5 13.375 12.5H16.75C16.9444 12.5 17.1181 12.5625 17.2708 12.6875C17.4236 12.8125 17.5139 12.9722 17.5417 13.1667L18.0833 16.0833C18.1111 16.2778 18.1078 16.4547 18.0733 16.6142C18.0383 16.7742 17.9583 16.9167 17.8333 17.0417L15.8125 19.0833C16.3958 20.0833 17.1286 21.0208 18.0108 21.8958C18.8925 22.7708 19.8611 23.5278 20.9167 24.1667L22.875 22.2083C23 22.0833 23.1633 21.9894 23.365 21.9267C23.5661 21.8644 23.7639 21.8472 23.9583 21.875L26.8333 22.4583C27.0278 22.5 27.1875 22.5936 27.3125 22.7392C27.4375 22.8853 27.5 23.0556 27.5 23.25V26.625C27.5 26.875 27.4167 27.0833 27.25 27.25C27.0833 27.4167 26.875 27.5 26.625 27.5ZM15.0208 17.5L16.3958 16.125L16.0417 14.1667H14.1875C14.2569 14.7361 14.3542 15.2986 14.4792 15.8542C14.6042 16.4097 14.7847 16.9583 15.0208 17.5ZM25.8333 25.7917V23.9583L23.875 23.5625L22.4792 24.9583C23.0208 25.1944 23.5731 25.3819 24.1358 25.5208C24.6981 25.6597 25.2639 25.75 25.8333 25.7917Z" fill="#353442"/>
           </svg>
         </div>
-        <div className="cc_right">
+        <div className="cc_right desk-show">
           <div className="cc_dec">
             <p>Talk to a Real Person:</p>
             <h2>(888) 349-3189</h2>
@@ -32,7 +32,7 @@ function index() {
                   <h1><span>The <span className='text-highlight'>Best</span> Way to</span> <span>Sell Your Car - </span><span>Period!</span></h1>
                   <span>We come to you paid on the spot</span>
                 </div>
-                <div className="bnr_left_info">
+                <div className="bnr_left_info desk-show">
                   <div className="row">
                     <div className="col-lg-6 review_col bnr_left_points">
                       <article data-toggle="modal" data-target="#activeUsers" className='reviewLt_icons'>
@@ -98,7 +98,7 @@ function index() {
                     </div>
                   </div>
                 </div>
-                <div className="bnr_left_bottom">
+                <div className="bnr_left_bottom desk-show">
                   <img src="/images/customer.webp" alt="customer" title='customer' />
                 </div>
               </div>
@@ -190,6 +190,62 @@ function index() {
                     </div>
                   </div>
                 </div>
+                <div className="bnr_left_info mob-show">
+                  <div className="row justify-content-center">
+                    <div className="col-lg-6 col-sm-6 col-6 review_col bnr_left_points bnr_mob_btm_pts">
+                      <div className="reviewRt_info">
+                        <ul>
+                          <li>
+                          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFC000"/></svg>
+                          </li>
+                          <li>
+                          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFC000"/></svg>
+                          </li>
+                          <li>
+                          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFC000"/></svg>
+                          </li>
+                          <li>
+                          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFC000"/></svg>
+                          </li>
+                          <li>
+                          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#FFC000"/></svg>
+                          </li>
+                        </ul>
+                        <div className="revDetail">
+                          <span>4.9/5 in <b>Google</b> reviews</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-sm-6 col-6 accredit_col bnr_left_points bnr_mob_btm_pts">
+                      <div className="acc_left">
+                        <img src="/images/accredit.png" alt="accredit" title='accredit' />
+                      </div>
+                      <div className="acc_right">
+                        <span>
+                          BBB Rating: A
+                        </span>
+                        <span>
+                          as of 5/11/2022
+                        </span>
+                        <span>
+                          click for profile</span>
+                      </div>
+                    </div>
+                    <div className="col-lg-12 video_col bnr_left_points bnr_mob_btm_pts">
+                      <div className="video_left">
+                        <img src="/images/video.png"  alt="video" title='video'  />
+                      </div>
+                      <div className="acc_right">
+                        <span>
+                          Watch How It Works (1:23)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bnr_left_bottom mob-show bnr_left_bottom_mobile">
+                    <img src="/images/customer.webp" alt="customer" title='customer' />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -200,9 +256,13 @@ function index() {
         <div className="container">
           <div className="secHd text-center">
             <span>How It Works</span>
-            <h2>
+            <h2 className='desk-show'>
               <span>Hooray!  Selling Your Car is Now </span>
               <span className="text-highlight long_line">100% HASSLE-FREE!</span>
+            </h2>
+            <h2 className='mob-show'>
+              <span><span>Hooray! </span> <span>Selling Your Car</span> is Now 100%</span>
+              <span className="text-highlight long_line"> HASSLE-FREE!</span>
             </h2>
           </div>
           <div className="secRow row pt50">
@@ -255,7 +315,7 @@ function index() {
         </div>
       </div>
       <div className="why-sell-to-whipflip pt100">
-          <div className="easy-sell">
+          <div className="easy-sell desk-show">
             <img src="/images/easy-sell.svg" alt="easy sell" title='easy sell'/>
           </div>
           <div className="container">
@@ -314,6 +374,11 @@ function index() {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-5 mob-easy-sell">
+              <div className="easy-sell-mob mob-show">
+                <img src="/images/easy-sell.svg" alt="easy sell" title='easy sell'/>
+              </div>
+              </div>
             </div>
           </div>
       </div>
@@ -323,9 +388,14 @@ function index() {
               <img src="/images/stars.svg" alt="stars" title='stars'/>
             </div>
             <span>WhipFlip has earned 4.9 stars in <span><img src="/images/google.svg" alt="Goole" title='Google'/></span> certified reviews</span>
-            <h2>
+            <h2 className='desk-show'>
               <span>Thousands of </span>
               <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS</span>
+            </h2>
+            <h2 className='mob-show'>
+              <span>Thousands of </span>
+              <span className="text-highlight long_line happy_customer"> HAPPY</span>
+              <span className="text-highlight long_line happy_customer">CUSTOMERS</span>
             </h2>
           </div>
           <HappyCustomersSlider/>
@@ -379,9 +449,16 @@ function index() {
                 <p>So our thought was simple and our mission was clear – What if there was a way anyone, anywhere could sell their vehicle as fast and as easy as ordering a pizza from a mobile device? </p> <p>No stress, no travel, no risk, no inconvenience.  Well, I believe we have created it and it’s here at your fingertips.Go ahead and give us a try! </p>
                 <p>We welcome you join the thousands of other customers who deserved a much better way to sell by using WhipFlip.</p>
               </div>
-              <div className="arrowPoint">
-                <svg width="64" height="57" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M62.5 55C62.5 55 30.0635 23 1.5 23V2C35.3889 2 62.5 55 62.5 55Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+              <div className="arrowPoint desk-show">
+                <svg width="65" height="57" viewBox="0 0 65 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M63.5 55C63.5 55 31.0635 23 2.5 23V2C36.3889 2 63.5 55 63.5 55Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+                  <rect y="3.5" width="4" height="18" fill="white"/>
+                </svg>                
+              </div>
+              <div className="arrowPointMob mob-show">
+                <svg width="56" height="65" viewBox="0 0 56 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M54.5 63.5C54.5 63.5 22.5 31.0635 22.5 2.5L1.5 2.5C1.5 36.3889 54.5 63.5 54.5 63.5Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+                  <rect x="3" y="4.5" width="4" height="18" transform="rotate(-90 3 4.5)" fill="white"/>
                 </svg>
               </div>
             </div>
@@ -402,7 +479,7 @@ function index() {
       <footer className='footer'>
         <div className="container">
           <div className="row fooRow">
-            <div className="col-lg-3 fooCol">
+            <div className="col-lg-3 col-6 fooCol">
               <div className="fooColIn">
                 <h2>About Whipflip</h2>
                 <ul>
@@ -412,7 +489,7 @@ function index() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 fooCol">
+            <div className="col-lg-3 col-6 fooCol">
               <div className="fooColIn">
                 <h2>About Whipflip</h2>
                 <ul>
@@ -422,7 +499,7 @@ function index() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 fooCol">
+            <div className="col-lg-3 col-6 fooCol">
               <div className="fooColIn">
                 <h2>About Whipflip</h2>
                 <ul>
@@ -432,7 +509,7 @@ function index() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 fooCol">
+            <div className="col-lg-3 col-6 fooCol">
               <div className="fooColIn">
                 <h2>About Whipflip</h2>
                 <ul>
