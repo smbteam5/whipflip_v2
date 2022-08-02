@@ -5,6 +5,20 @@ import Header from './Componants/Header'
 function index() {
   return (
     <>
+      <div className="cutomerCare">
+        <div className="cc_left">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="20" fill="#FFC000"/>
+            <path d="M26.625 27.5C24.8333 27.5 23.0869 27.1006 21.3858 26.3017C19.6842 25.5033 18.1772 24.4478 16.865 23.135C15.5522 21.8228 14.4967 20.3158 13.6983 18.6142C12.8994 16.9131 12.5 15.1667 12.5 13.375C12.5 13.125 12.5833 12.9167 12.75 12.75C12.9167 12.5833 13.125 12.5 13.375 12.5H16.75C16.9444 12.5 17.1181 12.5625 17.2708 12.6875C17.4236 12.8125 17.5139 12.9722 17.5417 13.1667L18.0833 16.0833C18.1111 16.2778 18.1078 16.4547 18.0733 16.6142C18.0383 16.7742 17.9583 16.9167 17.8333 17.0417L15.8125 19.0833C16.3958 20.0833 17.1286 21.0208 18.0108 21.8958C18.8925 22.7708 19.8611 23.5278 20.9167 24.1667L22.875 22.2083C23 22.0833 23.1633 21.9894 23.365 21.9267C23.5661 21.8644 23.7639 21.8472 23.9583 21.875L26.8333 22.4583C27.0278 22.5 27.1875 22.5936 27.3125 22.7392C27.4375 22.8853 27.5 23.0556 27.5 23.25V26.625C27.5 26.875 27.4167 27.0833 27.25 27.25C27.0833 27.4167 26.875 27.5 26.625 27.5ZM15.0208 17.5L16.3958 16.125L16.0417 14.1667H14.1875C14.2569 14.7361 14.3542 15.2986 14.4792 15.8542C14.6042 16.4097 14.7847 16.9583 15.0208 17.5ZM25.8333 25.7917V23.9583L23.875 23.5625L22.4792 24.9583C23.0208 25.1944 23.5731 25.3819 24.1358 25.5208C24.6981 25.6597 25.2639 25.75 25.8333 25.7917Z" fill="#353442"/>
+          </svg>
+        </div>
+        <div className="cc_right">
+          <div className="cc_dec">
+            <p>Talk to a Real Person:</p>
+            <h2>(888) 349-3189</h2>
+          </div>
+        </div>
+      </div>
       <div className="whipflip-header">
         <Header/>
       </div>
@@ -24,13 +38,13 @@ function index() {
                       <article data-toggle="modal" data-target="#activeUsers" className='reviewLt_icons'>
                             <div className="c-profile__list">
                                 <span className="c-profile" username="Buster">
-                                  <img src="/images/rv1.png" alt="" />
+                                  <img src="/images/rv1.png" alt="profile" title='profile'/>
                                 </span>
                                 <span className="c-profile" username="George Michael">
-                                  <img src="/images/rv1.png" alt="" />
+                                  <img src="/images/rv1.png" alt="profile" title='profile' />
                                 </span>
                                 <span className="c-profile" username="Gob">
-                                  <img src="/images/rv1.png" alt="" />
+                                  <img src="/images/rv1.png" alt="profile" title='profile' />
                                 </span>
                             </div>
                       </article>
@@ -59,7 +73,7 @@ function index() {
                     </div>
                     <div className="col-lg-6 accredit_col p-0 bnr_left_points">
                       <div className="acc_left">
-                        <img src="/images/accredit.png" alt="" />
+                        <img src="/images/accredit.png" alt="accredit" title='accredit' />
                       </div>
                       <div className="acc_right">
                         <span>
@@ -74,7 +88,7 @@ function index() {
                     </div>
                     <div className="col-lg-12 video_col bnr_left_points">
                       <div className="video_left">
-                        <img src="/images/video.png" alt="" />
+                        <img src="/images/video.png"  alt="video" title='video'  />
                       </div>
                       <div className="acc_right">
                         <span>
@@ -85,7 +99,7 @@ function index() {
                   </div>
                 </div>
                 <div className="bnr_left_bottom">
-                  <img src="/images/customer.webp" alt="" />
+                  <img src="/images/customer.webp" alt="customer" title='customer' />
                 </div>
               </div>
             </div>
@@ -96,7 +110,7 @@ function index() {
                     <div class="card card-outline-secondary home-form">
                       <div className="form_top">
                         <div className="poweredBy">
-                          <img src="images/jd.webp" alt="" />
+                          <img src="images/jd.webp" alt="poweredBy" title='poweredBy' />
                         </div>
                         <div className="form_head">
                           <h2>Get a REAL offer in seconds!</h2>
@@ -195,7 +209,7 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw1.png" alt="" />
+                    <img src="images/hiw1.png" alt="Get Instant Offer" title='Get Instant Offer'/>
                   </div>
                   <div className="hiw_body">
                     <h2>Get Instant Offer</h2>
@@ -206,7 +220,7 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw2.png" alt="" />
+                    <img src="images/hiw2.png" alt="Confirm Offer" title='Confirm Offer'/>
                   </div>
                   <div className="hiw_body">
                     <h2>Confirm Offer</h2>
@@ -217,7 +231,7 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw3.png" alt="" />
+                    <img src="images/hiw3.png" alt="SOLD" title='SOLD'/>
                   </div>
                   <div className="hiw_body">
                     <h2>SOLD!</h2>
@@ -230,10 +244,10 @@ function index() {
             <div className="col-lg-10">
             <div className="hiw">
               <div className="hiw_part1">
-                <img src="/images/left_man_money.svg" alt="" />
+                <img src="/images/left_man_money.svg" alt="money" title='money'/>
               </div>
               <div className="hiw_part2">
-                <img src="/images/vehicle.svg" alt="" />
+                <img src="/images/vehicle.svg" alt="vehicle" title='vehicle'/>
               </div>
             </div>
             </div>
@@ -242,7 +256,7 @@ function index() {
       </div>
       <div className="why-sell-to-whipflip pt100">
           <div className="easy-sell">
-            <img src="/images/easy-sell.svg" alt="" />
+            <img src="/images/easy-sell.svg" alt="easy sell" title='easy sell'/>
           </div>
           <div className="container">
             <div className="secHd text-left">
@@ -257,7 +271,7 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                       <div className="si-head">
-                        <img src="/images/uc.svg" alt="" />
+                        <img src="/images/uc.svg" alt="Ultimate Convenience" title='Ultimate Convenience'/>
                       </div>
                       <div className="si-body">
                         <h2>Ultimate Convenience</h2>
@@ -268,7 +282,7 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                     <div className="si-head">
-                        <img src="/images/bp.svg" alt="" />
+                        <img src="/images/bp.svg" alt="The Best Price" title='The Best Price'/>
                       </div>
                       <div className="si-body">
                         <h2>The Best Price</h2>
@@ -279,7 +293,7 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                     <div className="si-head">
-                        <img src="/images/fgp.svg" alt="" />
+                        <img src="/images/fgp.svg" alt="Fast & Guaranteed Payment" title='Fast & Guaranteed Payment' />
                       </div>
                       <div className="si-body">
                         <h2>Fast & Guaranteed Payment</h2>
@@ -290,7 +304,7 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                       <div className="si-head">
-                        <img src="/images/ts.svg" alt="" />
+                        <img src="/images/ts.svg" alt="Trusted & Saf" title='Trusted & Saf'/>
                       </div>
                       <div className="si-body">
                         <h2>Trusted & Safe</h2>
@@ -306,7 +320,7 @@ function index() {
       <div className="happy-customers pt100 pb100">
           <div className="secHd text-center">
             <div className="stars">
-              <img src="/images/stars.svg" alt="" />
+              <img src="/images/stars.svg" alt="stars" title='stars'/>
             </div>
             <span>WhipFlip has earned 4.9 stars in <span><img src="/images/google.svg" alt="Goole" title='Google'/></span> certified reviews</span>
             <h2>
@@ -321,7 +335,7 @@ function index() {
       </div>
       <div className="faq">
         <div className="faqLogo text-center">
-          <img src="/images/faq.svg" alt="FAQ" />
+          <img src="/images/faq.svg" alt="FAQ" title='faq'/>
         </div>
           <div className="secHd text-center mt25">
             <h2>
@@ -332,12 +346,158 @@ function index() {
             <div className="container">
               <Faq/>
               <div className="moreReviews text-center moreLoad">
-                <span>Want to see more raving reviews? Visit our <a href="#">customers reviews page</a></span>
+                <span>Looking for more? Visit our  <a href="#">FAQs page</a> or  <a href="#">Contact us</a></span>
               </div>
             </div>
           </div>
       </div>
-      
+      <div className="ready-to-sell">
+        <div className="container h100">
+          <div className="row h100">
+            <div className="col-lg-7 align-self-center">
+              <div className="relHd">
+                <h2>Ready to Sell?</h2>
+                <p>We are ready to buy now, at your door, and on your time!</p>
+                <button className='sell_car_btn'>Sell Your Car Now!</button>
+              </div>              
+            </div>
+            <div className="col-lg-5 align-self-end">
+              <div className="rts-rtImg">
+                <img src="/images/sell_to_customer.png" alt="Ready to Sell" title='Ready to Sell'/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="sell-car-info">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 colsciLeft">
+              <div className="sciLeft">
+                <h2>There has to be a better way to sell my car!</h2>
+                <p>The process of selling a car still remains very difficult and I never understood why with all of the great technology we have in the modern world.  We are consumers too that have sold a few cars ourselves and went though the same struggles you may have faced with wasting precious time with tire-kickers, scammers, and endless travel to receive lowball trade-in offers.</p> 
+                <p>So our thought was simple and our mission was clear – What if there was a way anyone, anywhere could sell their vehicle as fast and as easy as ordering a pizza from a mobile device? </p> <p>No stress, no travel, no risk, no inconvenience.  Well, I believe we have created it and it’s here at your fingertips.Go ahead and give us a try! </p>
+                <p>We welcome you join the thousands of other customers who deserved a much better way to sell by using WhipFlip.</p>
+              </div>
+              <div className="arrowPoint">
+                <svg width="64" height="57" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M62.5 55C62.5 55 30.0635 23 1.5 23V2C35.3889 2 62.5 55 62.5 55Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div className="col-lg-2 colsciRight">
+              <div className="sciRight">
+                <div className="scir_hd">
+                  <img src="/images/prof.png" alt="profile" title='profile'/>
+                </div>
+                <div className="profDetail">
+                  <h3>Roger Clappe</h3>
+                  <p>Founder and CEO at WhipFlip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer className='footer'>
+        <div className="container">
+          <div className="row fooRow">
+            <div className="col-lg-3 fooCol">
+              <div className="fooColIn">
+                <h2>About Whipflip</h2>
+                <ul>
+                  <li>About Us</li>
+                  <li>Customer Reviews</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 fooCol">
+              <div className="fooColIn">
+                <h2>About Whipflip</h2>
+                <ul>
+                  <li>About Us</li>
+                  <li>Customer Reviews</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 fooCol">
+              <div className="fooColIn">
+                <h2>About Whipflip</h2>
+                <ul>
+                  <li>About Us</li>
+                  <li>Customer Reviews</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 fooCol">
+              <div className="fooColIn">
+                <h2>About Whipflip</h2>
+                <ul>
+                  <li>About Us</li>
+                  <li>Customer Reviews</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+              <div className="fooColIn">
+                <h2>Follow us</h2>
+                <ul className='ss-icons'>
+                  <li>
+                    <span>
+                      <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 2.5585C23.1075 2.95 22.1565 3.2095 21.165 3.3355C22.185 2.7265 22.9635 1.7695 23.3295 0.616C22.3785 1.183 21.3285 1.5835 20.2095 1.807C19.3065 0.8455 18.0195 0.25 16.6155 0.25C13.8915 0.25 11.6985 2.461 11.6985 5.1715C11.6985 5.5615 11.7315 5.9365 11.8125 6.2935C7.722 6.094 4.1025 4.1335 1.671 1.147C1.2465 1.8835 0.9975 2.7265 0.9975 3.634C0.9975 5.338 1.875 6.8485 3.183 7.723C2.3925 7.708 1.617 7.4785 0.96 7.117C0.96 7.132 0.96 7.1515 0.96 7.171C0.96 9.562 2.6655 11.548 4.902 12.0055C4.5015 12.115 4.065 12.1675 3.612 12.1675C3.297 12.1675 2.979 12.1495 2.6805 12.0835C3.318 14.032 5.127 15.4645 7.278 15.511C5.604 16.8205 3.4785 17.6095 1.1775 17.6095C0.774 17.6095 0.387 17.5915 0 17.542C2.1795 18.9475 4.7625 19.75 7.548 19.75C16.602 19.75 21.552 12.25 21.552 5.749C21.552 5.5315 21.5445 5.3215 21.534 5.113C22.5105 4.42 23.331 3.5545 24 2.5585Z" fill="#353442"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                  <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 18.6281 5.37188 24 12 24C12.0703 24 12.1406 24 12.2109 23.9953V14.6578H9.63281V11.6531H12.2109V9.44062C12.2109 6.87656 13.7766 5.47969 16.0641 5.47969C17.1609 5.47969 18.1031 5.55938 18.375 5.59688V8.27813H16.8C15.5578 8.27813 15.3141 8.86875 15.3141 9.73594V11.6484H18.2906L17.9016 14.6531H15.3141V23.5359C20.3297 22.0969 24 17.4797 24 12Z" fill="#353442"/>
+                    </svg>
+                  </span>
+                  </li>
+                  <li>
+                    <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66667 0C2.98533 0 0 2.98533 0 6.66667V17.3333C0 21.0147 2.98533 24 6.66667 24H17.3333C21.0147 24 24 21.0147 24 17.3333V6.66667C24 2.98533 21.0147 0 17.3333 0H6.66667ZM20 2.66667C20.736 2.66667 21.3333 3.264 21.3333 4C21.3333 4.736 20.736 5.33333 20 5.33333C19.264 5.33333 18.6667 4.736 18.6667 4C18.6667 3.264 19.264 2.66667 20 2.66667ZM12 5.33333C15.6813 5.33333 18.6667 8.31867 18.6667 12C18.6667 15.6813 15.6813 18.6667 12 18.6667C8.31867 18.6667 5.33333 15.6813 5.33333 12C5.33333 8.31867 8.31867 5.33333 12 5.33333ZM12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8Z" fill="#353442"/>
+                    </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2634_129257)">
+                        <path d="M2.91049 1C1.15063 1 0 2.15561 0 3.67451C0 5.15986 1.11635 6.34843 2.84296 6.34843H2.87636C4.67064 6.34843 5.78729 5.15986 5.78729 3.67451C5.75374 2.15561 4.67064 1 2.91049 1Z" fill="#353442"/>
+                        <path d="M0.304101 8.46176H5.44893V23.9402H0.304101V8.46176Z" fill="#353442"/>
+                        <path d="M18.077 8.09848C15.3016 8.09848 13.4405 10.7065 13.4405 10.7065V8.46176H8.29555V23.9402H13.4402V15.2964C13.4402 14.8337 13.4738 14.3717 13.6097 14.0408C13.9816 13.1167 14.828 12.1595 16.2494 12.1595C18.111 12.1595 18.8556 13.5789 18.8556 15.6597V23.9402H24V15.0651C24 10.3108 21.4617 8.09848 18.077 8.09848Z" fill="#353442"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2634_129257">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="fooCopyRight">
+            <div className="fcl">
+              <span>Whipflip © 2022 WhipFlip, Inc. All rights reserved.</span>
+            </div>
+            <div className="fcr">
+              <div className="fooIcons">
+                <img src="/images/foo2.png" alt="accredited business" title='accredited business'/>
+                <img src="/images/foo1.png" alt="chamber of commerce" title='chamber of commerce'/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
