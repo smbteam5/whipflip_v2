@@ -481,6 +481,11 @@
         padding-left: 15px;
     }
 }
+.navbar-brand{
+    @include responsive(Exsmall394){
+        width: 80%;
+    }
+}
 .bnr_mob_btm_pts{
     @include responsive(Exsmall355){
         flex: 0 0 100%;

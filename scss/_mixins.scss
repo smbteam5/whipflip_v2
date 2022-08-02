@@ -4,6 +4,11 @@
             @content
         };
     }
+    @if $breakpoint == Exsmall394{
+        @media only screen and (max-width:394px){
+            @content
+        };
+    }
   @if $breakpoint == Exsmall{
       @media only screen and (max-width:474px){
           @content
