@@ -15,13 +15,15 @@ function Header2() {
             </>
         </Head>
         <div className="offer_header">
-            <div className="oh_logo">
-                <img src="/images/offer-sell-header.svg" alt="" />
-            </div>
-            <div className="hambergerMenu" onClick={handleShowSideBar}>
-              <span></span>
-              <span></span>
-              <span></span>
+            <div className="offer_header_in">
+              <div className="oh_logo">
+                  <img src="/images/offer-sell-header.svg" alt="" />
+              </div>
+              <div className="hambergerMenu" onClick={handleShowSideBar}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
         </div>
         

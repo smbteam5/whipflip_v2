@@ -1,10 +1,23 @@
 import React from 'react'
 import Header2 from '../Header2'
-
+import {
+    useWindowSize,
+    useWindowWidth,
+    useWindowHeight,
+  } from '@react-hook/window-size'
+import Confetti from 'react-confetti'
 function Congrats() {
-  return (
+const [width, height] = useWindowSize()
+const onlyWidth = useWindowWidth()
+const onlyHeight = useWindowHeight()
+  console.log(width, height);
+  return (    
     <div>
-        <Header2/>
+        <Confetti
+            width={width}
+            height={height}
+        />
+        <Header2/>        
         <div className="congratsView">
            <div className="container">
             <div className="cv_top">
