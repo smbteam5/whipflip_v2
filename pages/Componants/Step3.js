@@ -1,13 +1,26 @@
 import React,{useState} from 'react'
+import HigherOfferModalWeb from './HigherOfferModalWeb';
 import Step3b from './Step3b';
 
 function Step3() {
   const [showFrm, setShowFrm] = useState(false);
-  const handleShowFrm = () => {
-    setShowFrm(true);
-};
+    const [showHigherOffer,setShowHigherOffer] = useState(false);
+    const handleShowHigherOffer = (e) =>{
+      e.preventDefault()
+      setShowHigherOffer(true)
+    }
+    const handleCloseHigherOffer = (e) =>{
+      setShowHigherOffer(false)
+    }
+    const handleShowFrm = () => {
+      setShowFrm(true);
+    };
   return (
     <div>
+      {
+            showHigherOffer &&
+            <HigherOfferModalWeb showHigherOffer={showHigherOffer} handleCloseHigherOffer={handleCloseHigherOffer}/>
+      }
       {
         !showFrm &&
         <div className="acceptOffer">
@@ -26,7 +39,7 @@ function Step3() {
                 <p>Your offer is good for 5 days. Just let us know when and where we can come to buy your car!</p>
               </div>
               <div className="at_buttons">
-                <button className='elsewhere_offer'>
+                <button className='elsewhere_offer'  onClick={handleShowHigherOffer}>
                   I have a higher offer elsewhere
                 </button>
                 <button className='accept_off_btn' onClick={handleShowFrm}>

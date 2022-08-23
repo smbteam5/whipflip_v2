@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import RulesOfRoadModal from './mobile/RulesOfRoadModal';
 function Step3b() {
+    const [show, setShow] = React.useState(false) 
     const [startDate, setStartDate] = useState(new Date());
     const [status2, setStatus2] = useState(1);
     const [condition, setCondition] = useState(2);
@@ -15,8 +17,19 @@ function Step3b() {
     const warningHandler = (warning) => {
         setWarning(warning);
     };
+    const handleClose = () =>{
+        setShow(false);
+    }
+    const handleOpen = (e) =>{
+        e.preventDefault();
+        setShow(true);
+    }
   return (
     <div>
+        {
+            show &&
+            <RulesOfRoadModal  handleClose={handleClose} show={show} clickFromWeb/>
+        }
         <div className="offer_right">
             <div className="or_head">
                 <h1>When Can We Drop Off Your Check?</h1>
@@ -256,7 +269,7 @@ function Step3b() {
                 </div>
             </div> 
             <div className="initial_order_btn">
-                <button className='initofferBtn'>
+                <button className='initofferBtn' onClick={handleOpen}>
                     Submit
                 </button>
             </div>

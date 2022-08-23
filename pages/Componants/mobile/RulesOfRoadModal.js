@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
-function RulesOfRoadModal({show,handleClose}) {
+function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
   return (
     <>
-    <Modal show={show} onHide={handleClose} className="rules_of_road">
+    <Modal show={show} onHide={handleClose} className={clickFromWeb ? " rules_of_road rules_of_road_web ":" rules_of_road "}>
         <Modal.Header className='ror_head' closeButton>
           <Modal.Title>
             <h1>Rules of the Road</h1>

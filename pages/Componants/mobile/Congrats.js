@@ -1,15 +1,11 @@
 import React from 'react'
 import Header2 from '../Header2'
 import {
-    useWindowSize,
-    useWindowWidth,
-    useWindowHeight,
+    useWindowSize
   } from '@react-hook/window-size'
 import Confetti from 'react-confetti'
 function Congrats() {
 const [width, height] = useWindowSize()
-const onlyWidth = useWindowWidth()
-const onlyHeight = useWindowHeight()
   console.log(width, height);
   return (    
     <div>

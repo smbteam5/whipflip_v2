@@ -15,7 +15,7 @@ function ConfirmOffer() {
                         <h2>Initial offer: $7,000</h2>     
                         <div className="offerProduct-mobi row">
                             <div className="ofp_left col-4 p-0">
-                                <img src="/images/car1.png" alt="" />
+                                <img src="/images/car1.png" alt="car" title='car'/>
                             </div>
                             <div className="ofp_right col-8">
                                 <h3>2022 Ford Ranger</h3>
