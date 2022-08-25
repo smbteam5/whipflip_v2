@@ -44,122 +44,207 @@ function McWarning() {
                                             <div className="checkIssues">
                                                 <h3>Select all that apply.</h3>
                                                 <div className="chooseIssues">
-                                                    <div className="row">
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                    <ul className="ks-cboxtags row">
+                                                        <li className="col-6 p-0 ci_col">
+                                                            <input type="checkbox" id="checkbox1" value="Check Engine " />
+                                                            <label for="checkbox1" className='labeltick'>
                                                                 <span>Check Engine </span>
-                                                                <span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
                                                                     <img src="/images/check-engine.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                            </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox2" value="Check Engine " />
+                                                        <label for="checkbox2" className='labeltick'>
                                                                 <span for="chk2">Airbag/SRS</span>
-                                                                <span>
-                                                                    <img src="/images/air-bag.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <img src="/images/air-bag.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                              </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox3" value="Check Engine " />
+                                                        <label for="checkbox3" className='labeltick'>
                                                                 <span for="chk3">Transmission</span>
-                                                                <span>
-                                                                <img src="/images/transmission.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                    <img src="/images/transmission.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                              </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox4" value="Check Engine " />
+                                                        <label for="checkbox4" className='labeltick'>
                                                                 <span for="chk4">ABS</span>
-                                                                <span>
-                                                                <img src="/images/abs.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                    <img src="/images/abs.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                             </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox5" value="Check Engine " />
+                                                        <label for="checkbox5" className='labeltick'>
                                                                 <span for="chk5">Maintenance Required</span>
-                                                                <span>
-                                                                <img src="/images/maintanance.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <img src="/images/maintanance.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                            </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox6" value="Check Engine " />
+                                                        <label for="checkbox6" className='labeltick'>
                                                                 <span for="chk6">Temperature/ Overheat</span>
-                                                                <span>
-                                                                <img src="/images/temp.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <img src="/images/temp.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                              </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox7" value="Check Engine " />
+                                                        <label for="checkbox7" className='labeltick'>
                                                                 <span for="chk7">Traction Control</span>
-                                                                <span>
-                                                                <img src="/images/tc.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                    <img src="/images/tc.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
+                                                            </label>
+                                                        </li>
                                                         {/*  */}
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox8" value="Check Engine " />
+                                                        <label for="checkbox8" className='labeltick'>
                                                                 <span for="chk7">Low Oil/Pressure</span>
-                                                                <span>
-                                                                <img src="/images/low-oil.svg" alt="Check Engine" title='Check Engine'/>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <img src="/images/low-oil.svg" alt="Check Engine" title='Check Engine'/>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                                </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox9" value="Check Engine " />
+                                                        <label for="checkbox9" className='labeltick'>
                                                                 <span for="chk7">A/C Inoperable</span>
-                                                                <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                                </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox10" value="Check Engine " />
+                                                        <label for="checkbox10" className='labeltick'>
                                                                 <span for="chk7">Missing Parts</span>
-                                                                <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                               </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox11" value="Check Engine " />
+                                                        <label for="checkbox11" className='labeltick'>
                                                                 <span for="chk7">Odometer Not Visible</span>
-                                                                <span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                                </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox12" value="Check Engine " />
+                                                        <label for="checkbox12" className='labeltick'>
                                                                 <span for="chk7">A/C Blows Warm</span>
-                                                                <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                                </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox13" value="Check Engine " />
+                                                        <label for="checkbox13" className='labeltick'>
                                                                 <span for="chk7">Radio/ Navigation Inoperable</span>
-                                                                <span>
+                                                               
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                                </label>
+                                                        </li>
+                                                        <li className="col-6 p-0 ci_col">
+                                                        <input type="checkbox" id="checkbox14" value="Check Engine " />
+                                                        <label for="checkbox14" className='labeltick'>
+                                                            <span for="chk7">Windows/ Sunroof Inoperable</span>
+                                                            <span className='spanicon'>
+                                                                <span className="plus">
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Windows/ Sunroof Inoperable</span>
-                                                                <span>
-                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                <span className="checked">
+                                                                    <i class="fa-solid fa-check"></i>
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                            </span>
+                                                        </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>                                                
                                             </div>
                                         </div>                                             
                                         }
@@ -178,8 +263,17 @@ function McWarning() {
                                                     </span>
                                                 </span>
                                             </div>                                                    
-                                        }
+                                        }                                        
                                 </div>  
+                                <div class="form-group row ob_frm_row">
+                                            <div class="col-lg-12 p-0 text-center">
+                                                <button className='continueBtn'>Continue 
+                                                    <span>
+                                                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 6.8151L0 1.8151L1.16667 0.648438L5 4.48177L8.83333 0.648438L10 1.8151L5 6.8151Z" fill="white"/></svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
                             </div>
                         </div>
                     </form>

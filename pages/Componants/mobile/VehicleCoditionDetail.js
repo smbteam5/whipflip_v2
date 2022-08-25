@@ -45,10 +45,82 @@ function VehicleCoditionDetail() {
                                             <div className="checkIssues">
                                                 <h3>Select all that apply.</h3>
                                                 <div className="chooseIssues">
-                                                    <div className="row">
+                                                    <ul className='ks-cboxtags row'>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox1" value="Engine Modification" />
+                                                            <label for="checkbox1" className='labeltick'>
+                                                                <span className='labeltickspan'>Engine Modification</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
+                                                            <label for="checkbox2" className='labeltick'>
+                                                                <span className='labeltickspan'>Drivetrain Modification</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
+                                                            <label for="checkbox3" className='labeltick'>
+                                                                <span className='labeltickspan'>Altered Suspension (Lowered)</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
+                                                            <label for="checkbox4" className='labeltick'>
+                                                                <span className='labeltickspan'>Altered Suspension (Lifted)</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
+                                                            <label for="checkbox5" className='labeltick'>
+                                                                <span className='labeltickspan'>Aftermarket Body Panels</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    {/* <div className="row">                                                        
                                                         <div className="col-6 p-0 ci_col">
                                                             <div class="form-group check-group chsItem">
-                                                                <span>Doesn’t Start / Drive</span>
+                                                                <span for="chk7">Drivetrain Modification</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
@@ -56,7 +128,7 @@ function VehicleCoditionDetail() {
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
                                                             <div class="form-group check-group chsItem">
-                                                                <span for="chk2">Engine Noise (Knocking)</span>
+                                                                <span for="chk7">Altered Suspension (Lowered)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
@@ -64,7 +136,7 @@ function VehicleCoditionDetail() {
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
                                                             <div class="form-group check-group chsItem">
-                                                                <span for="chk3">Engine Noise (Ticking)</span>
+                                                                <span for="chk7">Altered Suspension (Lifted)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
@@ -72,7 +144,7 @@ function VehicleCoditionDetail() {
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
                                                             <div class="form-group check-group chsItem">
-                                                                <span for="chk4">Transmission</span>
+                                                                <span for="chk7">Aftermarket Body Panels</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
@@ -80,29 +152,13 @@ function VehicleCoditionDetail() {
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
                                                             <div class="form-group check-group chsItem">
-                                                                <span for="chk5">Battery / Charging</span>
+                                                                <span for="chk7">Windows/ Sunroof Inoperable</span>
                                                                 <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk6">Overheats</span>
-                                                                <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Oil / Fluid Leak</span>
-                                                                <span>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>                                             

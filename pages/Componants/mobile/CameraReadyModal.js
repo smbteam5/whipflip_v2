@@ -1,15 +1,40 @@
 import React from 'react'
+import { useState } from 'react';
 import { Button, Modal,Form  } from 'react-bootstrap';
+import AccessCamModal from './AccessCamModal';
+import PortraitModal from './PortraitModal';
 function CameraReadyModal({showCamera,handleCloseCamera}) {
+ const [showPortrait,setShowPortrait] = useState(false);
+ const [show, setShow] = React.useState(false)
+    const handleClose = () =>{
+        setShow(false);
+    }
+    const handleOpen = (e) =>{
+        e.preventDefault();
+        setShow(true);
+    }
+
+ const handleshowPortrait =(e)=>{
+    e.preventDefault();
+    setShowPortrait(true);
+ }
   return (
+    <>
+    {
+            show &&
+            <AccessCamModal handleClose={handleClose} handleOpen={handleOpen} show={show}/>
+    }
+    
     <Modal show={showCamera} onHide={handleCloseCamera} className="camera_ready_modal">
         <Modal.Header closeButton>
         </Modal.Header>
-        <Modal.Body className='cr_body'>
+        {
+            !showPortrait &&
+            <Modal.Body className='cr_body'>
             <div className="cr_body_in">
                 <div className="cr_head_dec">
                     <div className="cr_hd_img">
-                        <img src="/images/cam.svg" alt="" />
+                        <img src="/images/cam.svg" alt="rotate" title='rotate'/>
                     </div>
                     <div className="cr_hd_dec">
                         <h2>Tilt phone to landscape mode and fit each FULL vehicle side inside the outline</h2>
@@ -53,14 +78,21 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
                     </div>
                 </div>
                 <div className="cr_foo">
-                    <button className='cr_ready_btn'>
+                    <button className='cr_ready_btn' onClick={handleshowPortrait}>
                         I’m Ready
                     </button>
                     <a href="#" className='skipHref'>Skip Taking Photos</a>
                 </div>
             </div>
-        </Modal.Body>
+            </Modal.Body>
+        }
+        {
+            showPortrait &&
+            <PortraitModal showPortrait={showPortrait} handleOpen={handleOpen}/>
+        }
+        
     </Modal>
+    </>
   )
 }
 
