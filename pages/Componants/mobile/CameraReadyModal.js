@@ -18,6 +18,7 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
     e.preventDefault();
     setShowPortrait(true);
  }
+
   return (
     <>
     {
@@ -88,7 +89,7 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
         }
         {
             showPortrait &&
-            <PortraitModal showPortrait={showPortrait} handleOpen={handleOpen}/>
+            <PortraitModal showPortrait={showPortrait} handleOpen={handleOpen} setShow={setShow} show={show}/>
         }
         
     </Modal>

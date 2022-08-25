@@ -2846,6 +2846,9 @@ label.labelflexCenter.tclabel.tclabelMobi{
         width: 100%;
     }
 }
+.photosBtn{
+    margin: auto;
+}
 .fesFooter_list{
     @include responsive(tab-port){
         margin-top: 25px;
@@ -2863,7 +2866,9 @@ label.labelflexCenter.tclabel.tclabelMobi{
 }
 .camera_ready_modal{
     .modal-dialog{
-        margin: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
     .modal-header{
         border: none;
@@ -4248,6 +4253,7 @@ canvas{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    justify-content: center;
     &::before{
         position: absolute;
         content: "";
@@ -4260,6 +4266,7 @@ canvas{
     }
     .pb_inside{
         position: relative;
+        padding: 15px;
         .pb_headd{
             margin-bottom: 30px;
             text-align: center;
@@ -4365,6 +4372,7 @@ canvas{
         border-radius: 10px;
     }
     .mac_head{
+        justify-content: center;
         h2{
             font-style: normal;
             font-weight: 500;

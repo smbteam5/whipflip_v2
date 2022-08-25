@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
-function PortraitModal({showPortrait,handleOpen}) {
+function PortraitModal({showPortrait,handleOpen,show,setShow}) {
+    
   return (
     <div>
         <div className='portrait_body'> 
