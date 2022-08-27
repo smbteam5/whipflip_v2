@@ -1,4 +1,5 @@
 import React from 'react'
+import ColorSelect from './ColorSelect'
 
 function Step1() {
   return (
@@ -22,14 +23,7 @@ function Step1() {
                         <div class="form-group row ob_frm_row">
                             <div class="col-lg-6 p-0">
                                 <label htmlFor="">Color</label>
-                                <select class="form-control" id="user_time_zone" size="0">
-                                    <option value="Hawaii">
-                                        Choose a Color
-                                    </option>
-                                    <option value="Alaska">
-                                        (GMT-09:00) Alaska
-                                    </option>
-                                </select>
+                                <ColorSelect/>
                             </div>
                         </div>
                         <div class="form-group row ob_frm_row">

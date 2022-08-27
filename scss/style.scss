@@ -1219,7 +1219,7 @@ ul.form-stepper li a .form-stepper-circle {
 .si-wrap{
     width: 100%;
     &.active::before {
-        bottom: -19px;
+        bottom: -30px;        
         left: 50%;
         z-index: 9;
         content: '';
@@ -1230,6 +1230,9 @@ ul.form-stepper li a .form-stepper-circle {
         border-top: #4381C0 solid 1px;
         border-left: #4381C0 solid 1px;
         transform: translateX(-50%) rotate(45deg);
+        @include responsive(phone){
+            bottom: -19px;
+        }
     }    
 }
 .viewDetail{
@@ -1869,6 +1872,9 @@ label{
                 border-radius: 4px;
                 border: none;
                 padding: 10px 60px;
+                @include responsive(device1200Max){
+                    padding: 10px 50px;
+                }
             }
             .at_buttons{
                 display: inline-flex;
@@ -4362,9 +4368,9 @@ canvas{
     border-radius: 50%;
     font-size: 12px;
 }
-.offer_block .ob_frm_row div > label{
-    margin-bottom: 20px;
-}
+// .offer_block .ob_frm_row div > label{
+//     margin-bottom: 20px;
+// }
 .modal_accessCam{
     .modal-content{
         padding: 15px;
@@ -4403,6 +4409,70 @@ canvas{
             color: #F8F8FB;
             &:first-child{
                 border-right: 1px solid #F8F8FB;
+            }
+        }
+    }
+}
+// color select
+
+.color_picker{
+    .color_picker_toggle{
+        background-color: #F8F8FB !important;
+        border: none;
+        border-radius: 4px;
+        color: #8D8C9D;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        border: 1px solid #D5D5DC;
+        & span:first-child{
+            display: none;
+        }
+    }
+    &.show{
+        .color_list{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 320px;
+            flex-wrap: wrap;
+            padding: 10px;
+            .color_item{
+                padding: 0;
+                clear: both;
+                font-weight: 400;
+                color: #212529;
+                text-align: inherit;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #D5D5DC;
+                border-radius: 4px;
+                flex-direction: column;
+                .dropItemSpn{
+                    span{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        display: block;
+                    }
+                }
+                & > span{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #353442;
+                    display: block;
+                    padding-top: 5px;
+                }
             }
         }
     }
