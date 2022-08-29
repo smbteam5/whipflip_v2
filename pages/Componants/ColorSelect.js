@@ -42,10 +42,10 @@ function ColorSelect() {
             <Dropdown.Toggle id="dropdown-basic" className="color_picker_toggle"> 
             <span>{JSON.stringify(dropdown.name)}</span>          
             {dropdown.map(item => {
-            return <>
-                {item.name.length < 0 ? <span>Choose Color</span> : <span>{(item.name)}</span> }
-            </>;
-        })}
+              return <>
+                  {item.name.length < 0 ? <span>Choose Color</span> : <span>{(item.name)}</span> }
+              </>
+            })}
             </Dropdown.Toggle>
             <Dropdown.Menu className="color_list">
                 {dropdownList.map((value,i) => {
@@ -54,7 +54,7 @@ function ColorSelect() {
                    <Dropdown.Item className="color_item" href="#/action-1" onClick={() => dropdownListClick(i)}
                      key={value.id} id={value.id}>
                         <div className="dropItemSpn">
-                            <span style={{backgroundColor: value.code}}></span>
+                            <span style={{backgroundColor: value.code}} className={value.name === "white" ? "border_for_white color_dot":"color_dot"}></span>
                         </div>
                         <span>{value.name}</span>
                      </Dropdown.Item>

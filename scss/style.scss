@@ -4414,7 +4414,9 @@ canvas{
     }
 }
 // color select
-
+.border_for_white.color_dot{
+    border: 1px solid #000000;
+}
 .color_picker{
     .color_picker_toggle{
         background-color: #F8F8FB !important;

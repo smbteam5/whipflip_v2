@@ -23,7 +23,10 @@ function Step1() {
                         <div class="form-group row ob_frm_row">
                             <div class="col-lg-6 p-0">
                                 <label htmlFor="">Color</label>
-                                <ColorSelect/>
+                                <select name="" id="">
+                                    <option value="">ssss</option>
+                                </select>
+                                {/* <ColorSelect/> */}
                             </div>
                         </div>
                         <div class="form-group row ob_frm_row">
