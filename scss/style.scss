@@ -6,6 +6,7 @@
 //CUSTOME STYLES
 @import "./mixins";
 @import "./variables";
+@import "./layout";
 .whipflip_nav{
     justify-content: space-between;
     .navbar-collapse{
@@ -47,7 +48,7 @@
         }
         h1{
             font-style: normal;
-            font-weight: 800;
+            font-weight: $font-bold;
             font-size: 56px;
             color:#fff;
             @include responsive(tab-port){
@@ -390,7 +391,7 @@
         }
     }
     h2{
-        font-weight: 800;
+        font-weight: $font-bold;
         font-size: 56px;
         line-height: 64px;
         letter-spacing: -0.0002em;
@@ -398,7 +399,7 @@
         mix-blend-mode: normal;
         @include responsive(tab-port){
             font-style: normal;
-            font-weight: 800;
+            font-weight: $font-bold;
             font-size: 46px;
         }
         span{
@@ -728,13 +729,13 @@
         color: #FFFFFF;
         h2{
             font-style: normal;
-            font-weight: 800;
+            font-weight: $font-bold;
             font-size: 74px;
             color: #FFFFFF;
             @include responsive(tab-port){
                 color: #FFFFFF;
                 font-style: normal;
-                font-weight: 800;
+                font-weight: $font-bold;
                 font-size: 44px;
                 line-height: 52px;
             }
@@ -787,7 +788,7 @@
         }
         .sciLeft{
             h2{
-                font-weight: 800;
+                font-weight: $font-bold;
                 font-size: 36px;
                 line-height: 40px;
                 color: #201F2D;
@@ -1196,7 +1197,7 @@ ul.form-stepper li a .form-stepper-circle {
     }
     h1{
         font-style: normal;
-        font-weight: 800;
+        font-weight: $font-bold;
         font-size: 28px;
         line-height: 36px;
         color: #201F2D;
@@ -1619,7 +1620,7 @@ label{
                     text-align: center;
                     h2{
                         font-style: normal;
-                        font-weight: 800;
+                        font-weight: $font-bold;
                         font-size: 28px;
                         line-height: 36px;
                     }
@@ -1812,7 +1813,7 @@ label{
                 margin: 15px 0;
                 h1{
                     font-style: normal;
-                    font-weight: 800;
+                    font-weight: $font-bold;
                     font-size: 56px;
                     line-height: 64px;
                     text-align: center;
@@ -1895,7 +1896,7 @@ label{
             }
             & > h2{
                 font-style: normal;
-                font-weight: 800;
+                font-weight: $font-bold;
                 font-size: 26px;
                 line-height: 30px;
                 text-align: center;
