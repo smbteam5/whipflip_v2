@@ -19,7 +19,6 @@ function ColorSelect() {
         {id: 14, name: 'Other', code: '#000'},
     ];
     const [dropdown, setdropdown] = useState([]);
-
     const dropdownListClick = (e) => {
       console.log("filteredList",dropdownList[e].name);
       setdropdown([dropdownList[e]])
