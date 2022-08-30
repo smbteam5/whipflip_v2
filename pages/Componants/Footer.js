@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 function Footer() {
   return (
     <div>
@@ -72,7 +72,7 @@ function Footer() {
                             <li>
                                 <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_2634_129257)">
+                                    <g clipPath="url(#clip0_2634_129257)">
                                     <path d="M2.91049 1C1.15063 1 0 2.15561 0 3.67451C0 5.15986 1.11635 6.34843 2.84296 6.34843H2.87636C4.67064 6.34843 5.78729 5.15986 5.78729 3.67451C5.75374 2.15561 4.67064 1 2.91049 1Z" fill="#353442"/>
                                     <path d="M0.304101 8.46176H5.44893V23.9402H0.304101V8.46176Z" fill="#353442"/>
                                     <path d="M18.077 8.09848C15.3016 8.09848 13.4405 10.7065 13.4405 10.7065V8.46176H8.29555V23.9402H13.4402V15.2964C13.4402 14.8337 13.4738 14.3717 13.6097 14.0408C13.9816 13.1167 14.828 12.1595 16.2494 12.1595C18.111 12.1595 18.8556 13.5789 18.8556 15.6597V23.9402H24V15.0651C24 10.3108 21.4617 8.09848 18.077 8.09848Z" fill="#353442"/>
@@ -95,8 +95,19 @@ function Footer() {
                     </div>
                     <div className="fcr">
                     <div className="fooIcons">
-                        <img src="/images/foo2.png" alt="accredited business" title='accredited business'/>
-                        <img src="/images/foo1.png" alt="chamber of commerce" title='chamber of commerce'/>
+                        <Image src="/images/foo2.png" 
+                        alt="accredited business"
+                        title='accredited business'
+                        width={110}
+                        height={35}
+                        />
+
+                        <Image src="/images/foo1.png"
+                        alt="chamber of commerce"
+                        title='chamber of commerce'
+                        width={110}
+                        height={35}
+                        />
                     </div>
                     </div>
                 </div>

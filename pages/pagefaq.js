@@ -8,9 +8,9 @@ import Link from "next/link";
 function pagefaq() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header faq d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -18,11 +18,11 @@ function pagefaq() {
               <p className="pt-4">How can we help you?</p>
               <h1>Frequently asked questions</h1>
               <div className="pt-4">
-                <form class="form-row justify-content-center">
-                  <div class="form-group col-9 col-sm-7">
+                <form className="form-row justify-content-center">
+                  <div className="form-group col-9 col-sm-7">
                     <input
                       type="text"
-                      class="form-control form-control-lg input-faq"
+                      className="form-control form-control-lg input-faq"
                       id="inputSearchfaq"
                       placeholder="Search Questions"
                     />
@@ -30,10 +30,10 @@ function pagefaq() {
                   <div className="col-3 col-lg-2">
                     <button
                       type="submit"
-                      class="btn btn-primary btn-lg w-100 btn-yellow"
+                      className="btn btn-primary btn-lg w-100 btn-yellow"
                     >
                       <span className="d-none d-sm-inline">Search</span>
-                      <i class="bi bi-search d-sm-none"></i>
+                      <i className="bi bi-search d-sm-none"></i>
                     </button>
                   </div>
                 </form>
@@ -68,18 +68,20 @@ function pagefaq() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-8 col-lg-9">
-              <div>
-                <h3 className="font-weight-600">How It Works</h3>
-                <Faq />
-              </div>
-              <div className="my-4">
-                <h3 className="font-weight-600">What We Buy</h3>
-                <Faq />
-              </div>
-              <div className="my-4">
-                <h3 className="font-weight-600">Quotes & Offers</h3>
-                <Faq />
+            <div className="col-md-8 col-lg-9 faq right_sidebar_faq">
+              <div className="faqWrapper pagefaqWrapper">
+                <div className="faq_for_each">
+                  <h3 className="font-weight-600">How It Works</h3>
+                  <Faq />
+                </div>
+                <div className="faq_for_each">
+                  <h3 className="font-weight-600">What We Buy</h3>
+                  <Faq />
+                </div>
+                <div className="faq_for_each">
+                  <h3 className="font-weight-600">Quotes & Offers</h3>
+                  <Faq />
+                </div>
               </div>
             </div>
           </div>

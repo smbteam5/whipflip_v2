@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Header2 from '../Header2'
 import EasyModalMobi from './EasyModalMobi'
 import StepBar from './StepBar'
+import Image from 'next/image'
 function CcInterior() {
     const [show, setShow] = React.useState(false)
     const handleClose = () =>{
@@ -27,17 +28,22 @@ function CcInterior() {
                 <div className="ob_hd">
                     <h2>Cosmetic Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">                                        
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">                                        
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">How would you honestly rate your vehicle’s <b>INTERIOR</b> condition?</label>
                                     <div className="chooseBlock selectorRow rowSell tireconditions">
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc1" name="tc" class="selector-item_radio" defaultChecked  />
-                                            <label for="tc1" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc1" name="tc" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="tc1" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                <img src="/images/great.svg" alt="GREAT" title='GREAT'/>
+                                                <Image src="/images/great.svg" 
+                                                    alt="GREAT"
+                                                    title='GREAT'
+                                                    width={50}
+                                                    height={50}
+                                                 />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>FLIPPIN’ GREAT!</h3>
@@ -45,11 +51,16 @@ function CcInterior() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc2" name="tc" class="selector-item_radio" />
-                                            <label for="tc2" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc2" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc2" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                    <img src="/images/average.svg" alt="Average" title='Average' />
+                                                    <Image src="/images/average.svg" 
+                                                        alt="average"
+                                                        title='average'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Just Average</h3>
@@ -57,11 +68,16 @@ function CcInterior() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc3" name="tc" class="selector-item_radio" />
-                                            <label for="tc3" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc3" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc3" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                    <img src="/images/rough.svg" alt="Rough" title='Rough' />
+                                                    <Image src="/images/rough.svg" 
+                                                        alt="rough"
+                                                        title='rough'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>It’s Rough...</h3>

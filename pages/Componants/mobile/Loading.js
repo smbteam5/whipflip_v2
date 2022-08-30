@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header2 from '../Header2'
 import StepBar from './StepBar'
-
+import Image from 'next/image'
 function Loading() {
   return (
     <>
@@ -11,9 +11,15 @@ function Loading() {
             <div className="loadingText">
                 <span>Your awesome initial offer is loading...</span>
             </div>
-            <div class="car-movement">
-                <div class="car">
-                    <img src="/images/truck.svg" alt="" />
+            <div className="car-movement">
+                <div className="car">
+                    <Image 
+                        src="/images/truck.svg" 
+                        alt="mail" 
+                        title='mail'
+                        width={300}
+                        height={90}
+                    />
                 </div>
             </div>
         </div>

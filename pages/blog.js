@@ -8,9 +8,9 @@ import Link from "next/link";
 function blog() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header blog d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -22,11 +22,11 @@ function blog() {
                 car.
               </p>
               <div className="pt-4">
-                <form class="form-row justify-content-start">
-                  <div class="form-group col-9 col-sm-6 col-md-5 col-lg-4">
+                <form className="form-row justify-content-start">
+                  <div className="form-group col-9 col-sm-6 col-md-5 col-lg-4">
                     <input
                       type="text"
-                      class="form-control form-control-lg input-faq"
+                      className="form-control form-control-lg input-faq"
                       id="inputSearchfaq"
                       placeholder="Enter your email"
                     />
@@ -34,10 +34,10 @@ function blog() {
                   <div className="col-3 col-lg-2">
                     <button
                       type="submit"
-                      class="btn btn-primary btn-lg w-100 btn-yellow"
+                      className="btn btn-primary btn-lg w-100 btn-yellow"
                     >
                       <span className="d-none d-sm-inline">Subscribe</span>
-                      <i class="bi bi-search d-sm-none"></i>
+                      <i className="bi bi-search d-sm-none"></i>
                     </button>
                   </div>
                   <div className="col-12 text-xs">
@@ -299,10 +299,10 @@ function blog() {
               </div>
             </div>
             <div className="col-md-4 col-lg-3">
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   type="text"
-                  class="form-control input-search"
+                  className="form-control input-search"
                   id="inputSearchfaq"
                   placeholder="Search"
                 />
@@ -329,7 +329,7 @@ function blog() {
                   <p>Lorem ipsum dolor sit amet, consectetur ipiscing eli</p>
                   <button
                     type="submit"
-                    class="btn btn-primary btn-lg w-100 btn-yellow"
+                    className="btn btn-primary btn-lg w-100 btn-yellow"
                   >
                     Get a quote
                   </button>

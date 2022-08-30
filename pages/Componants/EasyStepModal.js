@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
+import Image from 'next/image'
 function EasyStepModal({show,handleClose}) {
   return (
     <Modal show={show} onHide={handleClose} className="final_easy_step_modal">
@@ -11,7 +12,13 @@ function EasyStepModal({show,handleClose}) {
                 <div className="fesBody_in_row row">
                     <div className="col-lg-4 fes_col fes_col_left">
                         <div className="fes_col_left_in">
-                            <img src="/images/easy-final.svg" alt="" title='easy final'/>
+                            <Image
+                                src="/images/easy-final.svg" 
+                                alt=""
+                                title='easy final'
+                                width={160} 
+                                height={160}
+                            />
                         </div>
                     </div>
                     <div className="col-lg-8 fes_col fes_col_right">
@@ -41,7 +48,13 @@ function EasyStepModal({show,handleClose}) {
                             <div className="fesConItemRow align-items-center">
                                 <div className="fesCon_left">
                                     <div className="fesConItem_img">
-                                        <img src="/images/access-email.svg" alt="" />
+                                        <Image
+                                            src="/images/access-email.svg" 
+                                            alt="easy final"
+                                            title='easy final'
+                                            width={60} 
+                                            height={60}
+                                        />
                                     </div>
                                 </div>
                                 <div className="fesCon_right">
@@ -59,7 +72,13 @@ function EasyStepModal({show,handleClose}) {
                             <div className="fesConItemRow align-items-center">
                                 <div className="fesCon_left">
                                     <div className="fesConItem_img">
-                                        <img src="/images/url.svg" alt="" />
+                                        <Image
+                                            src="/images/url.svg" 
+                                            alt="Access the photo"
+                                            title='Access the photo'
+                                            width={60} 
+                                            height={60}
+                                        />
                                     </div>
                                 </div>
                                 <div className="fesCon_right">

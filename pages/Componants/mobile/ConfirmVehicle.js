@@ -19,21 +19,21 @@ function ConfirmVehicle() {
                 <div className="ob_hd">
                     <h2>Confirm Exact Vehicle</h2> 
                 </div>
-                <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-6 p-0">
+                                        <div className="selecotr-item col-6 p-0">
                                             <div className={status === 1 ? "si-wrap active": "si-wrap"} >
                                                 <input type="radio" id="radio1" name="selector" className={status === 1 ? "selector-item_radio active": "selector-item_radio"} checked={status === 1} onClick={(e) => radioHandler(1)} />
-                                                <label for="radio1" class="selector-item_label">VIN #</label>  
+                                                <label htmlFor="radio1" className="selector-item_label">VIN #</label>  
                                             </div>
                                         </div>
-                                        <div class="selecotr-item col-6 pr-0">
+                                        <div className="selecotr-item col-6 pr-0">
                                             <div className={status === 2 ? "si-wrap active": "si-wrap"} >
-                                                <input type="radio" id="radio2" name="selector" class={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
-                                                <label for="radio2" class="selector-item_label">License Plate</label>  
+                                                <input type="radio" id="radio2" name="selector" className={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
+                                                <label htmlFor="radio2" className="selector-item_label">License Plate</label>  
                                             </div>                                             
                                         </div>
                                     </div>  

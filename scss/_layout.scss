@@ -181,10 +181,11 @@ border-radius: 64px;
             }
         }
     }
-
+    padding-top: 80px;
 &.min-height-none{
-    min-height: inherit !important;
+    min-height: inherit !important;    
 }
+
 a { color: #fff;}
 }
 .founder-quote{
@@ -398,6 +399,25 @@ a { color: #fff;}
         }
         button{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}
+.form-control{
+    height: calc(1.7em + 0.75rem + 2px);
+}
+.right_sidebar_faq{
+    @include responsive(phone){
+        margin-top: 50px;
+    }
+}
+
+.faqWrapper{
+    .faq_for_each:not(:first-child){
+        margin-top: 60px;
+    }
+    @include responsive(phone){
+        .faq_for_each{
+            margin-top: 30px;
         }
     }
 }

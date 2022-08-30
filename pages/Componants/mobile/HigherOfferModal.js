@@ -14,16 +14,16 @@ function HigherOfferModal({showHigherOffer,handleCloseHigherOffer}) {
             </ul>
             <p>Simply provide the details below.  We will respond quickly.  You can’t lose!</p>
             <div className="offer_block noBorder offHoblock">
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0 sacol">                                
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='Who is the company?'/>
                             </div>
-                            <div class="col-lg-12 p-0 sacol">                                
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='Final Offer Amount'/>
                             </div>
-                            <div class="col-lg-12 p-0 sacol">                                
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='Your Phone Number'/>
                             </div>
                         </div> 

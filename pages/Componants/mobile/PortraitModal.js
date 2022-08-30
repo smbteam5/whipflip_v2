@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
+import Image from 'next/image'
 function PortraitModal({showPortrait,handleOpen,show,setShow}) {
     
   return (
@@ -16,7 +17,13 @@ function PortraitModal({showPortrait,handleOpen,show,setShow}) {
                 <div className="pb_inside">
                     <div className="pb_headd">
                         <div className="pb_img">
-                            <img src="/images/cam.svg" alt="rotate" title='rotate'/>
+                            <Image 
+                                src="/images/cam.svg" 
+                                alt="rotate" 
+                                title='rotate'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                     </div>
                     <div className="pb_rotate_info">

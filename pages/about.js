@@ -3,12 +3,13 @@ import Faq from "./Componants/Faq";
 import Footer from "./Componants/Footer";
 import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
+import Image from 'next/image'
 function about() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header about-company d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -40,12 +41,12 @@ function about() {
                         type="image/webp"
                         srcSet="images/icon_customerfirst.webp"
                       />
-                      <img
-                        src="/images/icon_customerfirst.png"
-                        alt="Customer First"
-                        title="Customer First"
-                        className="img-fluid"
-                      />
+                      <Image src="/images/icon_customerfirst.png"
+                       alt="Customer First"
+                       title="Customer First"
+                       className="img-fluid"
+                       width={128} 
+                       height={164} />
                     </picture>
                   </div>
                   <h2>Customer First</h2>
@@ -66,12 +67,12 @@ function about() {
                         type="image/webp"
                         srcSet="images/icon_innovation.webp"
                       />
-                      <img
-                        src="/images/icon_innovation.png"
-                        alt="Innovation"
-                        title="Innovation"
-                        className="img-fluid"
-                      />
+                      <Image src="/images/icon_customerfirst.png"
+                       alt="Innovation"
+                       title="Innovation"
+                       className="img-fluid"
+                       width={128} 
+                       height={164} />
                     </picture>
                   </div>
                   <h2>Innovation</h2>
@@ -92,12 +93,13 @@ function about() {
                         type="image/webp"
                         srcSet="images/icon_trust.webp"
                       />
-                      <img
-                        src="/images/icon_trust.png"
-                        alt="Trust"
-                        title="Trust"
-                        className="img-fluid"
-                      />
+                      <Image 
+                       src="/images/icon_trust.png"
+                       alt="Trust"
+                       title="Trust"
+                       className="img-fluid"
+                       width={128} 
+                       height={164} />
                     </picture>
                   </div>
                   <h2>Trust</h2>
@@ -138,12 +140,13 @@ function about() {
                   type="image/webp"
                   srcSet="images/sell_fastandeasy.webp"
                 />
-                <img
+                <Image 
                   src="/images/sell_fastandeasy.png"
                   alt="Sell Fast and Easy"
                   title="Sell Fast and Easy"
                   className="img-fluid mt-4 mt-lg-0"
-                />
+                  width={537} 
+                  height={389} />
               </picture>
             </div>
           </div>
@@ -154,12 +157,13 @@ function about() {
                   type="image/webp"
                   srcSet="images/whipflip_concierges.webp"
                 />
-                <img
+                <Image 
                   src="/images/whipflip_concierges.png"
                   alt="Car Concierges"
                   title="Car Concierges"
                   className="img-fluid mt-4 mt-lg-0"
-                />
+                  width={219} 
+                  height={500} />
               </picture>
             </div>
             <div className="col-12 col-lg-6">
@@ -205,12 +209,13 @@ function about() {
                 </div>
                 <div className="mt-4">
                   <p className="text-center">
-                    <img
-                      src="/images/prof.png"
-                      alt="Roger Clappe"
-                      title="Founder and CEO at WhipFlip"
-                      className="thumb-64"
-                    />
+                    <Image 
+                  src="/images/prof.png"
+                  alt="Roger Clappe"
+                  title="Founder and CEO at WhipFlip"
+                  className="thumb-64"
+                  width={64} 
+                  height={64} />
                   </p>
                   <p>
                     Roger Clappe <br />{" "}
@@ -236,11 +241,12 @@ function about() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img
+                <Image 
                   src="/images/sell_to_customer.png"
                   alt="Ready to Sell"
                   title="Ready to Sell"
-                />
+                  width={445} 
+                  height={392}/>
               </div>
             </div>
           </div>

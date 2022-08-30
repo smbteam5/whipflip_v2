@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
 import CameraReadyModal from './CameraReadyModal';
+import Image from 'next/image'
 function EasyModalMobi({show,handleClose}) {
     const [showCamera, setShowCamera] = React.useState(false)
     const handleCloseCamera = () =>{
@@ -25,7 +26,13 @@ function EasyModalMobi({show,handleClose}) {
                 <div className="fesBody_in_row row">
                     <div className="col-lg-4 fes_col fes_col_left">
                         <div className="fes_col_left_in text-center">
-                            <img src="/images/easy-final.svg" alt="" title='easy final'/>
+                            <Image 
+                                src="/images/easy-final.svg" 
+                                alt="easy final" 
+                                title='easy final'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                     </div>
                     <div className="col-lg-8 fes_col fes_col_right p-0">

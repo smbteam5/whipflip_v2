@@ -10,6 +10,7 @@ function contactus() {
       {/* <div className="whipflip-header">
         <Header />
       </div> */}
+      <Header/>
       <div className="page-header min-height-none d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -28,50 +29,50 @@ function contactus() {
               <div className="card border-0">
                 <div className="card-body p-4">
                   <form>
-                    <div class="form-row">
-                      <div class="form-group WFinput-text col-sm-6">
-                        <label for="contactFirstname">First Name</label>
+                    <div className="form-row">
+                      <div className="form-group WFinput-text col-sm-6">
+                        <label htmlFor="contactFirstname">First Name</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="contactFirstname"
                           placeholder="Your First name"
                         />
                       </div>
-                      <div class="form-group WFinput-text col-sm-6">
-                        <label for="contacLastname">Last Name</label>
+                      <div className="form-group WFinput-text col-sm-6">
+                        <label htmlFor="contacLastname">Last Name</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="contacLastname"
                           placeholder="Your Last name"
                         />
                       </div>
                     </div>
-                    <div class="form-row">
-                      <div class="form-group WFinput-text col-sm-6">
-                        <label for="contactEmail">Email</label>
+                    <div className="form-row">
+                      <div className="form-group WFinput-text col-sm-6">
+                        <label htmlFor="contactEmail">Email</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="contactEmail"
                           placeholder="Your Email"
                         />
                       </div>
-                      <div class="form-group WFinput-text col-sm-6">
-                        <label for="contacPhone">Phone Number</label>
+                      <div className="form-group WFinput-text col-sm-6">
+                        <label htmlFor="contacPhone">Phone Number</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="contacPhone"
                           placeholder="+1 (000) 000-000"
                         />
                       </div>
                     </div>
-                    <div class="form-group WFinput-text">
-                      <label for="contactMessage">Message</label>
+                    <div className="form-group WFinput-text">
+                      <label htmlFor="contactMessage">Message</label>
                       <textarea
-                        class="form-control"
+                        className="form-control"
                         id="contactMessage"
                         rows="3"
                         placeholder="How can we help?"
@@ -79,7 +80,7 @@ function contactus() {
                     </div>
                     <button
                       type="submit"
-                      class="btn btn-lg btn-default mb-2 w-100"
+                      className="btn btn-lg btn-default mb-2 w-100"
                     >
                       Submit
                     </button>

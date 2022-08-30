@@ -1,14 +1,13 @@
 import React from "react";
-import Faq from "./Componants/Faq";
 import Footer from "./Componants/Footer";
-import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
+import Image from 'next/image'
 function privacypolicy() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header privacy d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -197,11 +196,12 @@ function privacypolicy() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img
+                <Image 
                   src="/images/sell_to_customer.png"
                   alt="Ready to Sell"
                   title="Ready to Sell"
-                />
+                  width={445} 
+                  height={392}/>
               </div>
             </div>
           </div>

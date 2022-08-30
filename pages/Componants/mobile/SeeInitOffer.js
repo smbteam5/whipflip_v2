@@ -18,22 +18,22 @@ function SeeInitOffer() {
                         <span>Where Can We Send It?</span>
                     </h2>
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">      
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">      
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Zip Code</label>
                                 <input type="text" placeholder='Enter Here'/>
                             </div>
                         </div>            
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Email</label>
                                 <input type="text" placeholder='Enter Here'/>
                             </div>
                         </div>   
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Phone Number (We won’t bug you!)</label>
                                 <div className="iptWrapperSio">
                                     <div className="iptLt">
@@ -42,13 +42,13 @@ function SeeInitOffer() {
                                 </div>
                             </div>
                         </div> 
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">When are you selling your car?</label>
                                 <div className="chooseBlock selector row selectorRow rowSell">
-                                    <div class="sellItemChoose">
-                                        <input type="radio" id="sl1" name="sl1" class="selector-item_radio" defaultChecked  />
-                                        <label for="sl1" class="selector-item_label labelflexCenter labelforSellCar">
+                                    <div className="sellItemChoose">
+                                        <input type="radio" id="sl1" name="sl1" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="sl1" className="selector-item_label labelflexCenter labelforSellCar">
                                             <span>
                                             <svg width="48" height="48" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.6001 0.851562V3.35667C13.6001 3.71754 13.3166 4.00121 12.9556 4.00121H10.3774C10.0164 4.00121 9.73291 3.71754 9.73291 3.35667V0.851562H13.6001Z" fill="#D1E0EF"/>
@@ -66,9 +66,9 @@ function SeeInitOffer() {
                                     </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose">
-                                        <input type="radio" id="sl2" name="sl1" class="selector-item_radio" />
-                                        <label for="sl2" class="selector-item_label labelflexCenter labelforSellCar"><span>
+                                    <div className="sellItemChoose">
+                                        <input type="radio" id="sl2" name="sl1" className="selector-item_radio" />
+                                        <label htmlFor="sl2" className="selector-item_label labelflexCenter labelforSellCar"><span>
                                         <svg width="48" height="48" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.8403 4.125H18.5625C18.942 4.125 19.25 3.817 19.25 3.4375V0.6875C19.25 0.307656 18.942 0 18.5625 0H3.4375C3.05766 0 2.75 0.308 2.75 0.6875V3.4375C2.75 3.817 3.05766 4.125 3.4375 4.125H4.15972C4.39484 6.41094 5.77569 7.84816 6.90491 9.02309C7.62644 9.77419 8.25 10.4225 8.25 11C8.25 11.5775 7.62644 12.2258 6.90491 12.9769C5.77569 14.1518 4.3945 15.5891 4.15972 17.875H3.4375C3.05766 17.875 2.75 18.183 2.75 18.5625V21.3125C2.75 21.692 3.05766 22 3.4375 22H18.5625C18.942 22 19.25 21.692 19.25 21.3125V18.5625C19.25 18.183 18.942 17.875 18.5625 17.875H17.8441C17.6124 15.3546 16.1305 13.8937 15.0243 12.803C14.3124 12.101 13.75 11.5466 13.75 11C13.75 10.4225 14.3732 9.77419 15.0951 9.02309C16.2243 7.84816 17.6055 6.41094 17.8403 4.125Z" fill="#D1E0EF"/>
                                         <path d="M18.5625 0H3.4375C3.05766 0 2.75 0.308 2.75 0.6875V3.4375C2.75 3.817 3.05766 4.125 3.4375 4.125H18.5625C18.942 4.125 19.25 3.817 19.25 3.4375V0.6875C19.25 0.308 18.942 0 18.5625 0Z" fill="#4381C0"/>
@@ -83,8 +83,8 @@ function SeeInitOffer() {
                                 <div className="chooseFuture">
                                     <a href="#" alt="IN THE FUTURE" title='IN THE FUTURE'>IN THE FUTURE</a>
                                 </div>
-                                <div class="initial_order_btn mt-30">
-                                    <button class="initofferBtn">Get My Initial Offer</button>
+                                <div className="initial_order_btn mt-30">
+                                    <button className="initofferBtn">Get My Initial Offer</button>
                                 </div>
                             </div>
                         </div>

@@ -3,36 +3,41 @@ import Faq from "./Componants/Faq";
 import Footer from "./Componants/Footer";
 import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
+import Image from 'next/image'
 function reviews() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header reviews d-flex align-items-center">
         <div className="container">
           <div className="row">
             <div className="col-12 page-title text-center">
               <p>Customer Reviews</p>
               <h1>Don’t Just Take Our Word For It</h1>
-              <picture>
-                <img
+              <picture className="pic_review">
+                <Image
                   src="/images/star_head.png"
                   alt="Customer Review"
                   title="Customer Review"
                   className="my-2"
+                  width={370}
+                  height={80}
                 />
               </picture>
               <p>Hear It from of Thousands of Raving Customers</p>
-              <p>
+              <p className="reviewTxt">
                 4.9/5 in recent{" "}
                 <span>
                   <picture>
-                    <img
+                    <Image
                       src="/images/google-w.png"
                       alt="Customer Review"
                       title="Customer Review"
                       className="mx-1"
+                      width={95}
+                      height={32}
                     />
                   </picture>
                 </span>
@@ -60,11 +65,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                    <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -81,11 +88,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -102,11 +111,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                    <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -123,11 +134,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -144,11 +157,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -165,11 +180,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -186,11 +203,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -207,11 +226,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -228,11 +249,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -249,11 +272,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -270,11 +295,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -291,11 +318,13 @@ function reviews() {
               <div className="card border-0">
                 <div className="card-body text-center">
                   <picture>
-                    <img
+                  <Image
                       src="/images/5start_sm.png"
                       alt="5 Star Customer Review"
                       title="5 Star Customer Review"
-                      className="mb-3"
+                      className="mb-1"
+                      width={118}
+                      height={21}
                     />
                   </picture>
                   <p>
@@ -323,10 +352,12 @@ function reviews() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img
+                <Image 
                   src="/images/sell_to_customer.png"
                   alt="Ready to Sell"
                   title="Ready to Sell"
+                  width={445} 
+                  height={392}
                 />
               </div>
             </div>

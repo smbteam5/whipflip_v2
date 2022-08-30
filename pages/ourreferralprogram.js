@@ -6,9 +6,9 @@ import Header from "./Componants/Header";
 function ourreferralprogram() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header referral-program d-flex align-items-center">
         <div className="container">
           <div className="row">

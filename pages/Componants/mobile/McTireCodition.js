@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Header2 from '../Header2'
 import StepBar from './StepBar'
+import Image from 'next/image'
 function McTireCodition() {
     const [status, setStatus] = React.useState(1)
     const radioHandler = (status) => {
@@ -18,17 +19,23 @@ function McTireCodition() {
                 <div className="ob_hd">
                     <h2>Mechanical Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">                                        
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">                                        
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Tire condition:</label>
                                     <div className="chooseBlock selectorRow rowSell tireconditions">
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc1" name="tc" class="selector-item_radio" defaultChecked  />
-                                            <label for="tc1" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc1" name="tc" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="tc1" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                    <img src="/images/plenty-thread.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/plenty-thread.svg" 
+                                                        alt="plenty" 
+                                                        title='plenty'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Plenty of Tread</h3>
@@ -36,11 +43,17 @@ function McTireCodition() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc2" name="tc" class="selector-item_radio" />
-                                            <label for="tc2" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc2" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc2" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                    <img src="/images/some-thread.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/some-thread.svg" 
+                                                        alt="thread" 
+                                                        title='thread'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Some Tread</h3>
@@ -48,11 +61,17 @@ function McTireCodition() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition tireconditionMobi">
-                                            <input type="radio" id="tc3" name="tc" class="selector-item_radio" />
-                                            <label for="tc3" class="selector-item_label labelflexCenter tclabel tclabelMobi">
+                                        <div className="sellItemChoose tirecondition tireconditionMobi">
+                                            <input type="radio" id="tc3" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc3" className="selector-item_label labelflexCenter tclabel tclabelMobi">
                                                 <span>
-                                                    <img src="/images/bald.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/bald.svg" 
+                                                        alt="bald" 
+                                                        title='bald'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Bald</h3>

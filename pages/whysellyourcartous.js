@@ -1,14 +1,13 @@
 import React from "react";
-import Faq from "./Componants/Faq";
 import Footer from "./Componants/Footer";
-import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
+import Image from 'next/image'
 function whysellyourcartous() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header about-company d-flex align-items-center">
         <div className="container">
           <div className="row">
@@ -36,15 +35,13 @@ function whysellyourcartous() {
             </div>
             <div className="col-md-5 col-lg-4">
               <picture>
-                <source
-                  type="image/webp"
-                  srcSet="images/ultimate_convenience.webp"
-                />
-                <img
+                <Image
                   src="/images/ultimate_convenience.png"
                   alt="Ultimate Convenience"
                   title="Ultimate Convenience"
                   className="img-fluid"
+                  width={350}
+                  height={350}
                 />
               </picture>
             </div>
@@ -66,12 +63,14 @@ function whysellyourcartous() {
             </div>
             <div className="col-md-5 col-lg-4">
               <picture>
-                <source type="image/webp" srcSet="images/thebestprice.webp" />
-                <img
+                
+                <Image
                   src="/images/thebestprice.png"
                   alt="The Best Price"
                   title="The Best Price"
                   className="img-fluid"
+                  width={300}
+                  height={300}
                 />
               </picture>
             </div>
@@ -92,12 +91,13 @@ function whysellyourcartous() {
             </div>
             <div className="col-md-5 col-lg-4">
               <picture>
-                <source type="image/webp" srcSet="images/fastpayment.webp" />
-                <img
+                <Image
                   src="/images/fastpayment.png"
                   alt="Fast & Guaranteed Payment"
                   title="Fast & Guaranteed Payment"
                   className="img-fluid"
+                  width={300}
+                  height={300}
                 />
               </picture>
             </div>
@@ -118,12 +118,13 @@ function whysellyourcartous() {
             </div>
             <div className="col-md-5 col-lg-4">
               <picture>
-                <source type="image/webp" srcSet="images/trust_save.webp" />
-                <img
-                  src="/images/trust_save.png"
+                <Image
+                  src="/images/trust_save.webp"
                   alt="Trusted & Safe"
                   title="Trusted & Safe"
                   className="img-fluid"
+                  width={300}
+                  height={300}
                 />
               </picture>
             </div>
@@ -142,10 +143,12 @@ function whysellyourcartous() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img
+                <Image 
                   src="/images/sell_to_customer.png"
                   alt="Ready to Sell"
                   title="Ready to Sell"
+                  width={445} 
+                  height={392}
                 />
               </div>
             </div>

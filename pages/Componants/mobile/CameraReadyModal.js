@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Button, Modal,Form  } from 'react-bootstrap';
 import AccessCamModal from './AccessCamModal';
+import Image from 'next/image'
 import PortraitModal from './PortraitModal';
 function CameraReadyModal({showCamera,handleCloseCamera}) {
  const [showPortrait,setShowPortrait] = useState(false);
@@ -35,7 +36,13 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
             <div className="cr_body_in">
                 <div className="cr_head_dec">
                     <div className="cr_hd_img">
-                        <img src="/images/cam.svg" alt="rotate" title='rotate'/>
+                        <Image 
+                            src="/images/cam.svg" 
+                            alt="rotate"
+                            title='rotate'
+                            width={160}
+                            height={160}
+                        />
                     </div>
                     <div className="cr_hd_dec">
                         <h2>Tilt phone to landscape mode and fit each FULL vehicle side inside the outline</h2>
@@ -49,7 +56,13 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
                         <div className="crm_info_item">
                             <div className="info_left">
                                 <div className="il_image">
-                                    <img src="/images/clear-away.svg" alt="" />
+                                    <Image 
+                                        src="/images/clear-away.svg" 
+                                        alt="clear"
+                                        title='clear'
+                                        width={60}
+                                        height={60}
+                                    />
                                 </div>
                             </div>
                             <div className="info_right">
@@ -59,7 +72,13 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
                         <div className="crm_info_item">
                             <div className="info_left">
                                 <div className="il_image">
-                                    <img src="/images/eye.svg" alt="" />
+                                    <Image 
+                                        src="/images/eye.svg" 
+                                        alt="eye"
+                                        title='eye'
+                                        width={60}
+                                        height={60}
+                                    />
                                 </div>
                             </div>
                             <div className="info_right">
@@ -69,7 +88,13 @@ function CameraReadyModal({showCamera,handleCloseCamera}) {
                         <div className="crm_info_item">
                             <div className="info_left">
                                 <div className="il_image">
-                                    <img src="/images/take-pic.svg" alt="" />
+                                    <Image 
+                                        src="/images/take-pic.svg" 
+                                        alt="take pic"
+                                        title='take pic'
+                                        width={60}
+                                        height={60}
+                                    />
                                 </div>
                             </div>
                             <div className="info_right">

@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Sidebar from './Sidebar'
 import Head from 'next/head';
+import Image from 'next/image'
 function Header2() {
   const [openSideBar, setOpenSideBar] = useState(false)
   const handleShowSideBar = () =>{
@@ -17,7 +18,13 @@ function Header2() {
         <div className="offer_header">
             <div className="offer_header_in">
               <div className="oh_logo">
-                  <img src="/images/offer-sell-header.svg" alt="" />
+                  <Image 
+                    src="/images/offer-sell-header.svg" 
+                    alt="offer sell logo" 
+                    title='offer sell logo'
+                    width={250}
+                    height={40}
+                  />
               </div>
               <div className="hambergerMenu" onClick={handleShowSideBar}>
                 <span></span>

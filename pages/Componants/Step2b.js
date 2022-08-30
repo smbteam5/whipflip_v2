@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import EasyStepModal from './EasyStepModal';
-
+import Image from 'next/image'
 function Step2b() {
     const [status2, setStatus2] = useState(1);
     const [condition, setCondition] = useState(2);
@@ -35,21 +35,21 @@ function Step2b() {
                 <div className="ob_hd">
                     <h2>Vehicle Information</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
+                                    <div className="selecotr-item col-lg-6 p-0">
                                         <div className={status2 === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="radio1" name="selector" className={status2 === 1 ? "selector-item_radio active": "selector-item_radio"} checked={status2 === 1} onClick={(e) => radioHandler2(1)} />
-                                            <label for="radio1" class="selector-item_label">VIN #</label>  
+                                            <label htmlFor="radio1" className="selector-item_label">VIN #</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
+                                    <div className="selecotr-item col-lg-6 pr-0">
                                         <div className={status2 === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="radio2" name="selector" class={status2 === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status2 === 2} onClick={(e) => radioHandler2(2)}/>
-                                            <label for="radio2" class="selector-item_label">License Plate</label>  
+                                            <input type="radio" id="radio2" name="selector" className={status2 === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status2 === 2} onClick={(e) => radioHandler2(2)}/>
+                                            <label htmlFor="radio2" className="selector-item_label">License Plate</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -96,22 +96,22 @@ function Step2b() {
                 <div className="ob_hd">
                     <h2>Vehicle Condition Details</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor="">Any vehicle history issues or title brand? (e.g. accident, flood, etc.)</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
+                                    <div className="selecotr-item col-lg-6 p-0">
                                         <div className={condition === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="radio11" name="selector" className={condition === 1 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 1} onClick={(e) => conditionHandler(1)} />
-                                            <label for="radio11" class="selector-item_label">Nope!</label>  
+                                            <label htmlFor="radio11" className="selector-item_label">Nope!</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
+                                    <div className="selecotr-item col-lg-6 pr-0">
                                         <div className={condition === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="radio12" name="selector" class={condition === 2 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 2} onClick={(e) => conditionHandler(2)}/>
-                                            <label for="radio12" class="selector-item_label">Yes</label>  
+                                            <input type="radio" id="radio12" name="selector" className={condition === 2 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 2} onClick={(e) => conditionHandler(2)}/>
+                                            <label htmlFor="radio12" className="selector-item_label">Yes</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -124,45 +124,45 @@ function Step2b() {
                                                     <div className="chooseIssues">
                                                         <div className="row">
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk1" />
-                                                                    <label for="chk1">Doesn’t Start / Drive</label>
+                                                                    <label htmlFor="chk1">Doesn’t Start / Drive</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk2" />
-                                                                    <label for="chk2">Engine Noise (Knocking)</label>
+                                                                    <label htmlFor="chk2">Engine Noise (Knocking)</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk3" />
-                                                                    <label for="chk3">Engine Noise (Ticking)</label>
+                                                                    <label htmlFor="chk3">Engine Noise (Ticking)</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk4" />
-                                                                    <label for="chk4">Transmission</label>
+                                                                    <label htmlFor="chk4">Transmission</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk5" />
-                                                                    <label for="chk5">Battery / Charging</label>
+                                                                    <label htmlFor="chk5">Battery / Charging</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk6" />
-                                                                    <label for="chk6">Overheats</label>
+                                                                    <label htmlFor="chk6">Overheats</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk7" />
-                                                                    <label for="chk7">Oil / Fluid Leak</label>
+                                                                    <label htmlFor="chk7">Oil / Fluid Leak</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -189,35 +189,35 @@ function Step2b() {
                                 </div>  
                             </div>
                         </div>                        
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Any engine and/or drivability issues?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="radiono" name="selector__sel" class="selector-item_radio" defaultChecked  />
-                                        <label for="radiono" class="selector-item_label">Nope!</label>
+                                    <div className="selecotr-item col-lg-6 p-0">
+                                        <input type="radio" id="radiono" name="selector__sel" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="radiono" className="selector-item_label">Nope!</label>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="radioyes" name="selector__sel" class="selector-item_radio" />
-                                        <label for="radioyes" class="selector-item_label">Yes</label>
+                                    <div className="selecotr-item col-lg-6 pr-0">
+                                        <input type="radio" id="radioyes" name="selector__sel" className="selector-item_radio" />
+                                        <label htmlFor="radioyes" className="selector-item_label">Yes</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor=""> Any dashboard warning lights or inoperable parts? (e.g. Check Engine, Airbag Light, A/C issue, etc.)</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
+                                    <div className="selecotr-item col-lg-6 p-0">
                                         <div className={warning === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="war1" name="selectorw" className={warning === 1 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 1} onClick={(e) => warningHandler(1)} />
-                                            <label for="war1" class="selector-item_label">Nope!</label>  
+                                            <label htmlFor="war1" className="selector-item_label">Nope!</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
+                                    <div className="selecotr-item col-lg-6 pr-0">
                                         <div className={warning === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="war2" name="selectorw" class={warning === 2 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 2} onClick={(e) => warningHandler(2)}/>
-                                            <label for="war2" class="selector-item_label">Yes</label>  
+                                            <input type="radio" id="war2" name="selectorw" className={warning === 2 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 2} onClick={(e) => warningHandler(2)}/>
+                                            <label htmlFor="war2" className="selector-item_label">Yes</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -230,75 +230,75 @@ function Step2b() {
                                                     <div className="chooseIssues">
                                                         <div className="row">
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk11" />
-                                                                    <label for="chk11">Check Engine Light</label>
+                                                                    <label htmlFor="chk11">Check Engine Light</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk12" />
-                                                                    <label for="chk12">Airbag / SRS Light</label>
+                                                                    <label htmlFor="chk12">Airbag / SRS Light</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk13" />
-                                                                    <label for="chk13">ABS</label>
+                                                                    <label htmlFor="chk13">ABS</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk14" />
-                                                                    <label for="chk14">Maintenance Required</label>
+                                                                    <label htmlFor="chk14">Maintenance Required</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk15" />
-                                                                    <label for="chk15">Low Oil / Pressure Light</label>
+                                                                    <label htmlFor="chk15">Low Oil / Pressure Light</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk16" />
-                                                                    <label for="chk16">Transmission Light</label>
+                                                                    <label htmlFor="chk16">Transmission Light</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk17" />
-                                                                    <label for="chk17">Odometer Not Visible</label>
+                                                                    <label htmlFor="chk17">Odometer Not Visible</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk18" />
-                                                                    <label for="chk18">A/C Blows Warm</label>
+                                                                    <label htmlFor="chk18">A/C Blows Warm</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk19" />
-                                                                    <label for="chk19">A/C Inoperable</label>
+                                                                    <label htmlFor="chk19">A/C Inoperable</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk10" />
-                                                                    <label for="chk10">Windows / Sunroof Inoperable</label>
+                                                                    <label htmlFor="chk10">Windows / Sunroof Inoperable</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk21" />
-                                                                    <label for="chk21">Radio / Navigation Inoperable</label>
+                                                                    <label htmlFor="chk21">Radio / Navigation Inoperable</label>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
-                                                                <div class="form-group check-group">
+                                                                <div className="form-group check-group">
                                                                     <input type="checkbox" id="chk22" />
-                                                                    <label for="chk22">Missing Parts</label>
+                                                                    <label htmlFor="chk22">Missing Parts</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -320,17 +320,17 @@ function Step2b() {
                                 </div>  
                             </div>
                         </div>  
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Any aftermarket parts or modifications?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="mod1" name="selectormod" class="selector-item_radio" defaultChecked  />
-                                        <label for="mod1" class="selector-item_label">Automatic</label>
+                                    <div className="selecotr-item col-lg-6 p-0">
+                                        <input type="radio" id="mod1" name="selectormod" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="mod1" className="selector-item_label">Automatic</label>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="mod2" name="selectormod" class="selector-item_radio" />
-                                        <label for="mod2" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                    <div className="selecotr-item col-lg-6 pr-0">
+                                        <input type="radio" id="mod2" name="selectormod" className="selector-item_radio" />
+                                        <label htmlFor="mod2" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                     </div>
                                 </div>
                             </div>
@@ -342,17 +342,23 @@ function Step2b() {
                 <div className="ob_hd">
                     <h2>Tire Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">                                        
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">                                        
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Tire condition?</label>
                                 <div className="chooseBlock selector row selectorRow rowSell tireconditions">
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="tc1" name="tc" class="selector-item_radio" defaultChecked  />
-                                        <label for="tc1" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="tc1" name="tc" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="tc1" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/plenty-thread.svg" alt="" />
+                                                <Image 
+                                                    src="/images/plenty-thread.svg" 
+                                                    alt="plenty-thread" 
+                                                    title='plenty-thread'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Plenty of Tread</h3>
@@ -360,11 +366,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="tc2" name="tc" class="selector-item_radio" />
-                                        <label for="tc2" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="tc2" name="tc" className="selector-item_radio" />
+                                        <label htmlFor="tc2" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/some-thread.svg" alt="" />
+                                                <Image 
+                                                    src="/images/some-thread.svg" 
+                                                    alt="some-thread" 
+                                                    title='some thread'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Some Tread</h3>
@@ -372,11 +384,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="tc3" name="tc" class="selector-item_radio" />
-                                        <label for="tc3" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="tc3" name="tc" className="selector-item_radio" />
+                                        <label htmlFor="tc3" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/bald.svg" alt="" />
+                                                 <Image 
+                                                    src="/images/bald.svg" 
+                                                    alt="bald" 
+                                                    title='bald'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Bald</h3>
@@ -394,17 +412,23 @@ function Step2b() {
                 <div className="ob_hd">
                     <h2>Cosmetic Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">                                        
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">                                        
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">How would you honestly rate your vehicle’s <b>EXTERIOR</b> condition?</label>
                                 <div className="chooseBlock selector row selectorRow rowSell tireconditions">
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc1" name="cc" class="selector-item_radio" defaultChecked  />
-                                        <label for="cc1" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc1" name="cc" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="cc1" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/great.svg" alt="" />
+                                                <Image 
+                                                    src="/images/great.svg" 
+                                                    alt="great" 
+                                                    title='great'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>FLIPPIN’ GREAT!</h3>
@@ -412,11 +436,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc2" name="cc" class="selector-item_radio" />
-                                        <label for="cc2" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc2" name="cc" className="selector-item_radio" />
+                                        <label htmlFor="cc2" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/average.svg" alt="" />
+                                                <Image 
+                                                    src="/images/average.svg" 
+                                                    alt="average" 
+                                                    title='average'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Just Average</h3>
@@ -424,11 +454,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc3" name="cc" class="selector-item_radio" />
-                                        <label for="cc3" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc3" name="cc" className="selector-item_radio" />
+                                        <label htmlFor="cc3" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/rough.svg" alt="" />
+                                                <Image 
+                                                    src="/images/rough.svg" 
+                                                    alt="rough" 
+                                                    title='rough'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>It’s Rough...</h3>
@@ -439,15 +475,21 @@ function Step2b() {
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">How would you honestly rate your vehicle’s <b>INTERIOR</b> condition?</label>
                                 <div className="chooseBlock selector row selectorRow rowSell tireconditions cosmicconditions">
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc11" name="cc11" class="selector-item_radio" defaultChecked  />
-                                        <label for="cc11" class="selector-item_label labelflexCenter tclabel cclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc11" name="cc11" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="cc11" className="selector-item_label labelflexCenter tclabel cclabel">
                                             <span>
-                                                <img src="/images/great.svg" alt="" />
+                                                <Image 
+                                                    src="/images/great.svg" 
+                                                    alt="great" 
+                                                    title='great'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Plenty of Tread</h3>
@@ -455,11 +497,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc22" name="cc11" class="selector-item_radio" />
-                                        <label for="cc22" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc22" name="cc11" className="selector-item_radio" />
+                                        <label htmlFor="cc22" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/average.svg" alt="" />
+                                                <Image 
+                                                    src="/images/average.svg" 
+                                                    alt="average" 
+                                                    title='average'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Some Tread</h3>
@@ -467,11 +515,17 @@ function Step2b() {
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose tirecondition">
-                                        <input type="radio" id="cc33" name="cc11" class="selector-item_radio" />
-                                        <label for="cc33" class="selector-item_label labelflexCenter tclabel">
+                                    <div className="sellItemChoose tirecondition">
+                                        <input type="radio" id="cc33" name="cc11" className="selector-item_radio" />
+                                        <label htmlFor="cc33" className="selector-item_label labelflexCenter tclabel">
                                             <span>
-                                                <img src="/images/rough.svg" alt="" />
+                                                <Image 
+                                                    src="/images/rough.svg" 
+                                                    alt="rough" 
+                                                    title='rough'
+                                                    width={50}
+                                                    height={50}
+                                                />
                                             </span>
                                             <span className='bodyTc'>
                                                 <h3>Bald</h3>

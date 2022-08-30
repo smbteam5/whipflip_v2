@@ -3,12 +3,13 @@ import Faq from "./Componants/Faq";
 import Footer from "./Componants/Footer";
 import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
+import Image from 'next/image'
 function careers() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header career d-flex align-items-center">
         <div className="container">
           <div className="row justify-content-center">
@@ -52,11 +53,13 @@ function careers() {
             <div className="col-lg-6 col-sm-6 pb-3">
               <picture>
                 <source type="image/webp" srcSet="images/joinourteam.webp" />
-                <img
+                <Image
                   src="/images/joinourteam.png"
                   alt="Join Our Team"
                   title="Join our team"
                   className="img-fluid mt-4 mt-lg-0"
+                  width={540}
+                  height={370}
                 />
               </picture>
             </div>
@@ -75,10 +78,12 @@ function careers() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img
-                  src="/images/sell_to_customer.png"
-                  alt="Ready to Sell"
-                  title="Ready to Sell"
+                <Image 
+                    src="/images/sell_to_customer.png"
+                    alt="Ready to Sell"
+                    title="Ready to Sell"
+                    width={445} 
+                    height={392}
                 />
               </div>
             </div>

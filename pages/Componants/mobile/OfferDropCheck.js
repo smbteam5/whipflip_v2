@@ -43,22 +43,22 @@ function OfferDropCheck() {
                 <div className="ob_hd">
                     <h2>Where should we arrive to buy?</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
                             <label htmlFor="">Enter pickup address</label>
-                            <div class="col-lg-12 p-0 sacol">                                
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='Address'/>
                             </div>
-                            <div class="col-lg-12 p-0 sacol">                                
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='Apt/Ste/Other'/>
                             </div>
-                            <div class="col-lg-12 p-0 sacol">                                
+                            <div className="col-lg-12 p-0 sacol">                                
                                 <input type="text" placeholder='City'/>
                             </div>    
                             <div className="form-row frmRow">
-                                <div class="frmfldItem">
-                                    <select class="form-control" id="user_time_zone" size="0">
+                                <div className="frmfldItem">
+                                    <select className="form-control" id="user_time_zone" size="0">
                                         <option value="Hawaii">
                                             Select State
                                         </option>
@@ -67,14 +67,14 @@ function OfferDropCheck() {
                                         </option>
                                     </select>
                                 </div>   
-                                <div class="frmfldItem">
+                                <div className="frmfldItem">
                                     <input type="text" placeholder='Zip Code'/>
                                 </div> 
                             </div>                    
                         </div>            
-                        <div class="form-group row ob_frm_row">
+                        <div className="form-group row ob_frm_row">
                             <div className="form-row frmRow">          
-                                <div class="frmfldItem">
+                                <div className="frmfldItem">
                                     <label htmlFor="">When would you like to sell?</label>
                                     <div className="calPicker">
                                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
@@ -85,8 +85,8 @@ function OfferDropCheck() {
                                         </span>
                                     </div>
                                 </div> 
-                                <div class="frmfldItem">
-                                    <select class="form-control" id="user_time_zone" size="0">
+                                <div className="frmfldItem">
+                                    <select className="form-control" id="user_time_zone" size="0">
                                         <option value="Hawaii">
                                             Select Time
                                         </option>
@@ -104,22 +104,22 @@ function OfferDropCheck() {
                 <div className="ob_hd">
                     <h2>Ownership Verification</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor="">Sole owner/only name on title?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-6 p-0">
+                                    <div className="selecotr-item col-6 p-0">
                                         <div className={condition === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="radio11" name="selector" className={condition === 1 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 1} onClick={(e) => conditionHandler(1)} />
-                                            <label for="radio11" class="selector-item_label">Yes</label>  
+                                            <label htmlFor="radio11" className="selector-item_label">Yes</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-6 pr-0">
+                                    <div className="selecotr-item col-6 pr-0">
                                         <div className={condition === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="radio12" name="selector" class={condition === 2 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 2} onClick={(e) => conditionHandler(2)}/>
-                                            <label for="radio12" class="selector-item_label">No</label>  
+                                            <input type="radio" id="radio12" name="selector" className={condition === 2 ? "selector-item_radio active": "selector-item_radio"} checked={condition === 2} onClick={(e) => conditionHandler(2)}/>
+                                            <label htmlFor="radio12" className="selector-item_label">No</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -130,16 +130,16 @@ function OfferDropCheck() {
                                                 <div className="checkIssues">
                                                     <div className="chooseIssues">
                                                         <div className="form-fld-grp">
-                                                            <label class="frmfl_label">Owner</label>  
+                                                            <label className="frmfl_label">Owner</label>  
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='First name'/>
                                                                 </div> 
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Last name'/>
                                                                 </div> 
-                                                                <div class="frmfldItem">
-                                                                    <select class="form-control" id="user_time_zone" size="0">
+                                                                <div className="frmfldItem">
+                                                                    <select className="form-control" id="user_time_zone" size="0">
                                                                         <option value="Hawaii">
                                                                             Suffix
                                                                         </option>
@@ -152,14 +152,14 @@ function OfferDropCheck() {
                                                         </div>  
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Enter Here'/>
                                                                 </div>                                                       
                                                             </div>
                                                         </div> 
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Enter Here'/>
                                                                 </div>                                                       
                                                             </div>
@@ -174,16 +174,16 @@ function OfferDropCheck() {
                                                 <div className="checkIssues">
                                                     <div className="chooseIssues">
                                                         <div className="form-fld-grp">
-                                                            <label class="frmfl_label">Owner</label>  
+                                                            <label className="frmfl_label">Owner</label>  
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Owner First Name'/>
                                                                 </div> 
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Owner Last Name'/>
                                                                 </div> 
-                                                                <div class="frmfldItem">
-                                                                    <select class="form-control" id="user_time_zone" size="0">
+                                                                <div className="frmfldItem">
+                                                                    <select className="form-control" id="user_time_zone" size="0">
                                                                         <option value="Hawaii">
                                                                             Suffix
                                                                         </option>
@@ -196,14 +196,14 @@ function OfferDropCheck() {
                                                         </div>  
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Second Owner First Name'/>
                                                                 </div>                                                       
                                                             </div>
                                                         </div> 
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Second Owner Last Name'/>
                                                                 </div>                                                       
                                                             </div>
@@ -211,8 +211,8 @@ function OfferDropCheck() {
                                                         {/*  */}
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
-                                                                    <select class="form-control" id="user_time_zone" size="0">
+                                                                <div className="frmfldItem">
+                                                                    <select className="form-control" id="user_time_zone" size="0">
                                                                         <option value="Hawaii">
                                                                             Suffix
                                                                         </option>
@@ -225,14 +225,14 @@ function OfferDropCheck() {
                                                         </div> 
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Confirm Email'/>
                                                                 </div>                                                       
                                                             </div>
                                                         </div> 
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
-                                                                <div class="frmfldItem">
+                                                                <div className="frmfldItem">
                                                                     <input type="text" placeholder='Confirm Phone #'/>
                                                                 </div>                                                       
                                                             </div>
@@ -244,35 +244,35 @@ function OfferDropCheck() {
                                 </div>  
                             </div>
                         </div>                        
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Do you have the title to this vehicle?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-6 p-0">
-                                        <input type="radio" id="radiono" name="selector__sel" class="selector-item_radio" defaultChecked  />
-                                        <label for="radiono" class="selector-item_label">Yes</label>
+                                    <div className="selecotr-item col-6 p-0">
+                                        <input type="radio" id="radiono" name="selector__sel" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="radiono" className="selector-item_label">Yes</label>
                                     </div>
-                                    <div class="selecotr-item col-6 pr-0">
-                                        <input type="radio" id="radioyes" name="selector__sel" class="selector-item_radio" />
-                                        <label for="radioyes" class="selector-item_label">No</label>
+                                    <div className="selecotr-item col-6 pr-0">
+                                        <input type="radio" id="radioyes" name="selector__sel" className="selector-item_radio" />
+                                        <label htmlFor="radioyes" className="selector-item_label">No</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor=""> Is this vehicle financed?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-6 p-0">
+                                    <div className="selecotr-item col-6 p-0">
                                         <div className={warning === 1 ? "si-wrap activesi": "si-wrap"} >
                                             <input type="radio" id="war1" name="selectorw" className={warning === 1 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 1} onClick={(e) => warningHandler(1)} />
-                                            <label for="war1" class="selector-item_label">Yes</label>  
+                                            <label htmlFor="war1" className="selector-item_label">Yes</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-6 pr-0">
+                                    <div className="selecotr-item col-6 pr-0">
                                         <div className={warning === 2 ? "si-wrap": "si-wrap"} >
-                                            <input type="radio" id="war2" name="selectorw" class={warning === 2 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 2} onClick={(e) => warningHandler(2)}/>
-                                            <label for="war2" class="selector-item_label">No</label>  
+                                            <input type="radio" id="war2" name="selectorw" className={warning === 2 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 2} onClick={(e) => warningHandler(2)}/>
+                                            <label htmlFor="war2" className="selector-item_label">No</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -283,23 +283,23 @@ function OfferDropCheck() {
                                             <div className="checkIssues">
                                                 <div className="chooseIssues">
                                                     <div className="form-fld-grp">
-                                                        <label class="frmfl_label">Which bank is it with?</label>  
+                                                        <label className="frmfl_label">Which bank is it with?</label>  
                                                         <div className="form-row frmRow">
-                                                            <div class="frmfldItem">
+                                                            <div className="frmfldItem">
                                                                 <input type="text" placeholder='Enter Here'/>
                                                             </div>                                                       
                                                         </div>
                                                     </div> 
                                                     <div className="form-fld-grp">
-                                                        <label class="frmfl_label">Estimated loan payoff amount?</label>  
+                                                        <label className="frmfl_label">Estimated loan payoff amount?</label>  
                                                         <div className="form-row frmRow">
-                                                            <div class="frmfldItem">
+                                                            <div className="frmfldItem">
                                                                 <input type="text" placeholder='Enter Amount'/>
                                                             </div> 
-                                                            <div class="frmfldItem">
-                                                                <div class="form-group check-group frm_fld_chk mt-2">
+                                                            <div className="frmfldItem">
+                                                                <div className="form-group check-group frm_fld_chk mt-2">
                                                                     <input type="checkbox" id="chk11"/>
-                                                                    <label for="chk11">I don’t know.</label>
+                                                                    <label htmlFor="chk11">I don’t know.</label>
                                                                 </div>
                                                             </div>                                                      
                                                         </div>
@@ -314,10 +314,10 @@ function OfferDropCheck() {
                     </form>
                 </div>
             </div>
-            <div class="frmfldItem frmAgree">
-                <div class="form-group check-group frm_fld_chk">
+            <div className="frmfldItem frmAgree">
+                <div className="form-group check-group frm_fld_chk">
                     <input type="checkbox" id="chk111"/>
-                    <label for="chk111">I agree to the terms of use.</label>
+                    <label htmlFor="chk111">I agree to the terms of use.</label>
                 </div>
             </div> 
             <div className="initial_order_btn">

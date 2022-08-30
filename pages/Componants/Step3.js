@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import HigherOfferModalWeb from './HigherOfferModalWeb';
 import Step3b from './Step3b';
-
+import Image from 'next/image'
 function Step3() {
   const [showFrm, setShowFrm] = useState(false);
     const [showHigherOffer,setShowHigherOffer] = useState(false);
@@ -29,7 +29,13 @@ function Step3() {
               <div className="at_head">
                 <span>Your <i>FLIPPIN’</i> Awesome Offer!</span>
                 <div className="at_img">
-                  <img src="/images/jd.webp" alt="jd power" title='jd power'/>
+                  <Image 
+                      src="/images/jd.webp" 
+                      alt="jd" 
+                      title='jd'
+                      width={200}
+                      height={25}
+                  />
                 </div>
               </div>
               <div className="at_price">
@@ -55,7 +61,13 @@ function Step3() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/convenience.svg" alt="" />
+                      <Image 
+                        src="/images/convenience.svg" 
+                        alt="convenience" 
+                        title='convenience'
+                        width={80}
+                        height={80}
+                      />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -66,7 +78,13 @@ function Step3() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/best-offer.svg" alt="" />
+                      <Image 
+                        src="/images/best-offer.svg" 
+                        alt="best offer" 
+                        title='best offer'
+                        width={80}
+                        height={80}
+                      />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -77,7 +95,13 @@ function Step3() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/safe.svg" alt="" />
+                      <Image 
+                        src="/images/safe.svg" 
+                        alt="safe" 
+                        title='safe'
+                        width={80}
+                        height={80}
+                      />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -93,7 +117,15 @@ function Step3() {
               <div className="acceptOffer_foo_left_in">
                 <span>
                   5-Star
-                  <span><img src="/images/google.svg" alt="Goole" title="Google" /></span>
+                  <span className='googText'>
+                      <Image 
+                        src="/images/google.svg" 
+                        alt="google" 
+                        title='google'
+                        width={70}
+                        height={30}
+                      />
+                    </span>
                   Rated Service
               </span>
               <div className="stars">
@@ -112,11 +144,25 @@ function Step3() {
             </div>
             <div className="acceptOffer_foo_right">
               <div className="acceptOffer_foo_right_in">
-                <div class="acceptOffer_rating">
-                  <div class="acc_left"><img src="/images/acc-rating.svg" alt="accredit" title="accredit" /></div>
+                <div className="acceptOffer_rating">
+                  <div className="acc_left">
+                    <Image 
+                        src="/images/acc-rating.svg" 
+                        alt="rating" 
+                        title='rating'
+                        width={280}
+                        height={50}
+                      />
+                    </div>
                 </div>
                 <div className="poweredBy">
-                  <img src="/images/jd.webp" alt="jd power" title='jd power'/>
+                      <Image 
+                        src="/images/jd.webp" 
+                        alt="jd" 
+                        title='jd'
+                        width={200}
+                        height={25}
+                      />
                 </div>
                 <div className="af_foo_dec">
                   <p>We are trusted by the biggest and best names in the industry!</p>

@@ -18,22 +18,22 @@ function McModification() {
                 <div className="ob_hd">
                     <h2>Mechanical Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor="">Any aftermarket parts or modifications?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-6 p-0">
+                                    <div className="selecotr-item col-6 p-0">
                                         <div className={status === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="radio1" name="selector" className={status === 1 ? "selector-item_radio active": "selector-item_radio"} checked={status === 1} onClick={(e) => radioHandler(1)} />
-                                            <label for="radio1" class="selector-item_label">Nope!</label>  
+                                            <label htmlFor="radio1" className="selector-item_label">Nope!</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-6 pr-0">
+                                    <div className="selecotr-item col-6 pr-0">
                                         <div className={status === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="radio2" name="selector" class={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
-                                            <label for="radio2" class="selector-item_label">Yes</label>  
+                                            <input type="radio" id="radio2" name="selector" className={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
+                                            <label htmlFor="radio2" className="selector-item_label">Yes</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -47,70 +47,70 @@ function McModification() {
                                                     <ul className='ks-cboxtags row'>
                                                         <li className='col-6 p-0 ci_col'>
                                                             <input type="checkbox" id="checkbox1" value="Engine Modification" />
-                                                            <label for="checkbox1" className='labeltick'>
+                                                            <label htmlFor="checkbox1" className='labeltick'>
                                                                 <span className='labeltickspan'>Engine Modification</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
-                                                                        <i class="fa-solid fa-plus"></i>
+                                                                        <i className="fa-solid fa-plus"></i>
                                                                     </span>
                                                                     <span className="checked">
-                                                                        <i class="fa-solid fa-check"></i>
+                                                                        <i className="fa-solid fa-check"></i>
                                                                     </span>
                                                                 </span>
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
                                                             <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
-                                                            <label for="checkbox2" className='labeltick'>
+                                                            <label htmlFor="checkbox2" className='labeltick'>
                                                                 <span className='labeltickspan'>Drivetrain Modification</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
-                                                                        <i class="fa-solid fa-plus"></i>
+                                                                        <i className="fa-solid fa-plus"></i>
                                                                     </span>
                                                                     <span className="checked">
-                                                                        <i class="fa-solid fa-check"></i>
+                                                                        <i className="fa-solid fa-check"></i>
                                                                     </span>
                                                                 </span>
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
                                                             <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
-                                                            <label for="checkbox3" className='labeltick'>
+                                                            <label htmlFor="checkbox3" className='labeltick'>
                                                                 <span className='labeltickspan'>Altered Suspension (Lowered)</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
-                                                                        <i class="fa-solid fa-plus"></i>
+                                                                        <i className="fa-solid fa-plus"></i>
                                                                     </span>
                                                                     <span className="checked">
-                                                                        <i class="fa-solid fa-check"></i>
+                                                                        <i className="fa-solid fa-check"></i>
                                                                     </span>
                                                                 </span>
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
                                                             <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
-                                                            <label for="checkbox4" className='labeltick'>
+                                                            <label htmlFor="checkbox4" className='labeltick'>
                                                                 <span className='labeltickspan'>Altered Suspension (Lifted)</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
-                                                                        <i class="fa-solid fa-plus"></i>
+                                                                        <i className="fa-solid fa-plus"></i>
                                                                     </span>
                                                                     <span className="checked">
-                                                                        <i class="fa-solid fa-check"></i>
+                                                                        <i className="fa-solid fa-check"></i>
                                                                     </span>
                                                                 </span>
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
                                                             <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
-                                                            <label for="checkbox5" className='labeltick'>
+                                                            <label htmlFor="checkbox5" className='labeltick'>
                                                                 <span className='labeltickspan'>Aftermarket Body Panels</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
-                                                                        <i class="fa-solid fa-plus"></i>
+                                                                        <i className="fa-solid fa-plus"></i>
                                                                     </span>
                                                                     <span className="checked">
-                                                                        <i class="fa-solid fa-check"></i>
+                                                                        <i className="fa-solid fa-check"></i>
                                                                     </span>
                                                                 </span>
                                                             </label>
@@ -118,40 +118,40 @@ function McModification() {
                                                     </ul>
                                                     {/* <div className="row">                                                        
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Drivetrain Modification</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Drivetrain Modification</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Altered Suspension (Lowered)</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Altered Suspension (Lowered)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Altered Suspension (Lifted)</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Altered Suspension (Lifted)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Aftermarket Body Panels</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Aftermarket Body Panels</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Windows/ Sunroof Inoperable</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Windows/ Sunroof Inoperable</span>
                                                                 <span>
                                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
@@ -181,8 +181,8 @@ function McModification() {
                                 </div>  
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0 text-center">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0 text-center">
                                 <button className='continueBtn'>Continue 
                                     <span>
                                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 6.8151L0 1.8151L1.16667 0.648438L5 4.48177L8.83333 0.648438L10 1.8151L5 6.8151Z" fill="white"/></svg>

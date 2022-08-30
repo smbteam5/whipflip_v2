@@ -7,6 +7,12 @@
 @import "./mixins";
 @import "./variables";
 @import "./layout";
+span{
+    overflow: unset !important;
+    @include responsive(tab-port){
+        overflow: unset !important;
+    }
+}
 .whipflip_nav{
     justify-content: space-between;
     .navbar-collapse{
@@ -167,7 +173,7 @@
     background-size: cover;
     background-position: center center;
     transition: all 200ms ease;
-    overflow: hidden;
+    overflow: hidden !important;
     img{
         width:100%;
         height: 100%;
@@ -669,8 +675,20 @@
         .accordion-item{
             border-bottom: 1px solid #D5D5DC;
             padding: 32px 0px;
+            @include responsive(phone){
+                padding: 15px 0px;
+            }
         }        
     }
+}
+.faqWrapper.pagefaqWrapper{
+    .accordion-item{
+        border-bottom: 1px solid #D5D5DC;
+        padding: 20px 0px;
+        @include responsive(phone){
+            padding: 15px 0px;
+        }
+    }     
 }
 .moreLoad{
     margin-top: 30px;
@@ -732,6 +750,7 @@
             font-weight: $font-bold;
             font-size: 74px;
             color: #FFFFFF;
+            margin-bottom: 0;
             @include responsive(tab-port){
                 color: #FFFFFF;
                 font-style: normal;
@@ -968,7 +987,7 @@
         display: block;
     }
     @include responsive(tab-port-min){
-        display: none;
+        display: none !important;
     }
 }
 // offer
@@ -986,8 +1005,23 @@ ul.form-stepper {
         }
     }
     @include responsive(tab-port){
-        padding-top: 40px;
+        padding-top: 50px;
         margin-bottom: 0;
+    }
+}
+.nl_img{
+    width: 50px;
+}
+.googText{
+    padding: 0 5px;
+}
+.gtagLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        display: flex;
+        padding: 0 5px;
     }
 }
 .formLeftSec{
@@ -1003,6 +1037,10 @@ ul.form-stepper .form-stepper-circle span {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    color: #6c757d;
+}
+ul.form-stepper .form-stepper-active .form-stepper-circle span{
+    color: #fff;
 }
 .form-stepper-horizontal {
     position: relative;
@@ -1104,6 +1142,7 @@ ul.form-stepper li a .form-stepper-circle {
 .form-stepper .label {
     font-size: 14px;
     margin-top: 0.5rem;
+    color: #6c757d;
 }
 .form-stepper a {
     cursor: pointer;
@@ -2607,6 +2646,7 @@ label{
                 box-shadow: none;
                 margin-top: 0;
                 padding: 0 !important;
+                align-items:flex-end;
             }
             h2{
                 font-style: normal;
@@ -2631,6 +2671,8 @@ label{
     padding: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 100%;
+    justify-content: center;
     @include responsive(tab-port){
         margin-top: 0;
     }
@@ -2894,6 +2936,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         height: 100vh;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     &::before{
         position: absolute;
@@ -4017,7 +4060,7 @@ canvas{
     }
 }
 .nm_detail{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .appDetailRight_web{
     .confOffBody{
@@ -4032,11 +4075,25 @@ canvas{
                         line-height: 64px;
                         letter-spacing: -0.0002em;
                         color: #201F2D;
+                        margin-bottom: 5px;
                     }
                 }
             }
         }
     }    
+}
+img.truckIdx{
+    top:18px !important;
+}
+.hiw_part2 > span{
+    overflow: unset !important;
+}
+.easy-sell-mob{
+    display: flex;
+    justify-content: end;
+    img{
+       
+    }
 }
 .congrats_head_web{
     margin-bottom: 180px;
@@ -4231,11 +4288,6 @@ canvas{
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
-        .nl_item_left{
-            img{
-
-            }
-        }
         .nl_item_right{
             p{
                 margin-bottom: 0;
@@ -4247,9 +4299,6 @@ canvas{
     .fyv_img {
         text-align: center;
         margin-bottom: 20px;
-        img{
-
-        }
     }
 }
 .portrait_body{
@@ -4478,5 +4527,22 @@ canvas{
                 }
             }
         }
+    }
+}
+
+.page-header .page-title picture.pic_review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.reviewTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    picture{
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
     }
 }

@@ -12,45 +12,42 @@ function Step1() {
                 <div className="ob_hd">
                     <h2>Vehicle Basics</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">      
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">      
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Mileage</label>
                                 <input type="text" placeholder='Enter Mileage'/>
                             </div>
                         </div>            
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Color</label>
-                                <select name="" id="">
-                                    <option value="">ssss</option>
-                                </select>
-                                {/* <ColorSelect/> */}
+                                <ColorSelect/>
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Transmission</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="radio1" name="selector" class="selector-item_radio" defaultChecked  />
-                                        <label for="radio1" class="selector-item_label">Automatic</label>
+                                    <div className="selecotr-item col-lg-6 p-0">
+                                        <input type="radio" id="radio1" name="selector" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="radio1" className="selector-item_label">Automatic</label>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="radio2" name="selector" class="selector-item_radio" />
-                                        <label for="radio2" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                    <div className="selecotr-item col-lg-6 pr-0">
+                                        <input type="radio" id="radio2" name="selector" className="selector-item_radio" />
+                                        <label htmlFor="radio2" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Does the vehicle start and drive?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="yes" name="selector1" class="selector-item_radio" defaultChecked  />
-                                        <label for="yes" class="selector-item_label labelflexCenter">
+                                    <div className="selecotr-item col-lg-6 p-0">
+                                        <input type="radio" id="yes" name="selector1" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="yes" className="selector-item_label labelflexCenter">
                                             <span>
                                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.7925 9.13144H9.20731C8.91624 9.13144 8.66117 8.93675 8.58443 8.65599C8.50769 8.37523 8.62826 8.07784 8.87881 7.92973C11.3123 6.49182 12.5763 4.8145 12.743 2.80193C12.8011 2.10347 13.4232 1.54556 14.1294 1.5548C14.85 1.56632 15.5251 1.85515 16.0307 2.3682C16.5367 2.88172 16.8156 3.56174 16.8158 4.28293C16.8158 4.28302 16.8158 4.2831 16.8158 4.28319V4.50014C16.8158 6.26186 16.294 7.38514 15.3312 8.8417C15.2115 9.02264 15.0093 9.13144 14.7925 9.13144Z" fill="#AEC8E3"/>
@@ -65,9 +62,9 @@ Yes
 </span>
                                         </label>
                                     </div>
-                                    <div class="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="no" name="selector1" class="selector-item_radio" />
-                                        <label for="no" class="selector-item_label labelflexCenter"><span>
+                                    <div className="selecotr-item col-lg-6 pr-0">
+                                        <input type="radio" id="no" name="selector1" className="selector-item_radio" />
+                                        <label htmlFor="no" className="selector-item_label labelflexCenter"><span>
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.8882 12.8686H9.30301C9.01194 12.8686 8.75688 13.0633 8.68013 13.344C8.60339 13.6248 8.72396 13.9222 8.97451 14.0703C11.408 15.5082 12.672 17.1855 12.8387 19.1981C12.8968 19.8965 13.5189 20.4544 14.2251 20.4452C14.9457 20.4337 15.6208 20.1448 16.1264 19.6318C16.6324 19.1183 16.9113 18.4383 16.9115 17.7171C16.9115 17.717 16.9115 17.7169 16.9115 17.7168V17.4999C16.9115 15.7381 16.3897 14.6149 15.4269 13.1583C15.3072 12.9774 15.105 12.8686 14.8882 12.8686Z" fill="#AEC8E3"/>
                                                     <path d="M21.7329 12.1408C21.7329 13.2564 20.8253 14.1641 19.7096 14.1641H9.30296C9.18733 14.1641 9.07381 14.133 8.97434 14.0742C8.24382 13.6422 7.50622 13.2867 6.91355 13.0009C6.70683 12.9013 6.51158 12.8071 6.33399 12.7183C6.11524 12.6089 5.97705 12.3854 5.97705 12.1408V3.87532C5.97705 3.6307 6.11524 3.40714 6.33399 3.29774C8.94318 1.99334 11.1121 1.8356 13.6413 1.8356C14.0329 1.8356 14.4335 1.83938 14.8454 1.84325C15.3009 1.84754 15.7719 1.85201 16.2657 1.85201H18.3071C19.4227 1.85201 20.3304 2.75964 20.3304 3.87532C20.3304 4.25044 20.2279 4.60201 20.0492 4.90352C20.6305 5.25939 21.0192 5.90036 21.0192 6.63048C21.0192 7.0056 20.9166 7.35717 20.738 7.65868C21.3193 8.01455 21.708 8.65551 21.708 9.38564C21.708 9.91037 21.5072 10.3891 21.1784 10.7489C21.5365 11.1263 21.7329 11.6184 21.7329 12.1408Z" fill="#D1E0EF"/>
@@ -89,22 +86,22 @@ Yes
                 <div className="ob_hd">
                     <h2>Where can we send your offer?</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">      
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">      
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Zip Code</label>
                                 <input type="text" placeholder='Enter Here'/>
                             </div>
                         </div>            
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-6 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-6 p-0">
                                 <label htmlFor="">Email</label>
                                 <input type="text" placeholder='Enter Here'/>
                             </div>
                         </div>   
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Phone Number (We won’t bug you!)</label>
                                 <div className="iptWrapper">
                                     <div className="iptLt">
@@ -116,13 +113,13 @@ Yes
                                 </div>
                             </div>
                         </div> 
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">When are you selling your car?</label>
                                 <div className="chooseBlock selector row selectorRow rowSell">
-                                    <div class="sellItemChoose">
-                                        <input type="radio" id="sl1" name="sl1" class="selector-item_radio" defaultChecked  />
-                                        <label for="sl1" class="selector-item_label labelflexCenter">
+                                    <div className="sellItemChoose">
+                                        <input type="radio" id="sl1" name="sl1" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="sl1" className="selector-item_label labelflexCenter">
                                             <span>
                                             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.6001 0.851562V3.35667C13.6001 3.71754 13.3166 4.00121 12.9556 4.00121H10.3774C10.0164 4.00121 9.73291 3.71754 9.73291 3.35667V0.851562H13.6001Z" fill="#D1E0EF"/>
@@ -140,9 +137,9 @@ Yes
                                     </span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose">
-                                        <input type="radio" id="sl2" name="sl1" class="selector-item_radio" />
-                                        <label for="sl2" class="selector-item_label labelflexCenter"><span>
+                                    <div className="sellItemChoose">
+                                        <input type="radio" id="sl2" name="sl1" className="selector-item_radio" />
+                                        <label htmlFor="sl2" className="selector-item_label labelflexCenter"><span>
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.8403 4.125H18.5625C18.942 4.125 19.25 3.817 19.25 3.4375V0.6875C19.25 0.307656 18.942 0 18.5625 0H3.4375C3.05766 0 2.75 0.308 2.75 0.6875V3.4375C2.75 3.817 3.05766 4.125 3.4375 4.125H4.15972C4.39484 6.41094 5.77569 7.84816 6.90491 9.02309C7.62644 9.77419 8.25 10.4225 8.25 11C8.25 11.5775 7.62644 12.2258 6.90491 12.9769C5.77569 14.1518 4.3945 15.5891 4.15972 17.875H3.4375C3.05766 17.875 2.75 18.183 2.75 18.5625V21.3125C2.75 21.692 3.05766 22 3.4375 22H18.5625C18.942 22 19.25 21.692 19.25 21.3125V18.5625C19.25 18.183 18.942 17.875 18.5625 17.875H17.8441C17.6124 15.3546 16.1305 13.8937 15.0243 12.803C14.3124 12.101 13.75 11.5466 13.75 11C13.75 10.4225 14.3732 9.77419 15.0951 9.02309C16.2243 7.84816 17.6055 6.41094 17.8403 4.125Z" fill="#D1E0EF"/>
                                         <path d="M18.5625 0H3.4375C3.05766 0 2.75 0.308 2.75 0.6875V3.4375C2.75 3.817 3.05766 4.125 3.4375 4.125H18.5625C18.942 4.125 19.25 3.817 19.25 3.4375V0.6875C19.25 0.308 18.942 0 18.5625 0Z" fill="#4381C0"/>
@@ -153,9 +150,9 @@ Yes
                                             <span>No</span>
                                         </label>
                                     </div>
-                                    <div class="sellItemChoose">
-                                        <input type="radio" id="sl3" name="sl1" class="selector-item_radio" />
-                                        <label for="sl3" class="selector-item_label labelflexCenter">
+                                    <div className="sellItemChoose">
+                                        <input type="radio" id="sl3" name="sl1" className="selector-item_radio" />
+                                        <label htmlFor="sl3" className="selector-item_label labelflexCenter">
                                             <span>Maybe Later...</span>
                                         </label>
                                     </div>

@@ -4,6 +4,7 @@ import Header2 from '../Header2'
 import HigherOfferModal from './HigherOfferModal';
 import OfferFactorsModal from './OfferFactorsModal';
 import StepBar from './StepBar'
+import Image from 'next/image'
 
 function WhySell() {
   const [showHigherOffer,setShowHigherOffer] = useState(false);
@@ -41,7 +42,13 @@ function WhySell() {
               <div className="at_head">
                 <span>Your <i>FLIPPIN’</i> Awesome Offer!</span>
                 <div className="at_img">
-                  <img src="/images/jd.webp" alt="jd power" title='jd power'/>
+                  <Image 
+                      src="/images/jd.webp" 
+                      alt="jd power" 
+                      title='jd power'
+                      width={150}
+                      height={20}
+                  />
                 </div>
               </div>
               <div className="at_price">
@@ -51,7 +58,13 @@ function WhySell() {
                 <h2>2022 Ford Ranger</h2>
             </div>
             <div className="itemImg">
-                <img src="/images/car1.png" alt="2022 Ford Ranger" title='2022 Ford Ranger'/>
+                <Image 
+                      src="/images/car1.png" 
+                      alt="2022 Ford Ranger" 
+                      title='2022 Ford Ranger'
+                      width={400}
+                      height={210}
+                  />
             </div>  
             <div className="off_info">
                 <p>Your offer is good for 5 days. Just let us know when and where we can come to buy your car!</p>
@@ -92,7 +105,13 @@ function WhySell() {
             <div className="whip_cus_info">
                 <div className="wci_in">
                     <div className="wci_left">
-                        <img src="/images/bulb.svg" alt="" />
+                        <Image 
+                          src="/images/bulb.svg" 
+                          alt="Bulb" 
+                          title='Bulb'
+                          width={20}
+                          height={20}
+                        />
                     </div>
                     <div className="wci_right">
                         <p><b>96% of WhipFlip customers</b> who scheduled an appointment to sell happily sold their cars to us! Ready to sell? We are ready to buy. No time wasted by either party. We stand behind our words!</p>
@@ -108,7 +127,13 @@ function WhySell() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/convenience.svg" alt="" />
+                      <Image 
+                          src="/images/convenience.svg" 
+                          alt="convenience" 
+                          title='convenience'
+                          width={100}
+                          height={100}
+                        />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -119,7 +144,13 @@ function WhySell() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/best-offer.svg" alt="" />
+                      <Image 
+                          src="/images/best-offer.svg" 
+                          alt="Best Offer" 
+                          title='Best Offer'
+                          width={100}
+                          height={100}
+                        />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -130,7 +161,13 @@ function WhySell() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <img src="/images/safe.svg" alt="" />
+                      <Image 
+                          src="/images/safe.svg" 
+                          alt="Safe" 
+                          title='Safe'
+                          width={100}
+                          height={100}
+                        />
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -147,7 +184,15 @@ function WhySell() {
                 <div className="acceptOffer_foo_left_in">
                     <span>
                     5-Star
-                    <span><img src="/images/google.svg" alt="Goole" title="Google" /></span>
+                    <span className='googText'>
+                        <Image 
+                          src="/images/google.svg" 
+                          alt="Goole" 
+                          title='Goole'
+                          width={70}
+                          height={30}
+                        />
+                    </span>
                     Rated Service
                 </span>
                 <div className="stars">
@@ -166,11 +211,25 @@ function WhySell() {
                 </div>
                 <div className="acceptOffer_foo_right">
                 <div className="acceptOffer_foo_right_in">
-                    <div class="acceptOffer_rating">
-                    <div class="acc_left"><img src="/images/acc-rating.svg" alt="accredit" title="accredit" /></div>
+                    <div className="acceptOffer_rating">
+                    <div className="acc_left">
+                      <Image 
+                          src="/images/acc-rating.svg" 
+                          alt="accredit" 
+                          title='accredit'
+                          width={400}
+                          height={50}
+                        />
+                      </div>
                     </div>
                     <div className="poweredBy">
-                    <img src="/images/jd.webp" alt="jd power" title='jd power'/>
+                      <Image 
+                        src="/images/jd.webp" 
+                        alt="jd" 
+                        title='jd'
+                        width={200}
+                        height={25}
+                      />
                     </div>
                     <div className="af_foo_dec">
                     <p>We are trusted by the biggest and best names in the industry!</p>
@@ -183,7 +242,7 @@ function WhySell() {
                 <p>No worries! Your offer is good for 5 days. Simply revisit <a href="#" title='whipflip'>WhipFlip.com</a> to retrieve your offer or check your email to see our offer confirmation.</p>
             </div>
             <div className="click_acceptOffer">
-                <button class="accept_off_btn">Accept Offer &amp; Sell</button>
+                <button className="accept_off_btn">Accept Offer &amp; Sell</button>
             </div>
           </div>
         </div>

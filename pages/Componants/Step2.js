@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import FindVinModal from './FindVinModal';
 import Step2b from './Step2b';
+import Image from 'next/image'
 
 function Step2() {
     const [status, setStatus] = React.useState(1)
@@ -37,21 +38,21 @@ function Step2() {
                     <div className="ob_hd">
                         <h2>Vehicle Information</h2> 
                     </div>
-                    <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                    <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-lg-6 p-0">
+                                        <div className="selecotr-item col-lg-6 p-0">
                                             <div className={status === 1 ? "si-wrap active": "si-wrap"} >
                                                 <input type="radio" id="radio1" name="selector" className={status === 1 ? "selector-item_radio active": "selector-item_radio"} checked={status === 1} onClick={(e) => radioHandler(1)} />
-                                                <label for="radio1" class="selector-item_label">VIN #</label>  
+                                                <label htmlFor="radio1" className="selector-item_label">VIN #</label>  
                                             </div>
                                         </div>
-                                        <div class="selecotr-item col-lg-6 pr-0">
+                                        <div className="selecotr-item col-lg-6 pr-0">
                                             <div className={status === 2 ? "si-wrap active": "si-wrap"} >
-                                                <input type="radio" id="radio2" name="selector" class={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
-                                                <label for="radio2" class="selector-item_label">License Plate</label>  
+                                                <input type="radio" id="radio2" name="selector" className={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
+                                                <label htmlFor="radio2" className="selector-item_label">License Plate</label>  
                                             </div>                                             
                                         </div>
                                     </div>  
@@ -98,64 +99,64 @@ function Step2() {
                     <div className="ob_hd">
                         <h2>Vehicle Condition Details</h2> 
                     </div>
-                    <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">  
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                    <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">  
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Any vehicle history issues or title brand? (e.g. accident, flood, etc.)</label>
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-lg-6 p-0">
-                                            <input type="radio" id="radio3" name="selector1" class="selector-item_radio" defaultChecked  />
-                                            <label for="radio3" class="selector-item_label">Automatic</label>
+                                        <div className="selecotr-item col-lg-6 p-0">
+                                            <input type="radio" id="radio3" name="selector1" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="radio3" className="selector-item_label">Automatic</label>
                                         </div>
-                                        <div class="selecotr-item col-lg-6 pr-0">
-                                            <input type="radio" id="radio4" name="selector1" class="selector-item_radio" />
-                                            <label for="radio4" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                        <div className="selecotr-item col-lg-6 pr-0">
+                                            <input type="radio" id="radio4" name="selector1" className="selector-item_radio" />
+                                            <label htmlFor="radio4" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Any engine and/or drivability issues?</label>
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-lg-6 p-0">
-                                            <input type="radio" id="radio5" name="selector11" class="selector-item_radio" defaultChecked  />
-                                            <label for="radio5" class="selector-item_label">Automatic</label>
+                                        <div className="selecotr-item col-lg-6 p-0">
+                                            <input type="radio" id="radio5" name="selector11" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="radio5" className="selector-item_label">Automatic</label>
                                         </div>
-                                        <div class="selecotr-item col-lg-6 pr-0">
-                                            <input type="radio" id="radio6" name="selector11" class="selector-item_radio" />
-                                            <label for="radio6" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                        <div className="selecotr-item col-lg-6 pr-0">
+                                            <input type="radio" id="radio6" name="selector11" className="selector-item_radio" />
+                                            <label htmlFor="radio6" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Any dashboard warning lights or inoperable parts? (e.g. Check Engine, Airbag Light, A/C issue, etc.)</label>
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-lg-6 p-0">
-                                            <input type="radio" id="radio7" name="selector12" class="selector-item_radio" defaultChecked  />
-                                            <label for="radio7" class="selector-item_label">Automatic</label>
+                                        <div className="selecotr-item col-lg-6 p-0">
+                                            <input type="radio" id="radio7" name="selector12" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="radio7" className="selector-item_label">Automatic</label>
                                         </div>
-                                        <div class="selecotr-item col-lg-6 pr-0">
-                                            <input type="radio" id="radio8" name="selector12" class="selector-item_radio" />
-                                            <label for="radio8" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                        <div className="selecotr-item col-lg-6 pr-0">
+                                            <input type="radio" id="radio8" name="selector12" className="selector-item_radio" />
+                                            <label htmlFor="radio8" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Any aftermarket parts or modifications?</label>
                                     <div className="chooseBlock selector row selectorRow">
-                                        <div class="selecotr-item col-lg-6 p-0">
-                                            <input type="radio" id="radio11" name="selector13" class="selector-item_radio" defaultChecked  />
-                                            <label for="radio11" class="selector-item_label">Automatic</label>
+                                        <div className="selecotr-item col-lg-6 p-0">
+                                            <input type="radio" id="radio11" name="selector13" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="radio11" className="selector-item_label">Automatic</label>
                                         </div>
-                                        <div class="selecotr-item col-lg-6 pr-0">
-                                            <input type="radio" id="radio12" name="selector13" class="selector-item_radio" />
-                                            <label for="radio12" class="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                        <div className="selecotr-item col-lg-6 pr-0">
+                                            <input type="radio" id="radio12" name="selector13" className="selector-item_radio" />
+                                            <label htmlFor="radio12" className="selector-item_label">Manual (i.e. Stick Shift)</label>
                                         </div>
                                     </div>
                                 </div>
@@ -167,17 +168,23 @@ function Step2() {
                     <div className="ob_hd">
                         <h2>Tire Condition</h2> 
                     </div>
-                    <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">                                        
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                    <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">                                        
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">Tire condition?</label>
                                     <div className="chooseBlock selector row selectorRow rowSell tireconditions">
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="tc1" name="tc" class="selector-item_radio" defaultChecked  />
-                                            <label for="tc1" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="tc1" name="tc" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="tc1" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/plenty-thread.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/plenty-thread.svg" 
+                                                        alt="mail" 
+                                                        title='mail'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Plenty of Tread</h3>
@@ -185,11 +192,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="tc2" name="tc" class="selector-item_radio" />
-                                            <label for="tc2" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="tc2" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc2" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/some-thread.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/some-thread.svg" 
+                                                        alt="mail" 
+                                                        title='mail'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Some Tread</h3>
@@ -197,11 +210,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="tc3" name="tc" class="selector-item_radio" />
-                                            <label for="tc3" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="tc3" name="tc" className="selector-item_radio" />
+                                            <label htmlFor="tc3" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/bald.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/bald.svg" 
+                                                        alt="mail" 
+                                                        title='mail'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Bald</h3>
@@ -219,17 +238,23 @@ function Step2() {
                     <div className="ob_hd">
                         <h2>Cosmetic Condition</h2> 
                     </div>
-                    <div class="offer_block-body">
-                        <form autocomplete="off" class="form" role="form">                                        
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                    <div className="offer_block-body">
+                        <form autoComplete="off" className="form" role="form">                                        
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">How would you honestly rate your vehicle’s <b>EXTERIOR</b> condition?</label>
                                     <div className="chooseBlock selector row selectorRow rowSell tireconditions">
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc1" name="cc" class="selector-item_radio" defaultChecked  />
-                                            <label for="cc1" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc1" name="cc" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="cc1" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/great.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/great.svg" 
+                                                        alt="great" 
+                                                        title='great'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>FLIPPIN’ GREAT!</h3>
@@ -237,11 +262,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc2" name="cc" class="selector-item_radio" />
-                                            <label for="cc2" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc2" name="cc" className="selector-item_radio" />
+                                            <label htmlFor="cc2" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/average.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/average.svg" 
+                                                        alt="average" 
+                                                        title='average'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Just Average</h3>
@@ -249,11 +280,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc3" name="cc" class="selector-item_radio" />
-                                            <label for="cc3" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc3" name="cc" className="selector-item_radio" />
+                                            <label htmlFor="cc3" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/rough.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/rough.svg" 
+                                                        alt="rough" 
+                                                        title='rough'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>It’s Rough...</h3>
@@ -264,15 +301,21 @@ function Step2() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row ob_frm_row">
-                                <div class="col-lg-12 p-0">
+                            <div className="form-group row ob_frm_row">
+                                <div className="col-lg-12 p-0">
                                     <label htmlFor="">How would you honestly rate your vehicle’s <b>INTERIOR</b> condition?</label>
                                     <div className="chooseBlock selector row selectorRow rowSell tireconditions cosmicconditions">
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc11" name="cc11" class="selector-item_radio" defaultChecked  />
-                                            <label for="cc11" class="selector-item_label labelflexCenter tclabel cclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc11" name="cc11" className="selector-item_radio" defaultChecked  />
+                                            <label htmlFor="cc11" className="selector-item_label labelflexCenter tclabel cclabel">
                                                 <span>
-                                                    <img src="/images/great.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/great.svg" 
+                                                        alt="great" 
+                                                        title='great'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Plenty of Tread</h3>
@@ -280,11 +323,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc22" name="cc11" class="selector-item_radio" />
-                                            <label for="cc22" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc22" name="cc11" className="selector-item_radio" />
+                                            <label htmlFor="cc22" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/average.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/average.svg" 
+                                                        alt="average" 
+                                                        title='average'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Some Tread</h3>
@@ -292,11 +341,17 @@ function Step2() {
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="sellItemChoose tirecondition">
-                                            <input type="radio" id="cc33" name="cc11" class="selector-item_radio" />
-                                            <label for="cc33" class="selector-item_label labelflexCenter tclabel">
+                                        <div className="sellItemChoose tirecondition">
+                                            <input type="radio" id="cc33" name="cc11" className="selector-item_radio" />
+                                            <label htmlFor="cc33" className="selector-item_label labelflexCenter tclabel">
                                                 <span>
-                                                    <img src="/images/rough.svg" alt="" />
+                                                    <Image 
+                                                        src="/images/rough.svg" 
+                                                        alt="rough" 
+                                                        title='rough'
+                                                        width={50}
+                                                        height={50}
+                                                    />
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Bald</h3>

@@ -18,22 +18,22 @@ function MechanicalCondition() {
                 <div className="ob_hd">
                     <h2>Mechanical Condition</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                             <label htmlFor="">Any vehicle history issues or title brand? (e.g. accident, flood, etc.)</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item col-6 p-0">
+                                    <div className="selecotr-item col-6 p-0">
                                         <div className={status === 1 ? "si-wrap active": "si-wrap"} >
                                             <input type="radio" id="radio1" name="selector" className={status === 1 ? "selector-item_radio active": "selector-item_radio"} checked={status === 1} onClick={(e) => radioHandler(1)} />
-                                            <label for="radio1" class="selector-item_label">Nope!</label>  
+                                            <label htmlFor="radio1" className="selector-item_label">Nope!</label>  
                                         </div>
                                     </div>
-                                    <div class="selecotr-item col-6 pr-0">
+                                    <div className="selecotr-item col-6 pr-0">
                                         <div className={status === 2 ? "si-wrap active": "si-wrap"} >
-                                            <input type="radio" id="radio2" name="selector" class={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
-                                            <label for="radio2" class="selector-item_label">Yes</label>  
+                                            <input type="radio" id="radio2" name="selector" className={status === 2 ? "selector-item_radio active": "selector-item_radio"} checked={status === 2} onClick={(e) => radioHandler(2)}/>
+                                            <label htmlFor="radio2" className="selector-item_label">Yes</label>  
                                         </div>                                             
                                     </div>
                                 </div>  
@@ -46,7 +46,7 @@ function MechanicalCondition() {
                                                 <div className="chooseIssues">
                                                     <div className="row">
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
+                                                            <div className="form-group check-group chsItem">
                                                                 <span>Doesn’t Start / Drive</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
@@ -54,48 +54,48 @@ function MechanicalCondition() {
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk2">Engine Noise (Knocking)</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk2">Engine Noise (Knocking)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk3">Engine Noise (Ticking)</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk3">Engine Noise (Ticking)</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk4">Transmission</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk4">Transmission</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk5">Battery / Charging</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk5">Battery / Charging</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk6">Overheats</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk6">Overheats</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>
                                                             </div>
                                                         </div>
                                                         <div className="col-6 p-0 ci_col">
-                                                            <div class="form-group check-group chsItem">
-                                                                <span for="chk7">Oil / Fluid Leak</span>
+                                                            <div className="form-group check-group chsItem">
+                                                                <span htmlFor="chk7">Oil / Fluid Leak</span>
                                                                 <span>
                                                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.0835 13.4193V7.91927H0.583496V6.08594H6.0835V0.585938H7.91683V6.08594H13.4168V7.91927H7.91683V13.4193H6.0835Z" fill="#747387"/></svg>
                                                                 </span>

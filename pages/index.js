@@ -4,6 +4,7 @@ import Faq from './Componants/Faq'
 import Footer from './Componants/Footer'
 import HappyCustomersSlider from './Componants/HappyCustomersSlider'
 import Header from './Componants/Header'
+import Image from 'next/image'
 function index() {
   const[showConfirmOffer,setShowConfirmOffer] = useState(false)
   const handleShowConfirmOffer =(e)=>{
@@ -50,13 +51,31 @@ function index() {
                         <article data-toggle="modal" data-target="#activeUsers" className='reviewLt_icons'>
                               <div className="c-profile__list">
                                   <span className="c-profile" username="Buster">
-                                    <img src="/images/rv1.png" alt="profile" title='profile'/>
+                                    <Image 
+                                        src="/images/rv1.png" 
+                                        alt="profile" 
+                                        title='profile'
+                                        width={40}
+                                        height={40}
+                                    />
                                   </span>
                                   <span className="c-profile" username="George Michael">
-                                    <img src="/images/rv1.png" alt="profile" title='profile' />
+                                    <Image 
+                                        src="/images/rv2.png" 
+                                        alt="profile" 
+                                        title='profile'
+                                        width={40}
+                                        height={40}
+                                    />
                                   </span>
                                   <span className="c-profile" username="Gob">
-                                    <img src="/images/rv1.png" alt="profile" title='profile' />
+                                    <Image 
+                                        src="/images/rv1.png" 
+                                        alt="profile" 
+                                        title='profile'
+                                        width={40}
+                                        height={40}
+                                    />
                                   </span>
                               </div>
                         </article>
@@ -85,7 +104,13 @@ function index() {
                       </div>
                       <div className="col-lg-6 accredit_col p-0 bnr_left_points">
                         <div className="acc_left">
-                          <img src="/images/accredit.png" alt="accredit" title='accredit' />
+                          <Image 
+                              src="/images/accredit.png" 
+                              alt="profile" 
+                              title='profile'
+                              width={95}
+                              height={36}
+                          />
                         </div>
                         <div className="acc_right">
                           <span>
@@ -100,7 +125,13 @@ function index() {
                       </div>
                       <div className="col-lg-12 video_col bnr_left_points">
                         <div className="video_left">
-                          <img src="/images/video.png"  alt="video" title='video'  />
+                          <Image 
+                              src="/images/video.png" 
+                              alt="video" 
+                              title='video'
+                              width={64}
+                              height={36}
+                          />
                         </div>
                         <div className="acc_right">
                           <span>
@@ -114,32 +145,45 @@ function index() {
                 <div className="bnr_lin_bottom">
                   <div className="bnr_left_bottom desk-show">
                     <img src="/images/customer.webp" alt="customer" title='customer' />
+                    {/* <Image 
+                        src="/images/customer.webp" 
+                        alt="customer" 
+                        title='customer'
+                            width={245}
+                        height={350}
+                    /> */}
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="bnr_right">
-                <div class="row justify-content-center">
-                  <div class="col-md-12">
-                    <div class="card card-outline-secondary home-form">
+                <div className="row justify-content-center">
+                  <div className="col-md-12">
+                    <div className="card card-outline-secondary home-form">
                       {
                         !showConfirmOffer &&
                         <div className="get_offer_banner">
                         <div className="form_top">
                           <div className="poweredBy">
-                            <img src="images/jd.webp" alt="poweredBy" title='poweredBy' />
+                            <Image 
+                              src="/images/jd.webp" 
+                              alt="poweredBy" 
+                              title='poweredBy'
+                              width={180}
+                              height={20}
+                            />
                           </div>
                           <div className="form_head">
                             <h2>Get a REAL offer in seconds!</h2>
                             <p>Enter your vehicles details:</p>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <form autocomplete="off" class="form" role="form">                  
-                            <div class="form-group row">
-                              <div class="col-lg-12">
-                                <select class="form-control" id="user_time_zone" size="0">
+                        <div className="card-body">
+                          <form autoComplete="off" className="form" role="form">                  
+                            <div className="form-group row">
+                              <div className="col-lg-12">
+                                <select className="form-control" id="user_time_zone" size="0">
                                   <option value="Hawaii">
                                     Year
                                   </option>
@@ -149,9 +193,9 @@ function index() {
                                 </select>
                               </div>
                             </div>
-                            <div class="form-group row">
-                              <div class="col-lg-12">
-                                <select class="form-control" id="user_time_zone" size="0">
+                            <div className="form-group row">
+                              <div className="col-lg-12">
+                                <select className="form-control" id="user_time_zone" size="0">
                                   <option value="Hawaii">
                                     Make
                                   </option>
@@ -161,9 +205,9 @@ function index() {
                                 </select>
                               </div>
                             </div>
-                            <div class="form-group row">
-                              <div class="col-lg-12">
-                                <select class="form-control" id="user_time_zone" size="0">
+                            <div className="form-group row">
+                              <div className="col-lg-12">
+                                <select className="form-control" id="user_time_zone" size="0">
                                   <option value="Hawaii">
                                     Model
                                   </option>
@@ -173,9 +217,9 @@ function index() {
                                 </select>
                               </div>
                             </div>
-                            <div class="form-group row">
-                              <div class="col-lg-12">
-                                <select class="form-control" id="user_time_zone" size="0">
+                            <div className="form-group row">
+                              <div className="col-lg-12">
+                                <select className="form-control" id="user_time_zone" size="0">
                                   <option value="Hawaii">
                                     Trim/Series
                                   </option>
@@ -195,8 +239,8 @@ function index() {
                                 </div>
                               </div>
                             </div>
-                            <div class="form-group row">
-                              <div class="col-lg-12">
+                            <div className="form-group row">
+                              <div className="col-lg-12">
                                 <button className='getOfferBtn' onClick={handleShowConfirmOffer}>
                                   <span>
                                     Get Instant Offer
@@ -221,7 +265,13 @@ function index() {
                         <div className="cob_body">
                           <div className="cob_in">
                             <div className="cob_offer_product">
-                              <img src="/images/car1.png" alt="" title='car'/>
+                              <Image 
+                                src="/images/car1.png" 
+                                alt="car" 
+                                title='car'
+                                width={285}
+                                height={155}
+                              />
                             </div>
                             <div className="cob_offer_name">
                               <h2>2022 Ford Ranger</h2>
@@ -260,7 +310,13 @@ function index() {
                               </div>                              
                             </div>
                             <div className="poweredBy">
-                              <img src="images/jd.webp" alt="poweredBy" title='poweredBy' />
+                              <Image 
+                                src="/images/jd.webp" 
+                                alt="poweredBy" 
+                                title='poweredBy'
+                                width={200}
+                                height={24}
+                              />
                             </div>                            
                           </div>
                         </div>
@@ -309,7 +365,13 @@ function index() {
                     </div>
                     <div className="col-lg-6 col-sm-6 col-12 accredit_col bnr_left_points bnr_mob_btm_pts">
                       <div className="acc_left">
-                        <img src="/images/accredit.png" alt="accredit" title='accredit' />
+                        <Image 
+                          src="/images/accredit.png" 
+                          alt="accredit" 
+                          title='accredit'
+                          width={95}
+                          height={36}
+                        />                
                       </div>
                       <div className="acc_right">
                         <span>
@@ -324,7 +386,13 @@ function index() {
                     </div>
                     <div className="col-lg-12 video_col bnr_left_points bnr_mob_btm_pts">
                       <div className="video_left">
-                        <img src="/images/video.png"  alt="video" title='video'  />
+                        <Image 
+                          src="/images/video.png" 
+                          alt="video" 
+                          title='video'
+                          width={64}
+                          height={36}
+                        />
                       </div>
                       <div className="acc_right">
                         <span>
@@ -335,6 +403,13 @@ function index() {
                   </div>
                   <div className="bnr_left_bottom mob-show bnr_left_bottom_mobile">
                     <img src="/images/customer.webp" alt="customer" title='customer' />
+                    {/* <Image 
+                          src="/images/customer.webp" 
+                          alt="customer" 
+                          title='customer'
+                          width={260}
+                          height={320}
+                        /> */}
                   </div>
                 </div>
               </div>
@@ -360,7 +435,13 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw1.png" alt="Get Instant Offer" title='Get Instant Offer'/>
+                    <Image 
+                        src="/images/hiw1.png" 
+                        alt="Get Instant Offer" 
+                        title='Get Instant Offer'
+                        width={150}
+                        height={150}
+                    />
                   </div>
                   <div className="hiw_body">
                     <h2>Get Instant Offer</h2>
@@ -371,7 +452,13 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw2.png" alt="Confirm Offer" title='Confirm Offer'/>
+                    <Image 
+                        src="/images/hiw2.png" 
+                        alt="Confirm Offer" 
+                        title='Confirm Offer'
+                        width={150}
+                        height={150}
+                    />
                   </div>
                   <div className="hiw_body">
                     <h2>Confirm Offer</h2>
@@ -382,7 +469,13 @@ function index() {
             <div className="col-lg-4">
               <div className="hiw_item">
                   <div className="hiw_head">
-                    <img src="images/hiw3.png" alt="SOLD" title='SOLD'/>
+                    <Image 
+                        src="/images/hiw3.png" 
+                        alt="SOLD" 
+                        title='SOLD'
+                        width={150}
+                        height={150}
+                    />
                   </div>
                   <div className="hiw_body">
                     <h2>SOLD!</h2>
@@ -395,10 +488,23 @@ function index() {
             <div className="col-lg-10">
             <div className="hiw">
               <div className="hiw_part1">
-                <img src="/images/left_man_money.svg" alt="money" title='money'/>
+                  <Image 
+                      src="/images/left_man_money.svg" 
+                      alt="money" 
+                      title='money'
+                      width={133}
+                      height={277}
+                  />
               </div>
               <div className="hiw_part2">
-                <img src="/images/vehicle.svg" alt="vehicle" title='vehicle'/>
+                <Image 
+                  src="/images/vehicle.svg" 
+                  alt="vehicle" 
+                  title='vehicle'
+                  width={860}
+                  height={200}
+                  className="truckIdx"
+                />
               </div>
             </div>
             </div>
@@ -407,7 +513,13 @@ function index() {
       </div>
       <div className="why-sell-to-whipflip pt100">
           <div className="easy-sell desk-show">
-            <img src="/images/easy-sell.svg" alt="easy sell" title='easy sell'/>
+                <Image 
+                  src="/images/easy-sell.svg" 
+                  alt="easy-sell" 
+                  title='easy-sell'
+                  width={612}
+                  height={600}
+                />
           </div>
           <div className="container">
             <div className="secHd text-left">
@@ -422,7 +534,13 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                       <div className="si-head">
-                        <img src="/images/uc.svg" alt="Ultimate Convenience" title='Ultimate Convenience'/>
+                        <Image 
+                          src="/images/uc.svg" 
+                          alt="easy-sell" 
+                          title='easy-sell'
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div className="si-body">
                         <h2>Ultimate Convenience</h2>
@@ -433,7 +551,13 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                     <div className="si-head">
-                        <img src="/images/bp.svg" alt="The Best Price" title='The Best Price'/>
+                        <Image 
+                          src="/images/bp.svg" 
+                          alt="The Best Price" 
+                          title='The Best Price'
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div className="si-body">
                         <h2>The Best Price</h2>
@@ -444,7 +568,13 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                     <div className="si-head">
-                        <img src="/images/fgp.svg" alt="Fast & Guaranteed Payment" title='Fast & Guaranteed Payment' />
+                        <Image 
+                          src="/images/fgp.svg" 
+                          alt="Fast & Guaranteed Payment" 
+                          title='Fast & Guaranteed Payment'
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div className="si-body">
                         <h2>Fast & Guaranteed Payment</h2>
@@ -455,7 +585,13 @@ function index() {
                   <div className="col-lg-6 siCol">
                     <div className="service-item">
                       <div className="si-head">
-                        <img src="/images/ts.svg" alt="Trusted & Saf" title='Trusted & Saf'/>
+                        <Image 
+                          src="/images/ts.svg" 
+                          alt="Trusted & Saf" 
+                          title='Trusted & Saf'
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div className="si-body">
                         <h2>Trusted & Safe</h2>
@@ -465,20 +601,41 @@ function index() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5 mob-easy-sell">
-              <div className="easy-sell-mob mob-show">
-                <img src="/images/easy-sell.svg" alt="easy sell" title='easy sell'/>
-              </div>
-              </div>
+              
             </div>
           </div>
+          <div className="mob-easy-sell">
+              <div className="easy-sell-mob mob-show">
+                <Image 
+                  src="/images/easy-sell.svg" 
+                  alt="easy sell" 
+                  title='easy sell'
+                  width={612}
+                  height={600}
+                />
+              </div>
+              </div>
       </div>
       <div className="happy-customers pt100 pb100">
           <div className="secHd text-center">
             <div className="stars">
-              <img src="/images/stars.svg" alt="stars" title='stars'/>
+              <Image 
+                  src="/images/stars.svg" 
+                  alt="stars" 
+                  title='stars'
+                  width={325}
+                  height={145}
+                />
             </div>
-            <span>WhipFlip has earned 4.9 stars in <span><img src="/images/google.svg" alt="Goole" title='Google'/></span> certified reviews</span>
+            <span className='gtagLine'>WhipFlip has earned 4.9 stars in <span>
+            <Image 
+                  src="/images/google.svg" 
+                  alt="Goole" 
+                  title='Goole'
+                  width={70}
+                  height={30}
+                />            
+            </span> certified reviews</span>
             <h2 className='desk-show'>
               <span>Thousands of </span>
               <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS</span>
@@ -496,7 +653,13 @@ function index() {
       </div>
       <div className="faq">
         <div className="faqLogo text-center">
-          <img src="/images/faq.svg" alt="FAQ" title='faq'/>
+          <Image 
+            src="/images/faq.svg" 
+            alt="FAQ" 
+            title='FAQ'
+            width={250}
+            height={250}
+          /> 
         </div>
           <div className="secHd text-center mt25">
             <h2>
@@ -524,7 +687,13 @@ function index() {
             </div>
             <div className="col-lg-5 align-self-end">
               <div className="rts-rtImg">
-                <img src="/images/sell_to_customer.png" alt="Ready to Sell" title='Ready to Sell'/>
+                <Image 
+                  src="/images/sell_to_customer.png" 
+                  alt="Ready to Sell" 
+                  title='Ready to Sell'
+                  width={450}
+                  height={395}
+                /> 
               </div>
             </div>
           </div>
@@ -542,13 +711,13 @@ function index() {
               </div>
               <div className="arrowPoint desk-show">
                 <svg width="65" height="57" viewBox="0 0 65 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M63.5 55C63.5 55 31.0635 23 2.5 23V2C36.3889 2 63.5 55 63.5 55Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M63.5 55C63.5 55 31.0635 23 2.5 23V2C36.3889 2 63.5 55 63.5 55Z" fill="white" stroke="#8AB0D7" strokeWidth="3" strokeLinejoin="round"/>
                   <rect y="3.5" width="4" height="18" fill="white"/>
                 </svg>                
               </div>
               <div className="arrowPointMob mob-show">
                 <svg width="56" height="65" viewBox="0 0 56 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M54.5 63.5C54.5 63.5 22.5 31.0635 22.5 2.5L1.5 2.5C1.5 36.3889 54.5 63.5 54.5 63.5Z" fill="white" stroke="#8AB0D7" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M54.5 63.5C54.5 63.5 22.5 31.0635 22.5 2.5L1.5 2.5C1.5 36.3889 54.5 63.5 54.5 63.5Z" fill="white" stroke="#8AB0D7" strokeWidth="3" strokeLinejoin="round"/>
                   <rect x="3" y="4.5" width="4" height="18" transform="rotate(-90 3 4.5)" fill="white"/>
                 </svg>
               </div>
@@ -556,7 +725,13 @@ function index() {
             <div className="col-lg-2 colsciRight">
               <div className="sciRight">
                 <div className="scir_hd">
-                  <img src="/images/prof.png" alt="profile" title='profile'/>
+                  <Image 
+                    src="/images/prof.png" 
+                    alt="profile" 
+                    title='profile'
+                    width={100}
+                    height={100}
+                  /> 
                 </div>
                 <div className="profDetail">
                   <h3>Roger Clappe</h3>

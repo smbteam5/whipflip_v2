@@ -6,9 +6,9 @@ import Header from "./Componants/Header";
 function privatesale() {
   return (
     <>
-      {/* <div className="whipflip-header">
+      <div className="whipflip-header">
         <Header />
-      </div> */}
+      </div>
       <div className="page-header faq d-flex align-items-center">
         <div className="container">
           <div className="row">

@@ -66,11 +66,11 @@ function Header() {
                             </div>
                             <div className="vdnForm">
                                 <div className="vdnForm_fields">
-                                    <form autocomplete="off" class="form" role="form">                  
+                                    <form autoComplete="off" className="form" role="form">                  
                                         <div className="vdn_frm_flds">
-                                            <div class="form-group row vdn_grp_row">
-                                                <div class="col-lg-12">
-                                                    <select class="form-control firstSelect" id="user_time_zone" size="0">
+                                            <div className="form-group row vdn_grp_row">
+                                                <div className="col-lg-12">
+                                                    <select className="form-control firstSelect" id="user_time_zone" size="0">
                                                         <option value="Hawaii">
                                                         Year
                                                         </option>
@@ -80,9 +80,9 @@ function Header() {
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="form-group row vdn_grp_row">
-                                                <div class="col-lg-12">
-                                                <select class="form-control" id="user_time_zone" size="0">
+                                            <div className="form-group row vdn_grp_row">
+                                                <div className="col-lg-12">
+                                                <select className="form-control" id="user_time_zone" size="0">
                                                     <option value="Hawaii">
                                                     Make
                                                     </option>
@@ -92,9 +92,9 @@ function Header() {
                                                 </select>
                                                 </div>
                                             </div>
-                                            <div class="form-group row vdn_grp_row">
-                                                <div class="col-lg-12">
-                                                <select class="form-control" id="user_time_zone" size="0">
+                                            <div className="form-group row vdn_grp_row">
+                                                <div className="col-lg-12">
+                                                <select className="form-control" id="user_time_zone" size="0">
                                                     <option value="Hawaii">
                                                     Model
                                                     </option>
@@ -104,9 +104,9 @@ function Header() {
                                                 </select>
                                                 </div>
                                             </div>
-                                            <div class="form-group row vdn_grp_row">
-                                                <div class="col-lg-12">
-                                                <select class="form-control lastSelect" id="user_time_zone" size="0">
+                                            <div className="form-group row vdn_grp_row">
+                                                <div className="col-lg-12">
+                                                <select className="form-control lastSelect" id="user_time_zone" size="0">
                                                     <option value="Hawaii">
                                                     Trim/Series
                                                     </option>
@@ -117,9 +117,9 @@ function Header() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group row vdn_grp_row">
-                                            <div class="col-lg-12">
-                                            <input class="btn btn-secondary getOfferBtn nav_getOfferBtn" type="reset" value="Get Instant Offer" />
+                                        <div className="form-group row vdn_grp_row">
+                                            <div className="col-lg-12">
+                                            <input className="btn btn-secondary getOfferBtn nav_getOfferBtn" type="reset" value="Get Instant Offer" />
                                             </div>
                                         </div>
                                     </form>

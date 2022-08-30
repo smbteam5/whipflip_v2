@@ -15,15 +15,15 @@ function StartAndDrive() {
                 <div className="ob_hd">
                     <h2>Vehicle Basics</h2> 
                 </div>
-                <div class="offer_block-body">
-                    <form autocomplete="off" class="form" role="form">      
-                        <div class="form-group row ob_frm_row">
-                            <div class="col-lg-12 p-0">
+                <div className="offer_block-body">
+                    <form autoComplete="off" className="form" role="form">      
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
                                 <label htmlFor="">Does the vehicle start and drive?</label>
                                 <div className="chooseBlock selector row selectorRow">
-                                    <div class="selecotr-item chooseItem col-6 p-0">
-                                        <input type="radio" id="radio1" name="selector" class="selector-item_radio" defaultChecked  />
-                                        <label for="radio1" class="selector-item_label flex-selector"><span>
+                                    <div className="selecotr-item chooseItem col-6 p-0">
+                                        <input type="radio" id="radio1" name="selector" className="selector-item_radio" defaultChecked  />
+                                        <label htmlFor="radio1" className="selector-item_label flex-selector"><span>
                                         <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M32.7745 19.9217H20.5887C19.9536 19.9217 19.3971 19.4969 19.2297 18.8844C19.0622 18.2718 19.3253 17.623 19.8719 17.2998C25.1813 14.1626 27.9391 10.5029 28.3029 6.11187C28.4297 4.58797 29.787 3.37072 31.3278 3.39087C32.9 3.416 34.3729 4.04618 35.4761 5.16556C36.5801 6.28597 37.1885 7.76965 37.1891 9.34315C37.1891 9.34334 37.1891 9.34353 37.1891 9.34372V9.81706C37.1891 13.6608 36.0506 16.1116 33.9499 19.2896C33.6888 19.6843 33.2475 19.9217 32.7745 19.9217Z" fill="#AEC8E3"/>
 <path d="M47.7085 21.5161C47.7085 19.0819 45.7282 17.1016 43.294 17.1016H20.5886C20.3363 17.1016 20.0886 17.1693 19.8716 17.2977C18.2777 18.2401 16.6684 19.0158 15.3753 19.6394C14.9243 19.8568 14.4983 20.0622 14.1108 20.2559C13.6335 20.4946 13.332 20.9823 13.332 21.5161V39.5497C13.332 40.0834 13.6335 40.5712 14.1108 40.8099C19.8036 43.6559 24.5357 44 30.0539 44C30.9085 44 31.7824 43.9918 32.6811 43.9833C33.675 43.974 34.7026 43.9642 35.78 43.9642H40.234C42.6681 43.9642 44.6485 41.9839 44.6485 39.5497C44.6485 38.7313 44.4247 37.9642 44.0349 37.3064C45.3032 36.5299 46.1513 35.1315 46.1513 33.5385C46.1513 32.72 45.9275 31.953 45.5377 31.2951C46.806 30.5187 47.6541 29.1202 47.6541 27.5272C47.6541 26.3823 47.216 25.3379 46.4987 24.5527C47.2798 23.7295 47.7085 22.6558 47.7085 21.5161Z" fill="#D1E0EF"/>
@@ -34,9 +34,9 @@ function StartAndDrive() {
 
                                             </span><span>Yes</span></label>
                                     </div>
-                                    <div class="selecotr-item chooseItem col-6 pr-0">
-                                        <input type="radio" id="radio2" name="selector" class="selector-item_radio" />
-                                        <label for="radio2" class="selector-item_label flex-selector">
+                                    <div className="selecotr-item chooseItem col-6 pr-0">
+                                        <input type="radio" id="radio2" name="selector" className="selector-item_radio" />
+                                        <label htmlFor="radio2" className="selector-item_label flex-selector">
                                             <span>
                                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M32.9835 28.0783H20.7977C20.1626 28.0783 19.6061 28.5031 19.4387 29.1156C19.2712 29.7282 19.5343 30.377 20.0809 30.7002C25.3903 33.8374 28.1481 37.4971 28.5119 41.8881C28.6387 43.412 29.996 44.6293 31.5368 44.6091C33.109 44.584 34.5819 43.9538 35.6851 42.8344C36.7891 41.714 37.3975 40.2303 37.3981 38.6568C37.3981 38.6567 37.3981 38.6565 37.3981 38.6563V38.1829C37.3981 34.3392 36.2596 31.8884 34.1589 28.7104C33.8978 28.3157 33.4565 28.0783 32.9835 28.0783Z" fill="#AEC8E3"/>

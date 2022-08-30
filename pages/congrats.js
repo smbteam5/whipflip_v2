@@ -3,6 +3,7 @@ import {
     useWindowSize
   } from '@react-hook/window-size'
 import Header2 from './Componants/Header2';
+import Image from 'next/image'
 function congrats() {
 const [width, height] = useWindowSize()
   console.log(width, height);
@@ -11,7 +12,13 @@ const [width, height] = useWindowSize()
         <Header2/>
         <div className="congratsView">
             <div className="congrats_head_vw congrats_head_web text-center">
-                <img src="/images/calendar.svg" alt="Calendar" title='Calendar'/>
+                    <Image 
+                        src="/images/calendar.svg" 
+                        alt="Calendar" 
+                        title='Calendar'
+                        width={50}
+                        height={50}
+                    />
                 <h1>Congratulations!</h1>
                 <p>You’re all set to sell your car!</p>
             </div>
@@ -39,12 +46,24 @@ const [width, height] = useWindowSize()
                                   <div className="ioCard ioCard_web">                                        
                                       <div className="offerProduct-mobi row offerProduct_web justify-content-end">
                                           <div className="ofp_left col-5 p-0">
-                                              <img src="/images/car1.png" alt="" />
+                                              <Image 
+                                                src="/images/car1.png" 
+                                                alt="Car" 
+                                                title='Car1'
+                                                width={270}
+                                                height={150}
+                                             />
                                           </div>
-                                          <div className="ofp_right ofp_right_web col-5">
+                                          <div className="ofp_right ofp_right_web col-6">
                                               <h2>$6,800</h2>   
-                                              <div class="jd_op_img">
-                                                  <img src="/images/jd.webp" alt="jd power" title="jd power" />
+                                              <div className="jd_op_img">
+                                                  <Image 
+                                                    src="/images/jd.webp" 
+                                                    alt="jd power" 
+                                                    title='jd power'
+                                                    width={190}
+                                                    height={22}
+                                                  />
                                               </div>  
                                               <div className="nm_detail">
                                                     <h3>2019 Ford Ranger Sedan 4D</h3>
@@ -69,7 +88,13 @@ const [width, height] = useWindowSize()
                           <div className="row np_item_row">
                               <div className="col-12 p-0">
                                   <div className="np_item_img">
-                                      <img src="/images/mail.svg" alt="mail" title='mail'/>
+                                      <Image 
+                                        src="/images/mail.svg" 
+                                        alt="mail" 
+                                        title='mail'
+                                        width={160}
+                                        height={160}
+                                      />
                                   </div>
                               </div>
                               <div className="col-12 p-0">
@@ -85,7 +110,13 @@ const [width, height] = useWindowSize()
                           <div className="row np_item_row">
                               <div className="col-12 p-0">
                                   <div className="np_item_img">
-                                      <img src="/images/sign.svg" alt="sign" title='sign' />
+                                      <Image 
+                                        src="/images/sign.svg" 
+                                        alt="sign" 
+                                        title='sign'
+                                        width={160}
+                                        height={160}
+                                      />
                                   </div>
                               </div>
                               <div className="col-12 p-0">
@@ -101,7 +132,13 @@ const [width, height] = useWindowSize()
                           <div className="row np_item_row">
                               <div className="col-12 p-0">
                                   <div className="np_item_img">
-                                      <img src="/images/key.svg" alt="key" title='key' />
+                                      <Image 
+                                        src="/images/key.svg" 
+                                        alt="key" 
+                                        title='key'
+                                        width={160}
+                                        height={160}
+                                      />
                                   </div>
                               </div>
                               <div className="col-12 p-0">
@@ -120,7 +157,13 @@ const [width, height] = useWindowSize()
                       <div className="wa_item col-3">
                           <div className="wa_iin">
                             <div className="wa_hd">
-                                <img src="/images/wa1.svg" alt="" />
+                                <Image 
+                                    src="/images/wa1.svg" 
+                                    alt="quick test drive" 
+                                    title='quick test drive'
+                                    width={128}
+                                    height={128}
+                                />
                             </div>
                             <div className="wa_dec">
                                 <p>We will match the vehicle condition you entered and conduct a quick test drive.</p>
@@ -130,7 +173,13 @@ const [width, height] = useWindowSize()
                       <div className="wa_item col-3">
                         <div className="wa_iin">
                           <div className="wa_hd">
-                              <img src="/images/wa2.svg" alt="" />
+                                <Image 
+                                    src="/images/wa2.svg" 
+                                    alt="Vehicle Purchase Agreement" 
+                                    title='Vehicle Purchase Agreement'
+                                    width={128}
+                                    height={128}
+                                />                              
                           </div>
                           <div className="wa_dec">
                               <p>We will complete all proper paperwork (i.e. Vehicle Purchase Agreement) and issue a check on the spot!</p>
@@ -140,7 +189,13 @@ const [width, height] = useWindowSize()
                       <div className="wa_item col-3">
                         <div className="wa_iin">
                           <div className="wa_hd">
-                              <img src="/images/wa3.svg" alt="" />
+                                <Image 
+                                    src="/images/wa3.svg" 
+                                    alt="SOLD " 
+                                    title='SOLD '
+                                    width={128}
+                                    height={128}
+                                />   
                           </div>
                           <div className="wa_dec">
                               <h2>That’s it! SOLD!</h2>
@@ -151,7 +206,13 @@ const [width, height] = useWindowSize()
                       <div className="wa_item col-3">
                         <div className="wa_iin">
                           <div className="wa_hd">
-                              <img src="/images/wa4.svg" alt="" />
+                            <Image 
+                                src="/images/wa4.svg" 
+                                alt="handle the pick up" 
+                                title='handle the pick up'
+                                width={128}
+                                height={128}
+                            />   
                           </div>
                           <div className="wa_dec">
                               <p>No need to worry about your car anymore. We’ll handle the pick up!</p>

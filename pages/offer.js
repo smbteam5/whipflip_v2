@@ -8,7 +8,7 @@ import Step3 from './Componants/Step3';
 import Header2 from './Componants/Header2';
 import ToLeaveModal from './Componants/ToLeaveModal';
 import OfferFactorsModal from './Componants/mobile/OfferFactorsModal';
-
+import Image from 'next/image'
 function offer() {
     const [activeTab, setActiveTab] = useState("tab1");
     const [show, setShow] = React.useState(false) 
@@ -61,35 +61,41 @@ function offer() {
                 <div className="row">
                     <div className="col-lg-4 p-0">
                         <div className="formLeftSec">
-                            <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">            
-                                <li class={activeTab === "tab1" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="1" onClick={()=>{handleTab1()}}>
-                                    <a class="mx-2" title='Initial Offer'>
-                                        <span class="form-stepper-circle">
+                            <ul className="form-stepper form-stepper-horizontal text-center mx-auto pl-0">            
+                                <li className={activeTab === "tab1" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="1" onClick={()=>{handleTab1()}}>
+                                    <a className="mx-2" title='Initial Offer'>
+                                        <span className="form-stepper-circle">
                                             <span>1</span>
                                         </span>
-                                        <div class="label">Initial Offer</div>
+                                        <div className="label">Initial Offer</div>
                                     </a>
                                 </li>
-                                <li class={activeTab === "tab2" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="2" onClick={()=>{handleTab2()}}>
-                                    <a class="mx-2" title='Confirm Offer'>
-                                        <span class="form-stepper-circle text-muted">
+                                <li className={activeTab === "tab2" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="2" onClick={()=>{handleTab2()}}>
+                                    <a className="mx-2" title='Confirm Offer'>
+                                        <span className="form-stepper-circle text-muted">
                                             <span>2</span>
                                         </span>
-                                        <div class="label text-muted">Confirm Offer</div>
+                                        <div className="label text-muted">Confirm Offer</div>
                                     </a>
                                 </li>
-                                <li class={activeTab === "tab3" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="3" onClick={()=>{handleTab3()}}>
-                                    <a class="mx-2" title='Sell Car'>
-                                        <span class="form-stepper-circle text-muted">
+                                <li className={activeTab === "tab3" ? "form-stepper-active text-center form-stepper-list": "text-center form-stepper-list form-stepper-unfinished"} step="3" onClick={()=>{handleTab3()}}>
+                                    <a className="mx-2" title='Sell Car'>
+                                        <span className="form-stepper-circle text-muted">
                                             <span>3</span>
                                         </span>
-                                        <div class="label text-muted">Sell Car</div>
+                                        <div className="label text-muted">Sell Car</div>
                                     </a>
                                 </li>
                             </ul>
                             <div className="itemForSell">
                                 <div className="itemImg">
-                                    <img src="/images/car1.png" alt="2022 Ford Ranger" title='2022 Ford Ranger'/>
+                                    <Image
+                                     src="/images/car1.png" 
+                                     alt="2022 Ford Ranger" 
+                                     title='2022 Ford Ranger'
+                                     width={350}
+                                     height={185}
+                                     />
                                 </div>
                                 <div className="itemInfo">
                                     <h2>2022 Ford Ranger</h2>
@@ -124,7 +130,13 @@ function offer() {
                                 <div className="whip_cus_info">
                                     <div className="wci_in">
                                         <div className="wci_left">
-                                            <img src="/images/bulb.svg" alt="" />
+                                            <Image
+                                                src="/images/bulb.svg" 
+                                                alt="bulb" 
+                                                title='bulb'
+                                                width={100}
+                                                height={100}
+                                            />
                                         </div>
                                         <div className="wci_right">
                                             <p><b>96% of WhipFlip customers</b> who scheduled an appointment to sell happily sold their cars to us! Ready to sell? We are ready to buy. No time wasted by either party. We stand behind our words!</p>

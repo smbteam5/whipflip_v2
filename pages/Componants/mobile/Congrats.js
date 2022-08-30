@@ -1,5 +1,6 @@
 import React from 'react'
 import Header2 from '../Header2'
+import Image from 'next/image'
 import {
     useWindowSize
   } from '@react-hook/window-size'
@@ -18,7 +19,13 @@ const [width, height] = useWindowSize()
            <div className="container">
             <div className="cv_top">
                     <div className="cv_head">
-                        <img src="/images/calendar.svg" alt="Calendar" title='Calendar'/>
+                        <Image 
+                            src="/images/calendar.svg" 
+                            alt="Calendar" 
+                            title='Calendar'
+                            width={50}
+                            height={50}
+                        />
                         <h1>Congratulations!</h1>
                         <p>You’re all set to sell your car!</p>
                     </div>
@@ -39,15 +46,28 @@ const [width, height] = useWindowSize()
                                         <h2>Your offer: $6,800</h2>     
                                         <div className="offerProduct-mobi row">
                                             <div className="ofp_left col-4 p-0">
-                                                <img src="/images/car1.png" alt="" />
+                                                <Image 
+                                                    src="/images/car1.png" 
+                                                    alt="car" 
+                                                    title='Calendar'
+                                                    layout="responsive"
+                                                    objectFit="contain"
+                                                    width="100%" height="100%" 
+                                                />
                                             </div>
-                                            <div className="ofp_right col-8">
+                                            <div className="ofp_right col-6">
                                                 <h3>2022 Ford Ranger</h3>
                                                 <span>2.3L EcoBoost® I4 engine</span>
                                             </div>
                                         </div>  
-                                        <div class="jd_op_img">
-                                            <img src="/images/jd.webp" alt="jd power" title="jd power" />
+                                        <div className="jd_op_img">
+                                            <Image 
+                                                src="/images/jd.webp" 
+                                                alt="jd power" 
+                                                title='jd power'
+                                                width={150}
+                                                height={20}
+                                            />
                                         </div>             
                                     </div>
                                 </div>
@@ -62,7 +82,13 @@ const [width, height] = useWindowSize()
                         <div className="row align-items-center">
                             <div className="col-4">
                                 <div className="np_item_img">
-                                    <img src="/images/mail.svg" alt="mail" title='mail'/>
+                                    <Image 
+                                        src="/images/mail.svg" 
+                                        alt="mail" 
+                                        title='mail'
+                                        width={140}
+                                        height={140}
+                                    />
                                 </div>
                             </div>
                             <div className="col-8">
@@ -77,7 +103,13 @@ const [width, height] = useWindowSize()
                         <div className="row align-items-center">
                             <div className="col-4">
                                 <div className="np_item_img">
-                                    <img src="/images/sign.svg" alt="sign" title='sign' />
+                                    <Image 
+                                        src="/images/sign.svg" 
+                                        alt="sign" 
+                                        title='sign'
+                                        width={140}
+                                        height={140}
+                                    />
                                 </div>
                             </div>
                             <div className="col-8">
@@ -92,7 +124,13 @@ const [width, height] = useWindowSize()
                         <div className="row align-items-center">
                             <div className="col-4">
                                 <div className="np_item_img">
-                                    <img src="/images/key.svg" alt="key" title='key' />
+                                    <Image 
+                                        src="/images/key.svg" 
+                                        alt="key" 
+                                        title='key'
+                                        width={140}
+                                        height={140}
+                                    />
                                 </div>
                             </div>
                             <div className="col-8">
@@ -109,7 +147,13 @@ const [width, height] = useWindowSize()
                 <div className="we_arrive_list">
                     <div className="wa_item">
                         <div className="wa_hd">
-                            <img src="/images/wa1.svg" alt="" />
+                            <Image 
+                                src="/images/wa1.svg" 
+                                alt="mail" 
+                                title='mail'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                         <div className="wa_dec">
                             <p>We will match the vehicle condition you entered and conduct a quick test drive.</p>
@@ -117,7 +161,13 @@ const [width, height] = useWindowSize()
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
-                            <img src="/images/wa2.svg" alt="" />
+                            <Image 
+                                src="/images/wa2.svg" 
+                                alt="mail" 
+                                title='mail'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                         <div className="wa_dec">
                             <p>We will complete all proper paperwork (i.e. Vehicle Purchase Agreement) and issue a check on the spot!</p>
@@ -125,7 +175,13 @@ const [width, height] = useWindowSize()
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
-                            <img src="/images/wa3.svg" alt="" />
+                            <Image 
+                                src="/images/wa3.svg" 
+                                alt="mail" 
+                                title='mail'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                         <div className="wa_dec">
                             <h2>That’s it! SOLD!</h2>
@@ -134,7 +190,13 @@ const [width, height] = useWindowSize()
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
-                            <img src="/images/wa4.svg" alt="" />
+                            <Image 
+                                src="/images/wa4.svg" 
+                                alt="mail" 
+                                title='mail'
+                                width={160}
+                                height={160}
+                            />
                         </div>
                         <div className="wa_dec">
                             <p>No need to worry about your car anymore. We’ll handle the pick up!</p>
