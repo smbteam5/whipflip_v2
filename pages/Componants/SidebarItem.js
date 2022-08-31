@@ -13,7 +13,7 @@ export default function SidebarItem({item}){
                     <i className="bi-chevron-down toggle-btn"></i>
                 </div>
                 <div className="sidebar-content">
-                    { item.childs.map((child, index) => <div><SidebarItem key={index} item={child} /></div>) }
+                    { item.childs.map((child, index) => <div key={index}><SidebarItem  item={child} /></div>) }
                 </div>
             </div>
         )
