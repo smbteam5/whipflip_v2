@@ -22,8 +22,7 @@ function ColorSelect() {
     const dropdownListClick = (e) => {
       console.log("filteredList",dropdownList[e].name);
       setdropdown([dropdownList[e]])
-    };
-    
+    };    
     useEffect(() => {
       console.log("dropdown",dropdown);
       if (dropdown === undefined || dropdown.length == 0) {
@@ -34,7 +33,7 @@ function ColorSelect() {
         console.log('array is NOT empty');
       }
     }, [dropdown])
-
+    
   return (
     <>
         <Dropdown className="color_picker">

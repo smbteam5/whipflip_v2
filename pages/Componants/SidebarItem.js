@@ -1,9 +1,9 @@
 import { useState } from "react"
 
 export default function SidebarItem({item}){
-    //console.log("item",item.childrens)
+    console.log("item children",item)
     const [open, setOpen] = useState(false)    
-    if(item.childrens){
+    if(item.childs){
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"}>
                 <div className="sidebar-title" onClick={() => setOpen(!open)}>
@@ -13,7 +13,7 @@ export default function SidebarItem({item}){
                     <i className="bi-chevron-down toggle-btn"></i>
                 </div>
                 <div className="sidebar-content">
-                    { item.childrens.map((child, index) => <SidebarItem key={index} item={child} />) }
+                    { item.childs.map((child, index) => <SidebarItem key={index} item={child} />) }
                 </div>
             </div>
         )
