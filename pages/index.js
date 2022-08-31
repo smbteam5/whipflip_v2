@@ -5,6 +5,7 @@ import Footer from './Componants/Footer'
 import HappyCustomersSlider from './Componants/HappyCustomersSlider'
 import Header from './Componants/Header'
 import Image from 'next/image'
+import Link from 'next/link'
 function index() {
   const[showConfirmOffer,setShowConfirmOffer] = useState(false)
   const handleShowConfirmOffer =(e)=>{
@@ -321,13 +322,23 @@ function index() {
                           </div>
                         </div>
                         <div className="cob_foo">
-                          <a href="/offer" className='confirm_offer_btn'>
+                          
+                          {/* <Link href="/offer" className='confirm_offer_btn'>
                             <span>Confirm My Offer</span> 
                             <span>
                               <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M8.5 16L7.075 14.6L12.675 9H0.5V7H12.675L7.075 1.4L8.5 0L16.5 8L8.5 16Z" fill="#353442"/></svg>
                             </span>
-                          </a>
+                          </Link> */}
+                          <Link href="/offer" >
+                            <span className="confirm_offer_btn" >
+                              <span>Confirm My Offer</span> 
+                              <span>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 16L7.075 14.6L12.675 9H0.5V7H12.675L7.075 1.4L8.5 0L16.5 8L8.5 16Z" fill="#353442"/></svg>
+                              </span>
+                            </span>
+                          </Link>
                           <button className='start_btn' onClick={handleCloseConfirmOffer}>
                             <span>Start Over</span> 
                           </button>
