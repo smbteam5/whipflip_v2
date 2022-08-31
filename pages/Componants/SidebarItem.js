@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function SidebarItem({item}){
     console.log("item children",item)
     const [open, setOpen] = useState(false)    
-    if(item.childs){
+    if(item?.childs){
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"}>
                 <div className="sidebar-title" onClick={() => setOpen(!open)}>
@@ -21,7 +21,7 @@ export default function SidebarItem({item}){
     else
     {
         return (
-            <a href={item.path || "#"} className="sidebar-item plain">
+            <a href={item?.path || "#"} className="sidebar-item plain">
                 {item.title}
             </a>
         )
