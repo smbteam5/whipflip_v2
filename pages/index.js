@@ -321,13 +321,13 @@ function index() {
                           </div>
                         </div>
                         <div className="cob_foo">
-                          <button className='confirm_offer_btn'>
+                          <a href="/offer" className='confirm_offer_btn'>
                             <span>Confirm My Offer</span> 
                             <span>
                               <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M8.5 16L7.075 14.6L12.675 9H0.5V7H12.675L7.075 1.4L8.5 0L16.5 8L8.5 16Z" fill="#353442"/></svg>
                             </span>
-                          </button>
+                          </a>
                           <button className='start_btn' onClick={handleCloseConfirmOffer}>
                             <span>Start Over</span> 
                           </button>

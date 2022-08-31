@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function SidebarItem({item}){
-    console.log("item children",item)
+    //console.log("item children",item)
     const [open, setOpen] = useState(false)    
     if(item?.childs){
         return (
