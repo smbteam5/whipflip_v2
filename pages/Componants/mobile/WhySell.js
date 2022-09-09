@@ -153,8 +153,8 @@ function WhySell() {
                         />
                     </div>
                     <div className="wsp_right">
-                      <h2>Ultimate Convenience!</h2>
-                      <p>We come to you to pay and pick up...on your time! No more wasted time or stress messing with scammers, tire-kickers, or dealers!</p>
+                      <h2>Best Offer!</h2>
+                      <p>Our offers typically are <b>$762 higher </b> than trade-in and beat most car buying companies. We’re trusted by the best in the industry, JD Power!</p>
                     </div>
                   </div>
                 </div>
@@ -170,8 +170,9 @@ function WhySell() {
                         />
                     </div>
                     <div className="wsp_right">
-                      <h2>Ultimate Convenience!</h2>
-                      <p>We come to you to pay and pick up...on your time! No more wasted time or stress messing with scammers, tire-kickers, or dealers!</p>
+                      <h2>Safe and Smooth!</h2>
+                      <p>Guaranteed payment on the spot with all proper paperwork completed in only a few minutes!
+Payment is a company check from Wells Fargo, guaranteed to clear.</p>
                     </div>
                   </div>
                 </div>

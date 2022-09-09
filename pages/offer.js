@@ -99,7 +99,7 @@ function offer() {
                                 </div>
                                 <div className="itemInfo">
                                     <h2>2022 Ford Ranger</h2>
-                                    <span>FWD, 4-Cyl, Standard, 2.0 Liter 10,000 miles</span>
+                                    <span>FWD, 4-Cyl, Standard, 2.0 Liter <span className='miles'>10,000 miles</span></span>
                                     <a href="#" title='Not a car'>Not your car?</a>
                                 </div>
                                 <div className="offer_factors">

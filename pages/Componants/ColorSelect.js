@@ -2,8 +2,8 @@ import React, { useState,useEffect } from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 function ColorSelect() {
     const dropdownList = [
-        {id: 0, name: 'black', code: '#000'},
-        {id: 1, name: 'white', code: '#fff'},
+        {id: 0, name: 'Black', code: '#000'},
+        {id: 1, name: 'White', code: '#fff'},
         {id: 2, name: 'Silver', code: '#D5D5DC'},
         {id: 3, name: 'Grey', code: '#7B7B7B'},
         {id: 4, name: 'Blue', code: '#356799'},
@@ -16,7 +16,7 @@ function ColorSelect() {
         {id: 11, name: 'Beige', code: '#E1C699'},
         {id: 12, name: 'Orange', code: '#F99147'},
         {id: 13, name: 'Purple', code: '#800080'},
-        {id: 14, name: 'Other', code: '#000'},
+        {id: 14, name: 'Other', path: '/images/grad.png'},
     ];
     const [dropdown, setdropdown] = useState([]);
     const dropdownListClick = (e) => {
@@ -41,7 +41,7 @@ function ColorSelect() {
             <span>{JSON.stringify(dropdown.name)}</span>          
             {dropdown.map(item => {
               return <>
-                  {item.name.length < 0 ? <span>Choose Color</span> : <span>{(item.name)}</span> }
+                  {item.name.length < 0 ? <span>Choose a Color</span> : <span>{(item.name)}</span> }
               </>
             })}
             </Dropdown.Toggle>
@@ -52,7 +52,14 @@ function ColorSelect() {
                    <Dropdown.Item className="color_item" href="#/action-1" onClick={() => dropdownListClick(i)}
                      key={value.id} id={value.id}>
                         <div className="dropItemSpn">
-                            <span style={{backgroundColor: value.code}} className={value.name === "white" ? "border_for_white color_dot":"color_dot"}></span>
+                            {
+                              value?.code &&
+                              <span style={{backgroundColor: value.code}} className={value.name === "White" ? "border_for_white color_dot":"color_dot"}></span>
+                            }
+                            {
+                             value?.path &&
+                             <img src={value.path} alt="" className="otherClr"/>
+                            }
                         </div>
                         <span>{value.name}</span>
                      </Dropdown.Item>

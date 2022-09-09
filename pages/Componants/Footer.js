@@ -18,31 +18,31 @@ function Footer() {
                     </div>
                     <div className="col-lg-3 col-6 fooCol">
                         <div className="fooColIn">
-                            <h2>About Whipflip</h2>
+                            <h2>How it works</h2>
                             <ul>
-                            <li>About Us</li>
-                            <li>Customer Reviews</li>
-                            <li>Careers</li>
+                            <li>Why Sell to Us?</li>
+                            <li>Private Sale or Trading In?</li>
+                            <li>Referrals</li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-3 col-6 fooCol">
                         <div className="fooColIn">
-                            <h2>About Whipflip</h2>
+                            <h2>Support</h2>
                             <ul>
-                            <li>About Us</li>
-                            <li>Customer Reviews</li>
-                            <li>Careers</li>
+                            <li>FAQ</li>
+                            <li>Blog</li>
+                            <li>Chat</li>
+                            <li>Contact Us</li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-3 col-6 fooCol">
                         <div className="fooColIn">
-                            <h2>About Whipflip</h2>
+                            <h2>Legal</h2>
                             <ul>
-                            <li>About Us</li>
-                            <li>Customer Reviews</li>
-                            <li>Careers</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
                             </ul>
                         </div>
                         <div className="fooColIn">

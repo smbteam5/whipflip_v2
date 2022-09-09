@@ -60,6 +60,12 @@ span{
             @include responsive(tab-port){
                 font-size: 44px;
             }
+            @include responsive(phone){
+                font-size: 38px;
+            }
+            @include responsive(Exsmall330){
+                font-size: 36px;
+            }
             & > span{
                 display: block;
             }
@@ -292,6 +298,7 @@ span{
     background-position: right 1rem center;
     background-size: 1em;
 }
+
 .form_top{
     padding: 0 1.25rem;
     padding-top: 1.25rem;
@@ -304,11 +311,17 @@ span{
     .form_head{
         margin-top: 15px;
         h2{
-            font-weight: 500;
+            font-weight: 700;
             font-size: 26px;
             margin-bottom: 5px;
             @include responsive(tab-port){
                 font-size: 22px;
+            }
+            @include responsive(phone){
+                font-size: 18px;
+            }
+            @include responsive(Exsmall330){
+                font-size: 16px;
             }
         }
         p{
@@ -318,6 +331,12 @@ span{
             color: #676767;
             @include responsive(tab-port){
                 font-size: 22px;
+            }
+            @include responsive(phone){
+                font-size: 16px;
+            }
+            @include responsive(Exsmall330){
+                font-size: 14px;
             }
         }
     }
@@ -386,6 +405,9 @@ span{
     }
 }
 .secHd{
+    @include responsive(tab-port){
+       padding: 10px;
+    }
     & > span{
         font-style: normal;
         font-weight: 400;
@@ -407,6 +429,10 @@ span{
             font-style: normal;
             font-weight: $font-bold;
             font-size: 46px;
+        }
+        @include responsive(phone){
+            font-size: 34px;
+            line-height: 48px;
         }
         span{
             display: inline-block;
@@ -745,6 +771,7 @@ span{
     }
     .relHd{
         color: #FFFFFF;
+        text-align: center;
         h2{
             font-style: normal;
             font-weight: $font-bold;
@@ -757,6 +784,12 @@ span{
                 font-weight: $font-bold;
                 font-size: 44px;
                 line-height: 52px;
+            }
+            @include responsive(phone){
+                font-size: 38px;
+            }
+            @include responsive(Exsmall330){
+                font-size: 36px;
             }
         }
         p{
@@ -818,6 +851,10 @@ span{
                     font-size: 28px;
                     line-height: 40px;
                 }
+                @include responsive(phone){
+                    font-size: 22px;
+                    line-height: 30px;
+                }
             }
             p{
                 font-style: normal;
@@ -825,6 +862,9 @@ span{
                 font-size: 20px;
                 mix-blend-mode: normal;
                 color: #4A4958;
+                @include responsive(phone){
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -860,10 +900,15 @@ span{
                 p{
                     font-weight: 400;
                     font-size: 14px;
+                    color: #8D8C9D;
                 }
             }
         }
     }
+}
+h2.happy_cus_mob{
+    font-size: 28px;
+    line-height: 42px;
 }
 .footer{
     padding: 80px 0 60px;
@@ -893,6 +938,9 @@ span{
                     line-height: 24px;
                     color: #201F2D;
                     mix-blend-mode: normal;
+                    @include responsive(phone){
+                        line-height: 34px;
+                    }
                 }
                 &.ss-icons{
                     display: flex;
@@ -996,7 +1044,9 @@ ul.form-stepper {
     margin-bottom: 3rem;
     position: relative;
     top:0;
+    @include responsive(tab-port-min){        
     top: 30px;
+    }
     &.hasBorder{
         @include responsive(tab-port){
             border-bottom: 1px solid #D5D5DC;
@@ -1005,7 +1055,7 @@ ul.form-stepper {
         }
     }
     @include responsive(tab-port){
-        padding-top: 50px;
+        padding-top: 80px;
         margin-bottom: 0;
     }
 }
@@ -1019,6 +1069,9 @@ ul.form-stepper {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include responsive(phone){
+        flex-direction: column;
+    }
     span{
         display: flex;
         padding: 0 5px;
@@ -1153,9 +1206,25 @@ ul.form-stepper li a .form-stepper-circle {
 }
 .selectorRow{
     margin: 0;
+    @include responsive(phone){
+        margin-top: 15px;
+    }
 }
 .rowSell{
     gap: 10px;
+}
+.transname{
+    span{
+        display: block;
+    }
+}
+.underline{
+    text-decoration: underline;
+}
+.otherClr{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
 }
 .offer_block{
     border-bottom: 1px solid #D5D5DC;
@@ -1175,10 +1244,14 @@ ul.form-stepper li a .form-stepper-circle {
             content: "";
             background-color: #FFC000;
             position: absolute;
-            bottom: -4px;
+            bottom: -7px;
             left: 0;
             width: 100px;
-            height: 2px;
+            height: 5px;
+            @include responsive(tab-port){
+                bottom: -6px;
+                height: 5px;
+            }
         }  
         @include responsive(tab-port){
             font-size: 22px;
@@ -1364,6 +1437,7 @@ ul.form-stepper li a .form-stepper-circle {
     gap: 6px;
     span{
         display: flex;
+        font-size: 14px;
     }
 }
 .chooseIssues ul.ks-cboxtags li label{
@@ -3618,6 +3692,16 @@ label.labelflexCenter.tclabel.tclabelMobi{
 canvas{
     position: fixed !important;
     width: 100%;
+    height: 100%;
+}
+.wa_dec{
+    h3{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #605F6E;
+    }
 }
 @keyframes truckmove {
 	0% {
@@ -4016,7 +4100,8 @@ canvas{
         line-height: 28px;
         color: #262626;
         position: relative;
-        display: inline-block;
+        display: inline-block;        
+        z-index: 1;
         &::before{
             content: "";
             background: url(/images/line.svg);
@@ -4027,7 +4112,8 @@ canvas{
             background-repeat: no-repeat;
             left: 0;
             background-position: left bottom;
-            bottom: -10px;
+            bottom: -7px;
+            z-index: -1;
         }
     }
     .dayLocation{
@@ -4138,6 +4224,13 @@ img.truckIdx{
 }
 .cf_btn_web.cf_btn button.returnHomeBtn{
     width: auto;
+    position: relative;
+    transition: all .5s;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+        transition: all .5s;
+    }
 }
 .appDetail_web{
     padding: 40px;
@@ -4159,11 +4252,31 @@ img.truckIdx{
 .wa_iin{
     height: 100%;
 }
+.sell_day{
+    margin-bottom: 20px;
+}
+.frmfldItem.suffFld{
+    flex: 0 0 20% !important;
+}
+span.opicon{
+    padding-right: 5px;
+    height: 20px;
+    object-fit: contain;
+}
+.np_item_dec{
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605F6E;
+    }
+}
 .next_process_web{
     padding-top: 50px;
     & > h2{
         font-style: normal;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -4212,7 +4325,7 @@ img.truckIdx{
 .what_happened_we_arrive_web{
     & > h2{
         font-style: normal;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -4304,6 +4417,9 @@ img.truckIdx{
             font-weight: 400;
             line-height: 22px;
             color: #353442;
+            @include responsive(tab-port){
+                font-size: 14px;
+            }
         }
     }
 }
@@ -4316,6 +4432,9 @@ img.truckIdx{
         .nl_item_right{
             p{
                 margin-bottom: 0;
+                @include responsive(tab-port){
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -4324,6 +4443,30 @@ img.truckIdx{
     .fyv_img {
         text-align: center;
         margin-bottom: 20px;
+    }
+    .fyv_text{
+        p{
+            @include responsive(tab-port){
+                font-size: 14px;
+            }
+        }
+    }
+}
+.whencarsell{
+    font-weight: 500;
+}
+.emailWithInfo{
+    display: flex !important;
+    align-items: center;
+    gap: 3px;
+}
+.mobHlp{
+    display: flex;
+    gap: 3px;
+    margin-top: 6px;
+    span{
+        font-size: 12px;
+        color: #8D8C9D;
     }
 }
 .portrait_body{
@@ -4573,4 +4716,34 @@ img.truckIdx{
 }
 .show > .btn-primary.dropdown-toggle{
     color: #8D8C9D;
+}
+h2.hooray_hd{
+    @include responsive(phone){
+        font-size: 34px;
+    }
+    .hooray_hd_span{
+        @include responsive(phone){
+            span{
+                display: block;
+            }
+        }        
+    }
+}
+.miles{
+    display: block;
+}
+.stepper_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .step_item{
+        .step_item_text{
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
 }

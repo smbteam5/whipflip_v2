@@ -46,7 +46,7 @@ function Transmission() {
                                                     height={50}
                                                 />
                                             </span>
-                                            <span>Manual (i.e. Stick Shift)</span>
+                                            <span className='transname'>Manual <span>(i.e. Stick Shift)</span></span>
                                         </label>
                                     </div>
                                 </div>

@@ -133,7 +133,7 @@ Yes
 
                                     </span>
                                     <span>
-                                        Yes
+                                    ASAP!
                                     </span>
                                         </label>
                                     </div>
@@ -147,7 +147,7 @@ Yes
                                         </svg>
 
                                             </span>
-                                            <span>No</span>
+                                            <span>In a Few Weeks</span>
                                         </label>
                                     </div>
                                     <div className="sellItemChoose">

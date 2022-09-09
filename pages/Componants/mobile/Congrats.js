@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Header2 from '../Header2'
 import Image from 'next/image'
 import {
@@ -6,14 +6,18 @@ import {
   } from '@react-hook/window-size'
 import Confetti from 'react-confetti'
 function Congrats() {
-const [width, height] = useWindowSize()
-  console.log(width, height);
+const [LOADED, setLoaded] = useState(false)
+
+	const { width, height } = useWindowSize()
+
+	useEffect(() => {
+		setLoaded(true)
+	}, [])
   return (    
     <div>
-        <Confetti
-            width={width}
-            height={height}
-        />
+        {
+            LOADED && <Confetti width={width} height={height} />
+        }
         <Header2/>        
         <div className="congratsView">
            <div className="container">
@@ -43,6 +47,15 @@ const [width, height] = useWindowSize()
                             <div className="mobConfirmOff">
                                 <div className="confOffBody">
                                     <div className="ioCard">
+                                    <div className="jd_op_img">
+                                            <Image 
+                                                src="/images/jd.webp" 
+                                                alt="jd power" 
+                                                title='jd power'
+                                                width={200}
+                                                height={25}
+                                            />
+                                        </div> 
                                         <h2>Your offer: $6,800</h2>     
                                         <div className="offerProduct-mobi row">
                                             <div className="ofp_left col-4 p-0">
@@ -55,20 +68,11 @@ const [width, height] = useWindowSize()
                                                     width="100%" height="100%" 
                                                 />
                                             </div>
-                                            <div className="ofp_right col-6">
+                                            <div className="ofp_right col-8 text-left">
                                                 <h3>2022 Ford Ranger</h3>
                                                 <span>2.3L EcoBoost® I4 engine</span>
                                             </div>
-                                        </div>  
-                                        <div className="jd_op_img">
-                                            <Image 
-                                                src="/images/jd.webp" 
-                                                alt="jd power" 
-                                                title='jd power'
-                                                width={150}
-                                                height={20}
-                                            />
-                                        </div>             
+                                        </div>                                                      
                                     </div>
                                 </div>
                             </div>
@@ -93,6 +97,7 @@ const [width, height] = useWindowSize()
                             </div>
                             <div className="col-8">
                                 <div className="np_item_dec">
+                                    <h2>Respond To Confirmation</h2>
                                     <p>We will contact you to confirm your appointment.  Please respond to lock in your day/time to sell.  If we haven’t heard from you, we reserve the right to cancel and rescind the offer.</p>
                                 </div>
                             </div>
@@ -114,6 +119,7 @@ const [width, height] = useWindowSize()
                             </div>
                             <div className="col-8">
                                 <div className="np_item_dec">
+                                    <h2>Make Sure Everyone’s There! </h2>
                                     <p>We will contact you to confirm your appointment.  Please respond to lock in your day/time to sell.  If we haven’t heard from you, we reserve the right to cancel and rescind the offer.</p>
                                 </div>
                             </div>
@@ -135,6 +141,7 @@ const [width, height] = useWindowSize()
                             </div>
                             <div className="col-8">
                                 <div className="np_item_dec">
+                                    <h2>Have Everything on Hand</h2>
                                     <p>We will contact you to confirm your appointment.  Please respond to lock in your day/time to sell.  If we haven’t heard from you, we reserve the right to cancel and rescind the offer.</p>
                                 </div>
                             </div>
@@ -148,7 +155,7 @@ const [width, height] = useWindowSize()
                     <div className="wa_item">
                         <div className="wa_hd">
                             <Image 
-                                src="/images/wa1.svg" 
+                                src="/images/ar1.svg" 
                                 alt="mail" 
                                 title='mail'
                                 width={160}
@@ -156,13 +163,14 @@ const [width, height] = useWindowSize()
                             />
                         </div>
                         <div className="wa_dec">
+                            <h2>Condition Verification</h2>
                             <p>We will match the vehicle condition you entered and conduct a quick test drive.</p>
                         </div>
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
                             <Image 
-                                src="/images/wa2.svg" 
+                                src="/images/ar2.svg" 
                                 alt="mail" 
                                 title='mail'
                                 width={160}
@@ -170,13 +178,14 @@ const [width, height] = useWindowSize()
                             />
                         </div>
                         <div className="wa_dec">
+                            <h2>Paperwork & Payment</h2>
                             <p>We will complete all proper paperwork (i.e. Vehicle Purchase Agreement) and issue a check on the spot!</p>
                         </div>
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
                             <Image 
-                                src="/images/wa3.svg" 
+                                src="/images/ar3.svg" 
                                 alt="mail" 
                                 title='mail'
                                 width={160}
@@ -184,14 +193,14 @@ const [width, height] = useWindowSize()
                             />
                         </div>
                         <div className="wa_dec">
-                            <h2>That’s it! SOLD!</h2>
+                            <h2>SOLD!</h2>
                             <p>In less than a few minutes of your time!</p>
                         </div>
                     </div>
                     <div className="wa_item">
                         <div className="wa_hd">
                             <Image 
-                                src="/images/wa4.svg" 
+                                src="/images/ar4.svg" 
                                 alt="mail" 
                                 title='mail'
                                 width={160}
@@ -199,6 +208,7 @@ const [width, height] = useWindowSize()
                             />
                         </div>
                         <div className="wa_dec">
+                            <h2>Picked Up</h2>
                             <p>No need to worry about your car anymore. We’ll handle the pick up!</p>
                         </div>
                     </div>

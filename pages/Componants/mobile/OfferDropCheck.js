@@ -7,10 +7,18 @@ import StepBar from './StepBar';
 
 function OfferDropCheck() {
     const [show, setShow] = React.useState(false)   
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState(null);
     const [status2, setStatus2] = useState(1);
     const [condition, setCondition] = useState(2);
     const [warning, setWarning] = useState(1);
+    const handleOnBlur = ({ target: { value } }) => {
+        const date = new Date(value);
+        if (isValid(date)) {
+          console.log("date: %s", format(date, "dd/MM/yyyy"));
+        } else {
+          console.log("value: %s", date);
+        }
+      };
     const radioHandler2 = (status) => {
         setStatus2(status);
     };
@@ -77,7 +85,12 @@ function OfferDropCheck() {
                                 <div className="frmfldItem">
                                     <label htmlFor="">When would you like to sell?</label>
                                     <div className="calPicker">
-                                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                                        <DatePicker 
+                                            selected={startDate} 
+                                            onChange={(date) => setStartDate(date)} 
+                                            placeholderText="mm/dd/yyyy"
+                                            onBlur={handleOnBlur}
+                                        />
                                         <span className="calendarIcon">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.16667 18.3307C3.70833 18.3307 3.31583 18.1677 2.98917 17.8416C2.66306 17.5149 2.5 17.1224 2.5 16.6641V4.9974C2.5 4.53906 2.66306 4.14684 2.98917 3.82073C3.31583 3.49406 3.70833 3.33073 4.16667 3.33073H5V1.66406H6.66667V3.33073H13.3333V1.66406H15V3.33073H15.8333C16.2917 3.33073 16.6842 3.49406 17.0108 3.82073C17.3369 4.14684 17.5 4.53906 17.5 4.9974V16.6641C17.5 17.1224 17.3369 17.5149 17.0108 17.8416C16.6842 18.1677 16.2917 18.3307 15.8333 18.3307H4.16667ZM4.16667 16.6641H15.8333V8.33073H4.16667V16.6641ZM4.16667 6.66406H15.8333V4.9974H4.16667V6.66406ZM4.16667 6.66406V4.9974V6.66406Z" fill="#353442"/>
@@ -130,13 +143,12 @@ function OfferDropCheck() {
                                                 <div className="checkIssues">
                                                     <div className="chooseIssues">
                                                         <div className="form-fld-grp">
-                                                            <label className="frmfl_label">Owner</label>  
                                                             <div className="form-row frmRow">
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='First name'/>
+                                                                    <input type="text" placeholder='Owner First name'/>
                                                                 </div> 
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='Last name'/>
+                                                                    <input type="text" placeholder='Owner Last name'/>
                                                                 </div> 
                                                                 <div className="frmfldItem">
                                                                     <select className="form-control" id="user_time_zone" size="0">
@@ -153,14 +165,14 @@ function OfferDropCheck() {
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='Enter Here'/>
+                                                                    <input type="text" placeholder='Confirm Email'/>
                                                                 </div>                                                       
                                                             </div>
                                                         </div> 
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='Enter Here'/>
+                                                                    <input type="text" placeholder='Confirm Phone #'/>
                                                                 </div>                                                       
                                                             </div>
                                                         </div> 
@@ -174,7 +186,6 @@ function OfferDropCheck() {
                                                 <div className="checkIssues">
                                                     <div className="chooseIssues">
                                                         <div className="form-fld-grp">
-                                                            <label className="frmfl_label">Owner</label>  
                                                             <div className="form-row frmRow">
                                                                 <div className="frmfldItem">
                                                                     <input type="text" placeholder='Owner First Name'/>

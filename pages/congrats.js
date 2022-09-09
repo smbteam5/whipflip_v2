@@ -20,7 +20,7 @@ const [width, height] = useWindowSize()
                         height={50}
                     />
                 <h1>Congratulations!</h1>
-                <p>You’re all set to sell your car!</p>
+                <p>We're coming to buy your car!</p>
             </div>
            <div className="cv_top_view">           
            <div className="container">
@@ -55,8 +55,7 @@ const [width, height] = useWindowSize()
                                              />
                                           </div>
                                           <div className="ofp_right ofp_right_web col-6">
-                                              <h2>$6,800</h2>   
-                                              <div className="jd_op_img">
+                                                <div className="jd_op_img">
                                                   <Image 
                                                     src="/images/jd.webp" 
                                                     alt="jd power" 
@@ -64,7 +63,8 @@ const [width, height] = useWindowSize()
                                                     width={190}
                                                     height={22}
                                                   />
-                                              </div>  
+                                               </div>  
+                                              <h2>$6,800</h2>                                                 
                                               <div className="nm_detail">
                                                     <h3>2019 Ford Ranger Sedan 4D</h3>
                                                     <div className="vehicle_info">
@@ -158,7 +158,7 @@ const [width, height] = useWindowSize()
                           <div className="wa_iin">
                             <div className="wa_hd">
                                 <Image 
-                                    src="/images/wa1.svg" 
+                                    src="/images/ar1.svg" 
                                     alt="quick test drive" 
                                     title='quick test drive'
                                     width={128}
@@ -166,6 +166,7 @@ const [width, height] = useWindowSize()
                                 />
                             </div>
                             <div className="wa_dec">
+                                <h3>Condition Verification</h3>
                                 <p>We will match the vehicle condition you entered and conduct a quick test drive.</p>
                             </div>
                           </div>
@@ -174,7 +175,7 @@ const [width, height] = useWindowSize()
                         <div className="wa_iin">
                           <div className="wa_hd">
                                 <Image 
-                                    src="/images/wa2.svg" 
+                                    src="/images/ar2.svg" 
                                     alt="Vehicle Purchase Agreement" 
                                     title='Vehicle Purchase Agreement'
                                     width={128}
@@ -182,6 +183,7 @@ const [width, height] = useWindowSize()
                                 />                              
                           </div>
                           <div className="wa_dec">
+                            <h3>Paperwork & Payment</h3>
                               <p>We will complete all proper paperwork (i.e. Vehicle Purchase Agreement) and issue a check on the spot!</p>
                           </div>
                         </div>
@@ -190,7 +192,7 @@ const [width, height] = useWindowSize()
                         <div className="wa_iin">
                           <div className="wa_hd">
                                 <Image 
-                                    src="/images/wa3.svg" 
+                                    src="/images/ar3.svg" 
                                     alt="SOLD " 
                                     title='SOLD '
                                     width={128}
@@ -198,7 +200,7 @@ const [width, height] = useWindowSize()
                                 />   
                           </div>
                           <div className="wa_dec">
-                              <h2>That’s it! SOLD!</h2>
+                              <h3>SOLD!</h3>
                               <p>In less than a few minutes of your time!</p>
                           </div>
                         </div>
@@ -207,7 +209,7 @@ const [width, height] = useWindowSize()
                         <div className="wa_iin">
                           <div className="wa_hd">
                             <Image 
-                                src="/images/wa4.svg" 
+                                src="/images/ar4.svg" 
                                 alt="handle the pick up" 
                                 title='handle the pick up'
                                 width={128}
@@ -215,7 +217,8 @@ const [width, height] = useWindowSize()
                             />   
                           </div>
                           <div className="wa_dec">
-                              <p>No need to worry about your car anymore. We’ll handle the pick up!</p>
+                            <h3>Picked Up</h3>
+                              <p>No need to worry about your car anymore. We’ll handle pick up and you do not need to be there!</p>
                           </div>
                         </div>
                       </div>
@@ -230,9 +233,7 @@ const [width, height] = useWindowSize()
                   <div className="cf_head">
                       <h2>Any other questions?</h2>
                       <p>
-                          <span>Check out our <a href="#"> FAQ,</a> email us at </span>
-                          <span><a href="#">support@whipflip.com</a> or contact us at </span>
-                          <span>(888) 349-3189.</span>
+                          <span>Check out our <a href="#"> FAQ,</a> email us at <a href="#">support@whipflip.com</a> or contact us at  (888) 349-3189.</span>
                       </p>
                   </div>
                   <div className="our_disclaimer">

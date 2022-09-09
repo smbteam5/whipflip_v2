@@ -434,11 +434,11 @@ function index() {
           <div className="secHd text-center">
             <span>How It Works</span>
             <h2 className='desk-show'>
-              <span>Hooray!  Selling Your Car is Now </span>
+              <span>Hooray!  Selling Your Car Is Now </span>
               <span className="text-highlight long_line">100% HASSLE-FREE!</span>
             </h2>
-            <h2 className='mob-show'>
-              <span><span>Hooray! </span> <span>Selling Your Car</span> is Now 100%</span>
+            <h2 className='mob-show hooray_hd'>
+              <span className='hooray_hd_span'><span>Hooray! </span> <span>Selling Your Car</span> <span>Is Now 100%</span></span>
               <span className="text-highlight long_line"> HASSLE-FREE!</span>
             </h2>
           </div>
@@ -638,23 +638,27 @@ function index() {
                   height={145}
                 />
             </div>
-            <span className='gtagLine'>WhipFlip has earned 4.9 stars in <span>
-            <Image 
+            <span className='gtagLine'>
+              WhipFlip has earned 4.9 stars in 
+              <span>
+                <Image
                   src="/images/google.svg" 
                   alt="Goole" 
                   title='Goole'
                   width={70}
                   height={30}
-                />            
-            </span> certified reviews</span>
+                />     
+                <span> certified reviews</span>
+              </span>    
+            </span>               
+            
             <h2 className='desk-show'>
               <span>Thousands of </span>
               <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS</span>
             </h2>
-            <h2 className='mob-show'>
+            <h2 className='mob-show happy_cus_mob'>
               <span>Thousands of </span>
-              <span className="text-highlight long_line happy_customer"> HAPPY</span>
-              <span className="text-highlight long_line happy_customer">CUSTOMERS</span>
+              <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS! </span>
             </h2>
           </div>
           <HappyCustomersSlider/>
@@ -693,7 +697,7 @@ function index() {
               <div className="relHd">
                 <h2>Ready to Sell?</h2>
                 <p>We are ready to buy now, at your door, and on your time!</p>
-                <button className='sell_car_btn'>Sell Your Car Now!</button>
+                <button className='sell_car_btn'>GET INSTANT OFFER</button>
               </div>              
             </div>
             <div className="col-lg-5 align-self-end">

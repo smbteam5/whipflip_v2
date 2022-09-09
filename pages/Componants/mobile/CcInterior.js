@@ -47,7 +47,7 @@ function CcInterior() {
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>FLIPPIN’ GREAT!</h3>
-                                                    <span>Truly in showroom condition. May only have a few barely visible imperfections.</span>
+                                                    <span>It might not have the new car smell, but the interior is super clean and there are no signs of wear.</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -64,7 +64,7 @@ function CcInterior() {
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>Just Average</h3>
-                                                    <span>A few SMALL dings, dents, or scratches on the body, but nothing needing significant repair.</span>
+                                                    <span>Some wear or small stains exists on the dash, seats, or armrests but nothing needing significant repair or replacing.</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -81,7 +81,7 @@ function CcInterior() {
                                                 </span>
                                                 <span className='bodyTc'>
                                                     <h3>It’s Rough...</h3>
-                                                    <span>Medium to large dents, several scratches, cracked bumper, and/or heavy rust.</span>
+                                                    <span>Tears, excessive wear, heavily stained seats and carpet, damaged interior parts, and/or significant odor.</span>
                                                 </span>
                                             </label>
                                         </div>
