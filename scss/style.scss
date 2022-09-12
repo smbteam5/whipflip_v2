@@ -54,7 +54,7 @@ span{
         }
         h1{
             font-style: normal;
-            font-weight: $font-bold;
+            font-weight: 800;
             font-size: 56px;
             color:#fff;
             @include responsive(tab-port){
@@ -311,7 +311,7 @@ span{
     .form_head{
         margin-top: 15px;
         h2{
-            font-weight: 700;
+            font-weight: 800;
             font-size: 26px;
             margin-bottom: 5px;
             @include responsive(tab-port){
@@ -419,7 +419,7 @@ span{
         }
     }
     h2{
-        font-weight: $font-bold;
+        font-weight: 900;
         font-size: 56px;
         line-height: 64px;
         letter-spacing: -0.0002em;
@@ -581,7 +581,7 @@ span{
                     .si-body{
                         h2{
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 800;
                             font-size: 20px;
                             line-height: 30px;
                             color: #356799;
@@ -771,7 +771,9 @@ span{
     }
     .relHd{
         color: #FFFFFF;
-        text-align: center;
+        @include responsive(phone){
+            text-align: center;
+        }
         h2{
             font-style: normal;
             font-weight: $font-bold;
@@ -840,7 +842,7 @@ span{
         }
         .sciLeft{
             h2{
-                font-weight: $font-bold;
+                font-weight: 900;
                 font-size: 36px;
                 line-height: 40px;
                 color: #201F2D;
@@ -935,7 +937,7 @@ h2.happy_cus_mob{
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 35px;
                     color: #201F2D;
                     mix-blend-mode: normal;
                     @include responsive(phone){
@@ -1965,11 +1967,11 @@ label{
                 display: inline-flex;
                 align-items: center;
                 text-align: center;
-                color: #353442;
+                color: #fff;
                 padding: 5px 15px;
-                border: 1px solid #4381C0;
+                border: none;
                 border-radius: 4px;
-                background-color: #fff;
+                background-color: #12c0ff;
                 margin-bottom: 20px;
             }
             .accept_off_btn{
@@ -3898,6 +3900,7 @@ canvas{
             .offer_expire{
                 text-align: center;
                 margin-top: 20px;
+                margin-bottom: 20px;
                 & > h2{
                     font-style: normal;
                     font-weight: 700;

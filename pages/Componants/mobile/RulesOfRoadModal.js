@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Modal,Form  } from 'react-bootstrap';
+import Link from "next/link";
 function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
   return (
     <>
@@ -17,11 +18,11 @@ function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
             <div className="ror_list">
                 <ul>
                   <li className='ror_item'>
-                    <h3>Your offer is $6,800.</h3>
+                    <h3>Your offer is <b>$6,800</b>.</h3>
                     <p>This offer is non-negotiable and is based on final inspection. If there is a moderate to major issue that has not been disclosed, your offer may change.</p>
                   </li>
                   <li className='ror_item'>
-                    <h3>We are NOT an appraisal service.</h3>
+                    <h3>We are <b>NOT</b> an appraisal service.</h3>
                     <p>We are traveling to purchase the vehicle and you are 100% ready to sell to us.</p>
                   </li>
                   <li className='ror_item'>
@@ -29,7 +30,7 @@ function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
                     <p>This includes ID, title (legally in your name on the front), or loan payoff quote.</p>
                   </li>
                   <li className='ror_item'>
-                    <h3>Payment is made via company check through Wells Fargo.</h3>
+                    <h3>Payment is made via company check through <b>Wells Fargo</b>.</h3>
                     <p>We do not carry cash as it is unsafe for our Car Concierges, who are buying tons of cars every day.</p>
                   </li>
                 </ul>
@@ -46,7 +47,9 @@ function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
         </Modal.Body>
         <div className="ror_btns">
           <button className='agree_btn'>I Disagree</button>
-          <button className='disagree_btn'>I Agree!</button>
+          <Link href="/congrats">
+           <button className='disagree_btn'>I Agree!</button>
+          </Link>          
         </div>
     </Modal>
     </>

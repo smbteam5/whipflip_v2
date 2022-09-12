@@ -18,7 +18,7 @@ function Footer() {
                     </div>
                     <div className="col-lg-3 col-6 fooCol">
                         <div className="fooColIn">
-                            <h2>How it works</h2>
+                            <h2>How It works</h2>
                             <ul>
                             <li>Why Sell to Us?</li>
                             <li>Private Sale or Trading In?</li>

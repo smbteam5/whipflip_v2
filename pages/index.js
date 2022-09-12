@@ -43,8 +43,9 @@ function index() {
               <div className="bnr_left">
                 <div className="bnr_lin_top">
                   <div className="bnr_left_head">
-                    <h1><span>The <span className='text-highlight'>Best</span> Way to</span> <span>Sell Your Car - </span><span>Period!</span></h1>
-                    <span>We come to you paid on the spot</span>
+                    <h1><span>The <span className='text-highlight'>Best</span> Way to</span> 
+                    <span>Sell Your Car - </span><span>Period!</span></h1>
+                    <span>We come to you. Paid on the spot!</span>
                   </div>
                   <div className="bnr_left_info desk-show">
                     <div className="row">
@@ -260,7 +261,7 @@ function index() {
                       showConfirmOffer &&
                       <div className="confirm_offer_banner">
                         <div className="cob_head">
-                          <span>Welcome back Ford Ranger owner!</span>
+                          <span>Welcome back</span>
                           <h2><span>You are only a click away from</span> <span>confirming your offer!</span></h2>
                         </div>
                         <div className="cob_body">
@@ -281,6 +282,15 @@ function index() {
                             <div className="cob_offer_price">
                               <h1>$7,000</h1>
                             </div>
+                            <div className="poweredBy">
+                              <Image 
+                                src="/images/jd.webp" 
+                                alt="poweredBy" 
+                                title='poweredBy'
+                                width={200}
+                                height={24}
+                              />
+                            </div> 
                             <div className="offer_expire">
                               <h2>Offer expires in:</h2>
                               <div className="oe_time_left">
@@ -309,16 +319,7 @@ function index() {
                                   <span>secs</span>
                                 </div>
                               </div>                              
-                            </div>
-                            <div className="poweredBy">
-                              <Image 
-                                src="/images/jd.webp" 
-                                alt="poweredBy" 
-                                title='poweredBy'
-                                width={200}
-                                height={24}
-                              />
-                            </div>                            
+                            </div>                                                       
                           </div>
                         </div>
                         <div className="cob_foo">
@@ -719,7 +720,7 @@ function index() {
           <div className="row">
             <div className="col-lg-10 colsciLeft">
               <div className="sciLeft">
-                <h2>There has to be a better way to sell my car!</h2>
+                <h2>"There has to be a better way to sell my car!"</h2>
                 <p>The process of selling a car still remains very difficult and I never understood why with all of the great technology we have in the modern world.  We are consumers too that have sold a few cars ourselves and went though the same struggles you may have faced with wasting precious time with tire-kickers, scammers, and endless travel to receive lowball trade-in offers.</p> 
                 <p>So our thought was simple and our mission was clear – What if there was a way anyone, anywhere could sell their vehicle as fast and as easy as ordering a pizza from a mobile device? </p> <p>No stress, no travel, no risk, no inconvenience.  Well, I believe we have created it and it’s here at your fingertips.Go ahead and give us a try! </p>
                 <p>We welcome you join the thousands of other customers who deserved a much better way to sell by using WhipFlip.</p>
