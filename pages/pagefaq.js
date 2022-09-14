@@ -45,7 +45,7 @@ function pagefaq() {
       <div className="how-it-works pt100 pb-5 body-text">
         <div className="container">
           <div className="row mb-5">
-            <div className="col-md-4 col-lg-3 faq-topics">
+            <div className="col-md-4 col-lg-3 faq-topics mb-4">
               <h6 className="font-weight-600">Topics</h6>
               <ul>
                 <li>
@@ -68,18 +68,20 @@ function pagefaq() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-8 col-lg-9">
-              <div>
-                <h3 className="font-weight-600">How It Works</h3>
-                <Faq />
-              </div>
-              <div className="my-4">
-                <h3 className="font-weight-600">What We Buy</h3>
-                <Faq />
-              </div>
-              <div className="my-4">
-                <h3 className="font-weight-600">Quotes & Offers</h3>
-                <Faq />
+            <div className="col-md-8 col-lg-9 faq">
+              <div className="faqWrapper">
+                <div>
+                  <h3 className="font-weight-600">How It Works</h3>
+                  <Faq />
+                </div>
+                <div className="my-4">
+                  <h3 className="font-weight-600">What We Buy</h3>
+                  <Faq />
+                </div>
+                <div className="my-4">
+                  <h3 className="font-weight-600">Quotes & Offers</h3>
+                  <Faq />
+                </div>
               </div>
             </div>
           </div>
