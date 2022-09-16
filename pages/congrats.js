@@ -86,50 +86,55 @@ const [width, height] = useWindowSize()
                   <div className="np_lst row">
                       <div className="np_item col-4">
                           <div className="row np_item_row">
-                              <div className="col-12 p-0">
-                                  <div className="np_item_img">
-                                      <Image 
-                                        src="/images/mail.svg" 
-                                        alt="mail" 
-                                        title='mail'
-                                        width={160}
-                                        height={160}
-                                      />
-                                  </div>
-                              </div>
-                              <div className="col-12 p-0">
-                                  <div className="np_item_dec">
-                                    <h2>Respond to Confirmation</h2>
-                                      <p>A member of our team will contact you to confirm your appointment to sell. Please respond immediately to lock in your day/time to sell. If we haven’t heard from you, we reserve the right to cancel and rescind the offer.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      {/*  */}
-                      <div className="np_item col-4">
-                          <div className="row np_item_row">
-                              <div className="col-12 p-0">
-                                  <div className="np_item_img">
-                                      <Image 
-                                        src="/images/sign.svg" 
-                                        alt="sign" 
-                                        title='sign'
-                                        width={160}
-                                        height={160}
-                                      />
-                                  </div>
-                              </div>
-                              <div className="col-12 p-0">
-                                  <div className="np_item_dec">
-                                    <h2>Make Sure Everyone’s There!</h2>
-                                      <p>All owners and/or co-signers must be present to sign the appropriate ownership and purchase documents.</p>
-                                  </div>
+                              <div className="npi_wrap">
+                                <div className="col-12 p-0">
+                                    <div className="np_item_img">
+                                        <Image 
+                                          src="/images/mail.svg" 
+                                          alt="mail" 
+                                          title='mail'
+                                          width={160}
+                                          height={160}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-12 p-0">
+                                    <div className="np_item_dec">
+                                      <h2>Respond to Confirmation</h2>
+                                        <p>A member of our team will contact you to confirm your appointment to sell. Please respond immediately to lock in your day/time to sell. If we haven’t heard from you, we reserve the right to cancel and rescind the offer.</p>
+                                    </div>
+                                </div>
                               </div>
                           </div>
                       </div>
                       {/*  */}
                       <div className="np_item col-4">
                           <div className="row np_item_row">
+                              <div className="npi_wrap">
+                                <div className="col-12 p-0">
+                                    <div className="np_item_img">
+                                        <Image 
+                                          src="/images/sign.svg" 
+                                          alt="sign" 
+                                          title='sign'
+                                          width={160}
+                                          height={160}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-12 p-0">
+                                    <div className="np_item_dec">
+                                      <h2>Make Sure Everyone’s There!</h2>
+                                        <p>All owners and/or co-signers must be present to sign the appropriate ownership and purchase documents.</p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      {/*  */}
+                      <div className="np_item col-4">
+                          <div className="row np_item_row">
+                            <div className="npi_wrap">                                
                               <div className="col-12 p-0">
                                   <div className="np_item_img">
                                       <Image 
@@ -147,6 +152,7 @@ const [width, height] = useWindowSize()
                                       <p>We are buying a lot of cars on the hour. Please be on time with your title or payoff information, ID, and keys ready for our Car Concierge.</p>
                                   </div>
                               </div>
+                            </div>
                           </div>
                       </div>
                   </div>
@@ -233,7 +239,7 @@ const [width, height] = useWindowSize()
                   <div className="cf_head">
                       <h2>Any other questions?</h2>
                       <p>
-                          <span>Check out our <a href="#"> FAQ,</a> email us at <a href="#">support@whipflip.com</a> or contact us at  (888) 349-3189.</span>
+                          <span>Check out our <a href="#"> FAQ,</a> email us at <a href="#">support@whipflip.com</a> or contact us at  <a href="#">(888) 349-3189.</a></span>
                       </p>
                   </div>
                   <div className="our_disclaimer">
