@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Footer from './Componants/Footer'
 import Header from './Componants/Header'
 import Step1 from './Componants/Step1'
-import Step2 from './Componants/Step2';
+import Step2b from './Componants/Step2b';
 import Step3 from './Componants/Step3';
 import Header2 from './Componants/Header2';
 import ToLeaveModal from './Componants/ToLeaveModal';
@@ -151,7 +151,7 @@ function offer() {
                     </div>
                     <div className="col-lg-8">
                     {(activeTab === "tab1") && <Step1/>}
-                    {(activeTab === "tab2") && <Step2/>}
+                    {(activeTab === "tab2") && <Step2b/>}
                     {(activeTab === "tab3") && <Step3/>}
                     </div>
                 </div>
