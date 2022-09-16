@@ -188,7 +188,7 @@ function privacypolicy() {
         <div className="container h100">
           <div className="row h100">
             <div className="col-lg-7 align-self-center">
-              <div className="relHd">
+              <div className="relHd text-center">
                 <h2>Ready to Sell?</h2>
                 <p>We are ready to buy now, at your door, and on your time!</p>
                 <button className="sell_car_btn">Sell Your Car Now!</button>
