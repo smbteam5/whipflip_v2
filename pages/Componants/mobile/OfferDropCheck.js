@@ -4,13 +4,14 @@ import "react-datepicker/dist/react-datepicker.css";
 import Header2 from '../Header2';
 import RulesOfRoadModal from './RulesOfRoadModal';
 import StepBar from './StepBar';
+import Image from 'next/image'
 
 function OfferDropCheck() {
     const [show, setShow] = React.useState(false)   
     const [startDate, setStartDate] = useState(null);
-    const [status2, setStatus2] = useState(1);
+    const [status2, setStatus2] = useState(true);
     const [condition, setCondition] = useState(2);
-    const [warning, setWarning] = useState(1);
+    const [warning, setWarning] = useState(true);
     const handleOnBlur = ({ target: { value } }) => {
         const date = new Date(value);
         if (isValid(date)) {
@@ -21,6 +22,7 @@ function OfferDropCheck() {
       };
     const radioHandler2 = (status) => {
         setStatus2(status);
+        console.log("status",status);
     };
     const conditionHandler = (condition) => {
         setCondition(condition);
@@ -113,7 +115,7 @@ function OfferDropCheck() {
                     </form>
                 </div>
             </div>
-            <div className="offer_block">
+            <div className="offer_block no-border">
                 <div className="ob_hd">
                     <h2>Ownership Verification</h2> 
                 </div>
@@ -145,10 +147,10 @@ function OfferDropCheck() {
                                                         <div className="form-fld-grp">
                                                             <div className="form-row frmRow">
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='Owner First name'/>
+                                                                    <input type="text" placeholder='Owner First Name'/>
                                                                 </div> 
                                                                 <div className="frmfldItem">
-                                                                    <input type="text" placeholder='Owner Last name'/>
+                                                                    <input type="text" placeholder='Owner Last Name'/>
                                                                 </div> 
                                                                 <div className="frmfldItem">
                                                                     <select className="form-control" id="user_time_zone" size="0">
@@ -260,82 +262,135 @@ function OfferDropCheck() {
                                 <label htmlFor="">Do you have the title to this vehicle?</label>
                                 <div className="chooseBlock selector row selectorRow">
                                     <div className="selecotr-item col-6 p-0">
-                                        <input type="radio" id="radiono" name="selector__sel" className="selector-item_radio" defaultChecked  />
-                                        <label htmlFor="radiono" className="selector-item_label">Yes</label>
+                                        <div className={status2 === true ? "si-wrap activesi": "si-wrap"} >
+                                            <input type="radio" id="radiono" name="selector__sel" className="selector-item_radio"  onClick={() => setStatus2(true)}/>
+                                            <label htmlFor="radiono" className="selector-item_label">Yes</label>
+                                        </div>                                        
                                     </div>
                                     <div className="selecotr-item col-6 pr-0">
-                                        <input type="radio" id="radioyes" name="selector__sel" className="selector-item_radio" />
-                                        <label htmlFor="radioyes" className="selector-item_label">No</label>
+                                        <div className={status2 === false ? "si-wrap activesi": "si-wrap"} >
+                                            <input type="radio" id="radioyes" name="selector__sel" className="selector-item_radio" onClick={() => setStatus2(false)}/>
+                                            <label htmlFor="radioyes" className="selector-item_label">No</label>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="form-group row ob_frm_row">
-                            <div className="col-lg-12 p-0">
-                            <label htmlFor=""> Is this vehicle financed?</label>
-                                <div className="chooseBlock selector row selectorRow">
-                                    <div className="selecotr-item col-6 p-0">
-                                        <div className={warning === 1 ? "si-wrap activesi": "si-wrap"} >
-                                            <input type="radio" id="war1" name="selectorw" className={warning === 1 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 1} onClick={(e) => warningHandler(1)} />
-                                            <label htmlFor="war1" className="selector-item_label">Yes</label>  
-                                        </div>
-                                    </div>
-                                    <div className="selecotr-item col-6 pr-0">
-                                        <div className={warning === 2 ? "si-wrap": "si-wrap"} >
-                                            <input type="radio" id="war2" name="selectorw" className={warning === 2 ? "selector-item_radio active": "selector-item_radio"} checked={warning === 2} onClick={(e) => warningHandler(2)}/>
-                                            <label htmlFor="war2" className="selector-item_label">No</label>  
-                                        </div>                                             
-                                    </div>
-                                </div>  
-                                {
-                                    warning === 1 && 
-                                    <div className="viewDetail viewDetailMobi">
-                                        <div className='selectView vin'>
-                                            <div className="checkIssues">
-                                                <div className="chooseIssues">
-                                                    <div className="form-fld-grp">
-                                                        <label className="frmfl_label">Which bank is it with?</label>  
-                                                        <div className="form-row frmRow">
-                                                            <div className="frmfldItem">
-                                                                <input type="text" placeholder='Enter Here'/>
-                                                            </div>                                                       
-                                                        </div>
-                                                    </div> 
-                                                    <div className="form-fld-grp">
-                                                        <label className="frmfl_label">Estimated loan payoff amount?</label>  
-                                                        <div className="form-row frmRow">
-                                                            <div className="frmfldItem">
-                                                                <input type="text" placeholder='Enter Amount'/>
-                                                            </div> 
-                                                            <div className="frmfldItem">
-                                                                <div className="form-group check-group frm_fld_chk mt-2">
-                                                                    <input type="checkbox" id="chk11"/>
-                                                                    <label htmlFor="chk11">I don’t know.</label>
-                                                                </div>
-                                                            </div>                                                      
-                                                        </div>
-                                                    </div>  
+                        {
+                            status2 == false &&
+                                <div className="form-group row ob_frm_row">
+                                    <div className="col-lg-12 p-0">
+                                        <label htmlFor=""> Is this vehicle financed?</label>
+                                        <div className="chooseBlock selector row selectorRow">
+                                            <div className="selecotr-item col-6 p-0">
+                                                <div className={warning === true ? "si-wrap activesi": "si-wrap"} >
+                                                    <input type="radio" id="war1" name="selectorw" className={warning === true ? "selector-item_radio active": "selector-item_radio"} checked={warning === true} onChange={() => setWarning(true)} />
+                                                    <label htmlFor="war1" className="selector-item_label">Yes</label>  
                                                 </div>
                                             </div>
-                                        </div>           
-                                    </div>                                         
-                                }
-                            </div>
-                        </div>
+                                            <div className="selecotr-item col-6 pr-0">
+                                                <div className={warning === false ? "si-wrap": "si-wrap"} >
+                                                    <input type="radio" id="war2" name="selectorw" className={warning === false ? "selector-item_radio active": "selector-item_radio"} checked={warning === false} onChange={() => setWarning(false)}/>
+                                                    <label htmlFor="war2" className="selector-item_label">No</label>  
+                                                </div>                                             
+                                            </div>
+                                        </div>  
+                                        {
+                                            warning === true &&
+                                            <div className="viewDetail viewDetailMobi">
+                                                <div className='selectView vin'>
+                                                    <div className="checkIssues">
+                                                        <div className="chooseIssues">
+                                                            <div className="form-fld-grp">
+                                                                <label className="frmfl_label">Which bank is it with?</label>  
+                                                                <div className="form-row frmRow">
+                                                                    <div className="frmfldItem">
+                                                                        <input type="text" placeholder='Enter Here'/>
+                                                                    </div>                                                       
+                                                                </div>
+                                                            </div> 
+                                                            <div className="form-fld-grp">
+                                                                <label className="frmfl_label">Estimated loan payoff amount?</label>  
+                                                                <div className="form-row frmRow">
+                                                                    <div className="frmfldItem">
+                                                                        <input type="text" placeholder='Enter Amount'/>
+                                                                    </div> 
+                                                                    <div className="frmfldItem">
+                                                                        <div className="form-group check-group frm_fld_chk mt-2">
+                                                                            <input type="checkbox" id="chk11"/>
+                                                                            <label htmlFor="chk11">I don’t know.</label>
+                                                                        </div>
+                                                                    </div>                                                      
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div className="doneProcess">
+                                                    <div className="frmfldItem frmAgree">
+                                                        <div className="form-group check-group frm_fld_chk">
+                                                            <input type="checkbox" id="chk111"/>
+                                                            <label htmlFor="chk111">I agree to the terms of use.</label>
+                                                        </div>
+                                                    </div> 
+                                                    <div className="initial_order_btn">
+                                                        <button className='initofferBtn' onClick={handleOpen}>
+                                                            Submit
+                                                        </button>
+                                                    </div> 
+                                                </div>         
+                                            </div>  
+                                                                                   
+                                        }
+                                        {
+                                             warning === false &&
+                                             <>
+                                                <div className="unable_to_reach">
+                                                    <div className="ur_head text-center">
+                                                        <Image src="/images/unable-to-reach.svg"
+                                                            alt="Unable to reach"
+                                                            title="Unable to reach"
+                                                            className="img-fluid"
+                                                            width={128} 
+                                                            height={164} 
+                                                        />
+                                                    </div>
+                                                    <div className="ur_body">
+                                                        <h2>Sorry, but we’re unable to buy your car.</h2>
+                                                        <p>If you do not have a physical title and your vehicle is not currently financed (Yes, we can buy financed cars!), you will need to get a clear title in your name before we can proceed. If you feel your situation is different (e.g. Estate sale or POA authorization), feel free to call us at (888) 349-3189.</p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div className="returnBtn">
+                                                    <button className='retBtn'>
+                                                        Return to the WhipFlip Website
+                                                    </button>
+                                                </div>
+                                             </>
+                                        }
+                                    </div>
+                                </div>
+                        }
+                        {
+                            status2 == true &&
+                            <>
+                                <div className="doneProcess mt-3">
+                                    <div className="frmfldItem frmAgree">
+                                        <div className="form-group check-group frm_fld_chk">
+                                            <input type="checkbox" id="chk111"/>
+                                            <label htmlFor="chk111">I agree to the terms of use.</label>
+                                        </div>
+                                    </div> 
+                                    <div className="initial_order_btn">
+                                        <button className='initofferBtn' onClick={handleOpen}>
+                                            Submit
+                                        </button>
+                                    </div> 
+                                </div>     
+                            </>
+                        }
                     </form>
                 </div>
-            </div>
-            <div className="frmfldItem frmAgree">
-                <div className="form-group check-group frm_fld_chk">
-                    <input type="checkbox" id="chk111"/>
-                    <label htmlFor="chk111">I agree to the terms of use.</label>
-                </div>
-            </div> 
-            <div className="initial_order_btn">
-                <button className='initofferBtn' onClick={handleOpen}>
-                    Submit
-                </button>
-            </div>
+            </div>            
         </div>
     </div>
   )

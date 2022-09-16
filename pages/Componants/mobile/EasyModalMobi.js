@@ -19,9 +19,9 @@ function EasyModalMobi({show,handleClose}) {
     }
     <Modal show={show} onHide={handleClose} className="final_easy_step_modal">
         <Modal.Header>
-        <Modal.Title>One Final Easy Step!</Modal.Title>
+        <Modal.Title className='finalMobiHd'>One Final Easy Step!</Modal.Title>
         </Modal.Header>
-        <Modal.Body className='fesBody'>
+        <Modal.Body className='fesBody fesBodyMobi'>
             <div className="fesBody_in">
                 <div className="fesBody_in_row row">
                     <div className="col-lg-4 fes_col fes_col_left">

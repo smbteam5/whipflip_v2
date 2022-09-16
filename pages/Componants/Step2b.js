@@ -411,11 +411,11 @@ function Step2b() {
                                 <div className="chooseBlock selector row selectorRow">
                                     <div className="selecotr-item col-lg-6 p-0">
                                         <input type="radio" id="mod1" name="selectormod" className="selector-item_radio" defaultChecked  />
-                                        <label htmlFor="mod1" className="selector-item_label">Automatic</label>
+                                        <label htmlFor="mod1" className="selector-item_label">Nope!</label>
                                     </div>
                                     <div className="selecotr-item col-lg-6 pr-0">
                                         <input type="radio" id="mod2" name="selectormod" className="selector-item_radio" />
-                                        <label htmlFor="mod2" className="selector-item_label">Manual (i.e. Stick Shift)</label>
+                                        <label htmlFor="mod2" className="selector-item_label">Yes</label>
                                     </div>
                                 </div>
                             </div>
@@ -577,8 +577,8 @@ function Step2b() {
                                                 />
                                             </span>
                                             <span className='bodyTc'>
-                                                <h3>Plenty of Tread</h3>
-                                                <span>Recently replaced tires</span>
+                                                <h3>FLIPPIN’ GREAT!</h3>
+                                                <span>It might not have the new car smell, but the interior is super clean and there are no signs of wear.</span>
                                             </span>
                                         </label>
                                     </div>
@@ -595,8 +595,8 @@ function Step2b() {
                                                 />
                                             </span>
                                             <span className='bodyTc'>
-                                                <h3>Some Tread</h3>
-                                                <span>Average wear, but passes inspection</span>
+                                                <h3>Just Average</h3>
+                                                <span>A little dirty but nothing a good detail can’t fix. Some wear and tear, but no need for significant repairs.</span>
                                             </span>
                                         </label>
                                     </div>
@@ -613,8 +613,8 @@ function Step2b() {
                                                 />
                                             </span>
                                             <span className='bodyTc'>
-                                                <h3>Bald</h3>
-                                                <span>Little tread left, steel belts showing</span>
+                                                <h3>It’s Rough...</h3>
+                                                <span>Tears, excessive wear, heavily stained seats and carpet, damaged interior parts, and/or significant odor.</span>
                                             </span>
                                         </label>
                                     </div>

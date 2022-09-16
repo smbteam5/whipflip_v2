@@ -27,6 +27,15 @@ function ConfirmOffer() {
                 <div className="confOffBody">
                     <h1>Your <i>FLIPPIN’</i> Awesome Offer!</h1>
                     <div className="ioCard">
+                        <div className="jd_op_img">
+                            <Image
+                                src="/images/jd.webp"
+                                alt="jd power"
+                                title='jd power'
+                                width={150}
+                                height={20}
+                            />
+                        </div>     
                         <h2>Initial offer: $7,000</h2>     
                         <div className="offerProduct-mobi row">
                             <div className="ofp_left col-4 p-0">
@@ -42,16 +51,7 @@ function ConfirmOffer() {
                                 <h3>2022 Ford Ranger</h3>
                                 <span>2.3L EcoBoost® I4 engine</span>
                             </div>
-                        </div>  
-                        <div className="jd_op_img">
-                            <Image
-                                src="/images/jd.webp"
-                                alt="jd power"
-                                title='jd power'
-                                width={150}
-                                height={20}
-                            />
-                        </div>             
+                        </div>
                     </div>
                     <div className="custo_info">
                         <p>We’d love to buy your car!</p>
@@ -77,7 +77,7 @@ function ConfirmOffer() {
                                 />
                             </div>
                             <div className="wci_right">
-                                <p>Feel free to compare your awesome offer to average trade-in values and you may see that your offer may be up to <b>14% higher than the national average!</b></p>
+                                <p>Feel free to compare your free estimate to average trade-in values and you may see that your car might worth up to 14% higher than the national average!</p>
                             </div>
                         </div>
                     </div>

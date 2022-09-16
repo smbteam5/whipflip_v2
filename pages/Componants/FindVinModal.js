@@ -18,7 +18,8 @@ function FindVinModal({show,handleClose}) {
                 />
             </div>
             <div className="fyv_text">
-                <p>We hope you come back soon!  We are always here!  Simply pick up where you left off with any of the options below:</p>
+                <p>You can find your 17-digit VIN # on the windshield beneath the drivers side or in the driver’s side door jamb.</p>
+                
             </div>
         </Modal.Body>
     </Modal>

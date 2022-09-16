@@ -23,7 +23,7 @@ function CcExterior() {
                         <form autoComplete="off" className="form" role="form">                                        
                             <div className="form-group row ob_frm_row">
                                 <div className="col-lg-12 p-0">
-                                    <label htmlFor="">How would you honestly rate your vehicle’s <b>EXTERIOR</b> condition?</label>
+                                    <label htmlFor="" className='labelForci'>How would you honestly rate your vehicle’s <b>EXTERIOR</b> condition?</label>
                                     <div className="chooseBlock selectorRow rowSell tireconditions">
                                         <div className="sellItemChoose tirecondition tireconditionMobi">
                                             <input type="radio" id="tc1" name="tc" className="selector-item_radio" defaultChecked  />

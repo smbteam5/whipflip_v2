@@ -123,17 +123,19 @@ function WhySell() {
           <div className="acceptOffer_center">
             <div className="ac_in">
               <h2>Why Sell to Us?</h2>
-              <div className="why_sell_points">
+              <div className="why_sell_points why_sell_wrp">
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
-                      <Image 
-                          src="/images/convenience.svg" 
-                          alt="convenience" 
-                          title='convenience'
-                          width={100}
-                          height={100}
-                        />
+                      <div className="wsp_img_wrap">
+                        <Image 
+                            src="/images/convenience.svg" 
+                            alt="convenience" 
+                            title='convenience'
+                            width={100}
+                            height={100}
+                          />
+                      </div>
                     </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
@@ -144,6 +146,7 @@ function WhySell() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
+                    <div className="wsp_img_wrap">
                       <Image 
                           src="/images/best-offer.svg" 
                           alt="Best Offer" 
@@ -151,6 +154,7 @@ function WhySell() {
                           width={100}
                           height={100}
                         />
+                        </div>
                     </div>
                     <div className="wsp_right">
                       <h2>Best Offer!</h2>
@@ -161,6 +165,7 @@ function WhySell() {
                 <div className="wsp_item">
                   <div className="wsp_item_in">
                     <div className="wsp_left">
+                    <div className="wsp_img_wrap">
                       <Image 
                           src="/images/safe.svg" 
                           alt="Safe" 
@@ -168,6 +173,7 @@ function WhySell() {
                           width={100}
                           height={100}
                         />
+                        </div>
                     </div>
                     <div className="wsp_right">
                       <h2>Safe and Smooth!</h2>

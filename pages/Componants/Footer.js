@@ -91,7 +91,7 @@ function Footer() {
                 </div>
                 <div className="fooCopyRight">
                     <div className="fcl">
-                    <span>Whipflip © 2022 WhipFlip, Inc. All rights reserved.</span>
+                    <span>WhipFlip © 2022 WhipFlip, Inc. All rights reserved.</span>
                     </div>
                     <div className="fcr">
                     <div className="fooIcons">

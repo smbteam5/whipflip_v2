@@ -83,8 +83,8 @@ function EasyStepModal({show,handleClose}) {
                                 </div>
                                 <div className="fesCon_right">
                                     <div className="fesConItem_detail">
-                                        <h3>Access the photo tool via email</h3>
-                                        <p>We’ve sent you an email! Open the email on your phone and tap the link.</p>
+                                        <h3>Go to www.whipflip.com on your phone</h3>
+                                        <p>Tap the “Retrieve Offer” button and enter your email address.</p>
                                     </div>
                                 </div>
                             </div>

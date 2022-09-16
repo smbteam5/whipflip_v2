@@ -42,7 +42,14 @@ span{
     box-shadow: 0px 24px 38px rgba(32, 31, 45, 0.14), 0px 11px 15px rgba(32, 31, 45, 0.2), 0px 9px 46px rgba(32, 31, 45, 0.12);
     border-radius: 10px;
 }
-
+.labelForci{
+    b{
+        text-decoration: underline;
+    }
+}
+span.infoBx{
+    padding-left: 3px;
+}
 .bnr_left{
     display: flex;
     flex-direction: column;
@@ -54,14 +61,14 @@ span{
         }
         h1{
             font-style: normal;
-            font-weight: 800;
+            font-weight: 900;
             font-size: 56px;
             color:#fff;
             @include responsive(tab-port){
                 font-size: 44px;
             }
             @include responsive(phone){
-                font-size: 38px;
+                font-size: 36px;
             }
             @include responsive(Exsmall330){
                 font-size: 36px;
@@ -74,6 +81,9 @@ span{
             color: #FFFFFF;
             mix-blend-mode: normal;
             font-size: 22px;
+            @include responsive(phone){
+                font-size: 16px;
+            }
         }
     }
 }
@@ -230,9 +240,8 @@ span{
     .acc_left{
         margin-right: 10px;
         img{
-            width: 95px;
-            height: 36px;
-            object-fit: cover;
+            background-color: #fff;
+            border-radius: 10px;
         }
     }
     .acc_right{
@@ -281,7 +290,7 @@ span{
     color: #353442;
     border: none;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
 }
@@ -311,7 +320,7 @@ span{
     .form_head{
         margin-top: 15px;
         h2{
-            font-weight: 800;
+            font-weight: 900;
             font-size: 26px;
             margin-bottom: 5px;
             @include responsive(tab-port){
@@ -473,7 +482,7 @@ span{
         }
         .hiw_body{
             h2{
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 28px;
                 line-height: 36px;
                 text-align: center;
@@ -581,7 +590,7 @@ span{
                     .si-body{
                         h2{
                             font-style: normal;
-                            font-weight: 800;
+                            font-weight: 900;
                             font-size: 20px;
                             line-height: 30px;
                             color: #356799;
@@ -620,13 +629,13 @@ span{
         .hcItemIn{
             padding: 15px;
             background: #FFFFFF;
-            box-shadow: 0px 2px 12px rgba(32, 31, 45, 0.16), 0px 47px 46px -27px rgba(32, 31, 45, 0.06);
+            // box-shadow: 0px 2px 12px rgba(32, 31, 45, 0.16), 0px 47px 46px -27px rgba(32, 31, 45, 0.06);
             border-radius: 4px;
         }
         .hc_head{
             .hcIn{
                 h2{
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 18px;
                     color: #201F2D;
                     mix-blend-mode: normal;
@@ -683,7 +692,7 @@ span{
                 display: flex;
                 align-items: center;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 20px;
                 color: #201F2D;
                 padding-left: 0;
@@ -721,7 +730,7 @@ span{
 }
 .sell_car_btn{
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     color: #353442;
     background: #FFD147;
@@ -849,7 +858,7 @@ span{
                 mix-blend-mode: normal;
                 @include responsive(tab-port){
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 28px;
                     line-height: 40px;
                 }
@@ -912,6 +921,18 @@ h2.happy_cus_mob{
     font-size: 28px;
     line-height: 42px;
 }
+.headColIn{
+    h2{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #605F6E;
+        mix-blend-mode: normal;
+    }
+}
 .footer{
     padding: 80px 0 60px;
     background: #EDF2F8;
@@ -960,6 +981,7 @@ h2.happy_cus_mob{
             }
         }
     }    
+
     .fooCopyRight{
         display: flex;
         align-items: center;
@@ -1017,7 +1039,7 @@ h2.happy_cus_mob{
         }
         h2{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 0;
@@ -1041,6 +1063,12 @@ h2.happy_cus_mob{
     }
 }
 // offer
+.hasBorder{
+    border-bottom: 1px solid #dee2e6;
+}
+.stepper_wrapper{
+    padding-bottom: 10px;
+}
 ul.form-stepper {
     counter-reset: section;
     margin-bottom: 3rem;
@@ -1237,7 +1265,7 @@ ul.form-stepper li a .form-stepper-circle {
     }
     .ob_hd > h2{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 26px;
         position: relative;
@@ -1251,7 +1279,7 @@ ul.form-stepper li a .form-stepper-circle {
             width: 100px;
             height: 5px;
             @include responsive(tab-port){
-                bottom: -6px;
+                bottom: -10px;
                 height: 5px;
             }
         }  
@@ -1277,6 +1305,7 @@ ul.form-stepper li a .form-stepper-circle {
             background-position: right 1rem center;
             background-size: 1em;
             background-color: #F8F8FB;
+            font-size: 14px;
             @include responsive(tab-port){
                 padding: 10px 0.75rem;
                 height: auto;
@@ -1317,7 +1346,7 @@ ul.form-stepper li a .form-stepper-circle {
         color: #201F2D;
         @include responsive(tab-port){
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 18px;
             line-height: 20px;
             text-align: center;
@@ -1365,7 +1394,7 @@ ul.form-stepper li a .form-stepper-circle {
     .selectView{
         input{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 14px;
             line-height: 26px;
             display: flex;
@@ -1426,7 +1455,7 @@ ul.form-stepper li a .form-stepper-circle {
     cursor: pointer;
     @include responsive(phone){
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 14px !important;
         line-height: 22px;
     }
@@ -1478,7 +1507,7 @@ ul.form-stepper li a .form-stepper-circle {
         border-radius: 4px;
         border: none;
         padding: 16px 36px;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         color: #353442;
     }
@@ -1512,7 +1541,7 @@ ul.form-stepper li a .form-stepper-circle {
         margin-top: 20px;
         h2{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             color: #201F2D;
@@ -1547,7 +1576,7 @@ label{
             margin-top: 6px;
             h3{
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 18px;
                 margin-bottom: 5px;
             }
@@ -1572,7 +1601,7 @@ label{
   .checkIssues{
     h3{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 20px;
@@ -1639,7 +1668,7 @@ label{
     }    
     .modal-header{
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 20px;
         line-height: 30px;
         @include responsive(tab-port){
@@ -1681,13 +1710,13 @@ label{
                         .fcr_head{
                             h2{
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 600;
                                 font-size: 20px;
                                 line-height: 26px;
                                 position: relative;
                                 @include responsive(tab-port){
                                     font-style: normal;
-                                    font-weight: 600;
+                                    font-weight: 700;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #262626;
@@ -1748,7 +1777,7 @@ label{
                         .fesConItem_detail{
                             h3{
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 600;
                                 font-size: 20px;
                                 line-height: 26px;
                                 margin-bottom: 0;
@@ -1767,7 +1796,7 @@ label{
                         margin: 10px 0;
                         span{
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 20px;
                             line-height: 26px;
                             color: #201F2D;
@@ -1782,7 +1811,7 @@ label{
                         &_detail{
                             h3{
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 600;
                                 font-size: 20px;
                                 line-height: 26px;
                             }
@@ -1811,7 +1840,7 @@ label{
             }
             h2{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 20px;
                 line-height: 26px;
                 position: relative;
@@ -1819,7 +1848,7 @@ label{
                 justify-content: center;
                 @include responsive(tab-port){
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 16px;
                     line-height: 24px;
                     color: #262626;
@@ -1856,7 +1885,7 @@ label{
                         background-color: #fff;
                         @include responsive(tab-port){                            
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 18px;
                             line-height: 28px;
                             padding: 10px 24px;
@@ -1961,7 +1990,7 @@ label{
             }
             .elsewhere_offer{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
                 display: inline-flex;
@@ -1976,7 +2005,7 @@ label{
             }
             .accept_off_btn{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 20px;
                 line-height: 30px;
                 color: #353442;
@@ -2031,7 +2060,7 @@ label{
                         .wsp_right{
                             h2{
                                 font-style: normal;
-                                font-weight: 700;
+                                font-weight: 900;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: #155698;
@@ -2070,7 +2099,7 @@ label{
             &_in{
                 span{
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 22px;
                     display: flex;
                     align-items: center;
@@ -2156,7 +2185,7 @@ label{
         }
         h2{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 6px;
@@ -2200,7 +2229,7 @@ label{
         margin-top: 0;
     }
     h2{
-        font-weight: 700;
+        font-weight: 900;
         font-size: 18px;
         line-height: 28px;
         text-align: center;
@@ -2355,7 +2384,7 @@ label{
         margin-bottom: 15px;
         span{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 22px;
             line-height: 28px;
             display: flex;
@@ -2491,7 +2520,7 @@ label{
     }
     .ofp_right{
         h1{
-            font-weight: 600;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 0;            
@@ -2513,7 +2542,7 @@ label{
   .continueBtn{
     background-color: #4381C0;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
@@ -2531,7 +2560,7 @@ label{
     .irm_head{
         h1{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 26px;
             color: #201F2D;
@@ -2562,7 +2591,7 @@ label{
                 justify-content: center;
                 align-items: center;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 line-height: 28px;
                 border: none;
@@ -2577,7 +2606,7 @@ label{
                 justify-content: center;
                 align-items: center;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 line-height: 28px;
                 border: none;
@@ -2588,11 +2617,25 @@ label{
         }
     }
   }
+
+  .fesBodyMobi{
+    padding-top: 0 !important;
+  }
+  .finalMobiHd{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1E558F;
+    mix-blend-mode: normal;
+  }
 .itemSelected{
     border-bottom: 1px solid #D5D5DC;
     padding-bottom: 5px;
     @include responsive(tab-port){
-        padding-top: 50px;
+        // padding-top: 50px;
     }
     span{
         font-style: normal;
@@ -2618,7 +2661,7 @@ label{
             padding: 8px 10px;
         }
         span{
-            font-weight: 700;
+            font-weight: 900;
             font-size: 14px;
             line-height: 22px;
         }
@@ -2628,7 +2671,7 @@ label{
     height: auto;
     .selector-item_label{
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 14px;
         line-height: 22px;
         &.flex-selector{
@@ -2643,7 +2686,7 @@ label{
     padding-top: 12px;
     h2{
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 20px;
         line-height: 30px;
         text-align: center;
@@ -2662,7 +2705,7 @@ label{
         padding: 16px 12px;
         span{
             font-style: normal;
-            font-weight: 700;
+            font-weight: 900;
             font-size: 14px;
             line-height: 22px;
             color: #353442;
@@ -2723,7 +2766,7 @@ label{
             }
             h2{
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 22px;
                 line-height: 30px;
                 text-align: center;
@@ -2756,7 +2799,7 @@ label{
     }
     .ofp_right{
         h3{
-            font-weight: 600;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 0;            
@@ -2775,7 +2818,7 @@ label{
     border-radius: 4px;
     border: none;
     padding: 16px 36px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     color: #353442;
     display: flex;
@@ -2799,7 +2842,7 @@ label{
 }
 .custo_info-aref{
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     display: flex;
@@ -2923,7 +2966,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         text-align: left;
         h3{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 0;
@@ -2959,7 +3002,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     justify-content: center;
     align-items: center;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     border: none;
@@ -3034,7 +3077,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
                 margin-top: 20px;
                 h2{
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 22px;
                     line-height: 28px;
                     color: #FFFFFF;
@@ -3048,7 +3091,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
             margin-top: 20px;
             .crm_head{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
                 text-align: center;
@@ -3075,7 +3118,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
                     .info_right{
                         span{
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: 16px;
                             line-height: 24px;
                             color: #201F2D;
@@ -3099,7 +3142,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         justify-content: center;
         align-items: center;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 28px;
         border: none;
@@ -3110,7 +3153,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     }
     .skipHref{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 28px;
         display: flex;
@@ -3129,7 +3172,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     margin-top: 20px;
     p{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 14px;
         line-height: 22px;
         text-align: center;
@@ -3139,7 +3182,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
 .itemName{
     h2{
         font-style: normal;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         text-align: center;
@@ -3149,7 +3192,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
 .click_acceptOffer{
     .accept_off_btn{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 30px;
         color: #353442;
@@ -3187,7 +3230,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         }
         h1{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 26px;
             line-height: 30px;
             color: #FFFFFF;
@@ -3206,14 +3249,14 @@ label.labelflexCenter.tclabel.tclabelMobi{
         .rb_hd{
             h2{
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
                 color: #CC1200;
             }
         }
         .ror_list{
-            height: 280px;
+            // height: 280px;
             overflow: hidden;
             overflow-y: auto;
             padding: 0 5px;
@@ -3249,7 +3292,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         padding: 10px 24px;
         flex: 1;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 28px;
         color: #605F6E;
@@ -3273,13 +3316,13 @@ label.labelflexCenter.tclabel.tclabelMobi{
         text-align: center;
         span{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 14px;
             line-height: 22px;
         }
         h3{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             text-align: center;
@@ -3309,7 +3352,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
             }
             h1{
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 20px;
                 line-height: 30px;
                 text-align: center;
@@ -3330,7 +3373,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
             padding-top: 20px;
             & > h2{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 22px;
                 line-height: 28px;
                 color: #262626;
@@ -3355,14 +3398,14 @@ label.labelflexCenter.tclabel.tclabelMobi{
                 .sell_day{
                     span{
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: 14px;
                         line-height: 22px;
                         color: #4381C0;
                     }
                     h3{
                         font-style: normal;
-                        font-weight: 700;
+                        font-weight: 900;
                         font-size: 20px;
                         line-height: 30px;
                         color: #201F2D;
@@ -3371,7 +3414,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
                 .sell_location{
                     & > span{
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: 14px;
                         line-height: 22px;
                         color: #4381C0;
@@ -3380,7 +3423,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
                         span{
                             display: block;
                             font-style: normal;
-                            font-weight: 700;
+                            font-weight: 900;
                             font-size: 20px;
                             line-height: 30px;
                             color: #201F2D;
@@ -3395,7 +3438,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     padding-bottom: 20px;
     & > h2{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 20px;
         text-align: center;
@@ -3430,7 +3473,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
 }
 .what_happened_we_arrive{
     & > h2{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 26px;
         text-align: center;
@@ -3457,7 +3500,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
             .wa_dec{
                 h2{
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 900;
                     font-size: 16px;
                     line-height: 24px;
                     color: #605F6E;
@@ -3492,7 +3535,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     .cf_head{
         h2{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 26px;
         }
@@ -3507,7 +3550,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         border-top: 1px solid #D5D5DC;
         h2{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 26px;
             color: #201F2D;
@@ -3521,11 +3564,18 @@ label.labelflexCenter.tclabel.tclabelMobi{
         }
     }
 }
+.hom_body.bonus_body{
+    ul{
+        li{
+            margin-bottom: 10px;
+        }
+    }
+}
 .higher_offer_modal{
     .modal-header{
         h1{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 900;
             font-size: 22px;
             line-height: 28px;
             color: #201F2D;
@@ -3536,8 +3586,8 @@ label.labelflexCenter.tclabel.tclabelMobi{
     .hom_body{
         h2{
             font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
+            font-weight: 900;
+            font-size: 18px;
             line-height: 22px;
             color: #201F2D;
         }
@@ -3557,7 +3607,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
                 border-radius: 4px;
                 padding: 10px 24px;                
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 line-height: 28px;
                 &.cancelBtn{
@@ -3572,6 +3622,29 @@ label.labelflexCenter.tclabel.tclabelMobi{
         }
     }
 }
+.wsp_img_wrp{
+    .wsp_left{
+        width: 80px;
+    }
+}
+.happy_customers_list{
+    .slick-prev {
+        left: -40px;
+    }
+    .slick-next {
+        right: -32px;
+    }
+    .slick-next:before, .slick-prev:before {
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: #1c1212;
+        font-size: 30px;
+    }
+}
+.infoBx{
+    padding-left: 2px;
+}
 .offer_block.offHoblock{
     padding-bottom: 0;
     margin-bottom: 0;
@@ -3583,7 +3656,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     .modal-header{
         h2{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 26px;
             line-height: 30px;
             color: #201F2D;
@@ -3593,7 +3666,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
         .of_item{
             h2{
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
                 color: #201F2D;
@@ -3635,7 +3708,7 @@ label.labelflexCenter.tclabel.tclabelMobi{
     .vdnHd{
         span{
             font-style: normal;
-            font-weight: 700;
+            font-weight: 900;
             font-size: 14px;
             line-height: 22px;
             color: #4A4958;
@@ -3698,7 +3771,7 @@ canvas{
 }
 .wa_dec{
     h3{
-        font-weight: 700;
+        font-weight: 900;
         font-size: 22px;
         line-height: 30px;
         text-align: center;
@@ -3769,7 +3842,7 @@ canvas{
         width: 70%;
         margin: 0 auto 30px;
         span{
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 26px;
             color: #201F2D;
@@ -3826,15 +3899,18 @@ canvas{
         }
         h2{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 26px;
             line-height: 30px;
             text-align: center;
             color: #201F2D;
             @include responsive(tab-port){
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 22px;
                 line-height: 28px;
+            }
+            @include responsive(phone){
+                font-size: 18px;
             }
             span{
                 display: block;
@@ -3858,7 +3934,7 @@ canvas{
                 margin-top: 30px;
                 h2{
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 22px;
                     line-height: 28px;
                     color: #201F2D;
@@ -3881,7 +3957,7 @@ canvas{
             .cob_offer_price{
                 h1{
                     font-style: normal;
-                    font-weight: 800;
+                    font-weight: 900;
                     font-size: 45px;
                     line-height: 50px;
                     text-align: center;
@@ -3889,7 +3965,7 @@ canvas{
                     color: #201F2D;
                     @include responsive(tab-port){
                         font-style: normal;
-                        font-weight: 800;
+                        font-weight: 900;
                         font-size: 36px;
                         line-height: 40px;
                         text-align: center;
@@ -3903,14 +3979,14 @@ canvas{
                 margin-bottom: 20px;
                 & > h2{
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 900;
                     font-size: 14px;
                     line-height: 22px;
                     text-transform: uppercase;
                     color: #4A4958;
                     @include responsive(tab-port){
                         font-style: normal;
-                        font-weight: 700;
+                        font-weight: 900;
                         font-size: 11px;
                         line-height: 16px;
                         letter-spacing: 0.02em;
@@ -3947,7 +4023,7 @@ canvas{
                             }
                             span{
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 600;
                                 font-size: 14px;
                                 line-height: 22px;
                                 color: #201F2D;
@@ -3992,7 +4068,7 @@ canvas{
             background: #FFD147;
             border-radius: 4px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             color: #353442;
@@ -4012,7 +4088,7 @@ canvas{
             border: 1px solid #D5D5DC;
             border-radius: 4px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             color: #353442;
@@ -4034,7 +4110,7 @@ canvas{
     background: #FFD147;
     border-radius: 4px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     color: #353442;
@@ -4079,7 +4155,7 @@ canvas{
         border-radius: 4px;
         padding: 10px 24px;                
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 28px;
         &.cancelBtn{
@@ -4098,7 +4174,7 @@ canvas{
 .appDetailLeft_web{
     & > h2{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 22px;
         line-height: 28px;
         color: #262626;
@@ -4179,7 +4255,7 @@ canvas{
                     text-align: left;
                     h2{
                         font-style: normal;
-                        font-weight: 800;
+                        font-weight: 900;
                         font-size: 56px;
                         line-height: 64px;
                         letter-spacing: -0.0002em;
@@ -4209,7 +4285,7 @@ img.truckIdx{
     margin-top: 30px;
     h1{
         font-style: normal;
-        font-weight: 800;
+        font-weight: 900;
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -4269,7 +4345,7 @@ span.opicon{
 .np_item_dec{
     h2{
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 16px;
         line-height: 24px;
         color: #605F6E;
@@ -4279,7 +4355,7 @@ span.opicon{
     padding-top: 50px;
     & > h2{
         font-style: normal;
-        font-weight: 800;
+        font-weight: 900;
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -4303,10 +4379,11 @@ span.opicon{
                     margin: 0 auto;
                 }
                 .np_item_dec{
+                    margin-top: 20px;
                     h2{
                         font-style: normal;
-                        font-weight: 500;
-                        font-size: 28px;
+                        font-weight: 600;
+                        font-size: 24px;
                         line-height: 36px;
                         text-align: center;
                         color: #201F2D;
@@ -4315,8 +4392,8 @@ span.opicon{
                     p{
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 20px;
-                        line-height: 30px;
+                        font-size: 16px;
+                        line-height: 26px;
                         text-align: center;
                         color: #4A4958;
                     }
@@ -4328,7 +4405,7 @@ span.opicon{
 .what_happened_we_arrive_web{
     & > h2{
         font-style: normal;
-        font-weight: 800;
+        font-weight: 900;
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -4357,14 +4434,14 @@ span.opicon{
                     p{
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 20px;
-                        line-height: 30px;
+                        font-size: 16px;
+                        line-height: 26px;
                         text-align: center;
                         color: #605F6E;
                     }
                     h2{
                         font-style: normal;
-                        font-weight: 700;
+                        font-weight: 900;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
@@ -4406,7 +4483,7 @@ span.opicon{
         h2{
             margin-bottom: 0;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 26px;
             line-height: 30px;
             color: #201F2D;
@@ -4456,7 +4533,7 @@ span.opicon{
     }
 }
 .whencarsell{
-    font-weight: 500;
+    font-weight: 600;
 }
 .emailWithInfo{
     display: flex !important;
@@ -4514,7 +4591,7 @@ span.opicon{
         .pbr_hd{
             h2{
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 22px;
                 line-height: 28px;
                 color: #FFFFFF;
@@ -4528,7 +4605,7 @@ span.opicon{
             margin-top: 30px;
             p{
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
                 color: #FFFFFF;
@@ -4566,7 +4643,7 @@ span.opicon{
         color: #fff;
         display: flex;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 28px;
     }
@@ -4602,7 +4679,7 @@ span.opicon{
         justify-content: center;
         h2{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 22px;
             line-height: 28px;
             margin-bottom: 0;
@@ -4622,7 +4699,7 @@ span.opicon{
         span{
             flex: 1;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 22px;
             line-height: 28px;
             text-align: center;
@@ -4689,7 +4766,7 @@ span.opicon{
                 }
                 & > span{
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 900;
                     font-size: 14px;
                     line-height: 22px;
                     color: #353442;
@@ -4748,5 +4825,175 @@ h2.hooray_hd{
                 line-height: 18px;
             }
         }
+    }
+}
+.doneProcess{
+    border-top: 1px solid #d5d5d5;
+    padding-top: 10px;
+}
+.unable_to_reach{
+    background-color: #F8F8FB;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    .ur_body{
+        h2{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            color: #201F2D;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #605F6E;
+        }
+    }
+}
+.returnBtn{
+    width: 100%;
+    margin-top: 30px;
+    button{
+        border: 1px solid #D5D5DC;
+        border-radius: 4px;
+        padding: 15px;
+        width: 100%;
+    }
+}
+.no-border{
+    border: none !important;
+}
+.why_sell_points.why_sell_wrp{
+    .wsp_left{
+        flex: 1;
+    }
+    .wsp_right{
+        flex: 3;
+    }
+}
+label.labelflexCenter.tclabel.tclabelMobi{
+    & > span{
+        flex: 1;
+    }
+    span.bodyTc{
+        flex: 5;
+    }
+}
+.elsewhere_offer,.accept_off_btn{    
+    position: relative;
+    transition: all .5s;
+    &:hover{
+        filter: brightness(0.85);
+        transition: all .5s;
+    }
+}
+.ss-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li{
+        span{
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+.fooColIn.headColIn{
+    line-height: 42px;
+}
+.hoBtnsFooGrp.hoBtnsFooGrp_web.thanks_btn button{
+    flex: inherit;
+    padding: 10px 50px;
+}
+.hom_body.hofferBody{
+    text-align: center;
+    h2{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+        color: #201F2D;
+    }
+}
+.thanks_block_foo{
+    padding-bottom: 15px;
+}
+.side_nav_foo{
+    padding: 0.75em 1em;
+    padding-top: 0;
+    ul{
+        padding-left: 0;
+        list-style: none;
+    }
+    .legal{
+        line-height: 42px;
+        & > span{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #605F6E;
+            mix-blend-mode: normal;
+        }
+    }
+}
+.license_plate.finance_no{
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #D5D5DC;
+
+}
+.unable_to_reach.unable_to_reach_desk{
+    background: #EDF2F8;
+    .ur_body{
+        h2{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 30px;
+            text-align: center;
+            color: #605F6E;
+        }
+    }
+}
+.returnBtn.returnBtnDesk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        width: auto;
+        background-color: #FFFFFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #353442;
+        outline: 0;
+    }
+}
+span.phoneNo{
+    display: block;
+    color: #12c0ff;
+}
+label.lblipt{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    span{
+        display: inline-flex;
+        padding-top: 0;
+        position: relative;
+        top: 2px;
     }
 }

@@ -1,126 +1,63 @@
 [
     {
-        "title": "General",
+        "title": "About WhipFlip",
         "icon": "bi-gear-fill",
         "childs": [
             {
-                "title": "Home",
+                "title": "Company",
                 "icon": "bi-house-fill",
-                "path": "/"
+                "path": ""
             },
             {
-                "title": "About",
+                "title": "Customer Reviews",
                 "icon": "bi-info-circle-fill",
-                "path": "/about"
+                "path": ""
             },
             {
-                "title": "Contact",
+                "title": "Careers",
                 "icon": "bi-phone-fill",
-                "childs": [
-                    {
-                        "title": "Facebook",
-                        "icon": "bi-facebook"
-                    },
-                    {
-                        "title": "Twitter",
-                        "icon": "bi-twitter"
-                    },
-                    {
-                        "title": "Instagram",
-                        "icon": "bi-instagram"
-                    }
-                ]
-            },
-            {
-                "title": "FAQ",
-                "icon": "bi-question-circle-fill"
+                "path": ""
             }
         ]
     },
     {
-        "title": "Account",
+        "title": "How It Works",
         "icon": "bi-info-circle-fill",
         "childs": [
             {
-                "title": "Login",
-                "path": "/login"
+                "title": "Why Sell to Us?",
+                "path": "/"
             },
             {
-                "title": "Register",
-                "path": "/register"
+                "title": "Private Sale or Trading In?",
+                "path": "/"
             },
             {
-                "title": "Forgot Password",
-                "path": "/forgot-password"
-            },
-            {
-                "title": "Reset Password",
-                "path": "/reset-password"
-            }
-        ]
-    },
-    {
-        "title": "Profile",
-        "icon": "bi-person-fill",
-        "childs": [
-            {
-                "title": "Profile",
-                "path": "/profile"
-            },
-            {
-                "title": "Settings",
-                "childs": [
-                    {
-                        "title": "Account",
-                        "path": "/settings/account"
-                    },
-                    {
-                        "title": "Billing",
-                        "childs": [
-                            {
-                                "title": "Payment",
-                                "path": "/settings/billing/payment"
-                            },
-                            {
-                                "title": "Subscription",
-                                "path": "/settings/billing/subscription"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Notifications",
-                        "path": "/settings/notifications"
-                    }
-                ]
-            },
-            {
-                "title": "Logout",
-                "path": "/logout"
-            }
-        ]
-    },
-    {
-        "title": "Advance",
-        "icon": "bi-view-list",
-        "childs": [
-            {
-                "title": "Search",
-                "path": "/search"
-            },
-            {
-                "title": "History",
-                "path": "/history"   
+                "title": "Referrals",
+                "path": "/"
             }
         ]
     },
     {
         "title": "Support",
-        "icon": "bi-question-circle-fill",
-        "path": "/support"
-    },
-    {
-        "title": "Report Bug",
-        "icon": "bi-bug",
-        "path": "/report-bug"
+        "icon": "bi-person-fill",
+        "childs": [
+            {
+                "title": "FAQ",
+                "path": "/"
+            },
+            {
+                "title": "Blog",
+                "path": "/"
+            },
+            {
+                "title": "Chat",
+                "path": "/"
+            },
+            {
+                "title": "Contact Us",
+                "path": "/"
+            }
+        ]
     }
 ]

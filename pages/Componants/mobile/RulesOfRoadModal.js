@@ -40,7 +40,7 @@ function RulesOfRoadModal({show,handleClose,clickFromWeb}) {
                     <h3>June 17 at 3:20PM</h3>
                   </div>
                   <div className="apText">
-                    <p>If something should arise, please contact us immediately at (888) 349-3189</p>
+                    <p>If something should arise, please contact us immediately at: <span className='phoneNo'>(888) 349-3189</span></p>
                   </div>
                 </div>
             </div>            

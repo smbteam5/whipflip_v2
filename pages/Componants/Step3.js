@@ -60,6 +60,7 @@ function Step3() {
               <div className="why_sell_points">
                 <div className="wsp_item">
                   <div className="wsp_item_in">
+                  <div className="wsp_img_wrp">
                     <div className="wsp_left">
                       <Image 
                         src="/images/convenience.svg" 
@@ -69,6 +70,7 @@ function Step3() {
                         height={80}
                       />
                     </div>
+                    </div>
                     <div className="wsp_right">
                       <h2>Ultimate Convenience!</h2>
                       <p>We come to you to pay and pick up...on your time! No more wasted time or stress messing with scammers, tire-kickers, or dealers!</p>
@@ -77,6 +79,7 @@ function Step3() {
                 </div>
                 <div className="wsp_item">
                   <div className="wsp_item_in">
+                  <div className="wsp_img_wrp">
                     <div className="wsp_left">
                       <Image 
                         src="/images/best-offer.svg" 
@@ -85,27 +88,29 @@ function Step3() {
                         width={80}
                         height={80}
                       />
-                    </div>
+                    </div></div>
                     <div className="wsp_right">
-                      <h2>Ultimate Convenience!</h2>
-                      <p>We come to you to pay and pick up...on your time! No more wasted time or stress messing with scammers, tire-kickers, or dealers!</p>
+                      <h2>Best Offer!</h2>
+                      <p>Our offers typically are <b>$762 higher</b> than trade-in and beat most other car-buying companies. Plus, we are trusted by the best in the industry, JD Power!</p>
                     </div>
                   </div>
                 </div>
                 <div className="wsp_item">
                   <div className="wsp_item_in">
-                    <div className="wsp_left">
-                      <Image 
-                        src="/images/safe.svg" 
-                        alt="safe" 
-                        title='safe'
-                        width={80}
-                        height={80}
-                      />
+                    <div className="wsp_img_wrp">
+                      <div className="wsp_left">
+                        <Image 
+                          src="/images/safe.svg" 
+                          alt="safe" 
+                          title='safe'
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                     <div className="wsp_right">
-                      <h2>Ultimate Convenience!</h2>
-                      <p>We come to you to pay and pick up...on your time! No more wasted time or stress messing with scammers, tire-kickers, or dealers!</p>
+                      <h2>Safe and Smooth!</h2>
+                      <p>Guaranteed payment on the spot with all proper paperwork completed in only a few minutes!</p>
                     </div>
                   </div>
                 </div>

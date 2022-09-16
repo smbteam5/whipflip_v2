@@ -209,7 +209,7 @@ const [LOADED, setLoaded] = useState(false)
                         </div>
                         <div className="wa_dec">
                             <h2>Picked Up</h2>
-                            <p>No need to worry about your car anymore. We’ll handle the pick up!</p>
+                            <p>No need to worry about your car anymore. We’ll handle pick up and you do not need to be there!</p>
                         </div>
                     </div>
                 </div>

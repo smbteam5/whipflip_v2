@@ -27,7 +27,7 @@ function ColorSelect() {
       console.log("dropdown",dropdown);
       if (dropdown === undefined || dropdown.length == 0) {
         console.log('array is empty');
-        setdropdown([{id: 0, name: 'Choose Color'}]);
+        setdropdown([{id: 0, name: 'Choose a Color'}]);
       }
       if (dropdown.length > 0) {
         console.log('array is NOT empty');
