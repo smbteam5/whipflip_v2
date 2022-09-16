@@ -43,9 +43,9 @@ function index() {
               <div className="bnr_left">
                 <div className="bnr_lin_top">
                   <div className="bnr_left_head">
-                    <h1><span>The <span className='text-highlight'>Best</span> Way to</span> 
+                    <h1><span>The <span className='text-highlight'>Best</span> Way To</span> 
                     <span>Sell Your Car - </span><span>Period!</span></h1>
-                    <span>We come to you. Paid on the spot!</span>
+                    <span>We come to you. Paid on the sport!</span>
                   </div>
                   <div className="bnr_left_info desk-show">
                     <div className="row">
@@ -107,22 +107,12 @@ function index() {
                       <div className="col-lg-6 accredit_col p-0 bnr_left_points">
                         <div className="acc_left">
                           <Image 
-                              src="/images/accredit.png" 
+                              src="/images/acc-text.png" 
                               alt="profile" 
                               title='profile'
-                              width={95}
-                              height={36}
+                              width={200}
+                              height={50}
                           />
-                        </div>
-                        <div className="acc_right">
-                          <span>
-                            BBB Rating: A
-                          </span>
-                          <span>
-                            as of 5/11/2022
-                          </span>
-                          <span>
-                            click for profile</span>
                         </div>
                       </div>
                       <div className="col-lg-12 video_col bnr_left_points">
@@ -241,7 +231,7 @@ function index() {
                                 </div>
                               </div>
                             </div>
-                            <div className="form-group row">
+                            <div className="form-group row mb-0">
                               <div className="col-lg-12">
                                 <button className='getOfferBtn' onClick={handleShowConfirmOffer}>
                                   <span>
@@ -261,8 +251,8 @@ function index() {
                       showConfirmOffer &&
                       <div className="confirm_offer_banner">
                         <div className="cob_head">
-                          <span>Welcome back</span>
-                          <h2><span>You are only a click away from</span> <span>confirming your offer!</span></h2>
+                          <span>Welcome back !</span>
+                          <h2><span>You’re only a click away from </span> <span>confirming your offer!</span></h2>
                         </div>
                         <div className="cob_body">
                           <div className="cob_in">
@@ -655,7 +645,7 @@ function index() {
             
             <h2 className='desk-show'>
               <span>Thousands of </span>
-              <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS</span>
+              <span className="text-highlight long_line happy_customer"> HAPPY CUSTOMERS!</span>
             </h2>
             <h2 className='mob-show happy_cus_mob'>
               <span>Thousands of </span>
@@ -720,7 +710,7 @@ function index() {
           <div className="row">
             <div className="col-lg-10 colsciLeft">
               <div className="sciLeft">
-                <h2>"There has to be a better way to sell my car!"</h2>
+                <h2>There has to be a better way to sell my car!</h2>
                 <p>The process of selling a car still remains very difficult and I never understood why with all of the great technology we have in the modern world.  We are consumers too that have sold a few cars ourselves and went though the same struggles you may have faced with wasting precious time with tire-kickers, scammers, and endless travel to receive lowball trade-in offers.</p> 
                 <p>So our thought was simple and our mission was clear – What if there was a way anyone, anywhere could sell their vehicle as fast and as easy as ordering a pizza from a mobile device? </p> <p>No stress, no travel, no risk, no inconvenience.  Well, I believe we have created it and it’s here at your fingertips.Go ahead and give us a try! </p>
                 <p>We welcome you join the thousands of other customers who deserved a much better way to sell by using WhipFlip.</p>
