@@ -12,13 +12,13 @@ function OfferDropCheck() {
     const [status2, setStatus2] = useState(true);
     const [condition, setCondition] = useState(2);
     const [warning, setWarning] = useState(true);
-    const handleOnBlur = ({ target: { value } }) => {
+    const handleOnBlur1 = ({ target: { value } }) => {
         const date = new Date(value);
-        if (isValid(date)) {
-          console.log("date: %s", format(date, "dd/MM/yyyy"));
-        } else {
-          console.log("value: %s", date);
-        }
+        // if (isValid(date)) {
+        //   console.log("date: %s", format(date, "dd/MM/yyyy"));
+        // } else {
+        //   console.log("value: %s", date);
+        // }
       };
     const radioHandler2 = (status) => {
         setStatus2(status);
@@ -91,7 +91,7 @@ function OfferDropCheck() {
                                             selected={startDate} 
                                             onChange={(date) => setStartDate(date)} 
                                             placeholderText="mm/dd/yyyy"
-                                            onBlur={handleOnBlur}
+                                            onBlur={handleOnBlur1}
                                         />
                                         <span className="calendarIcon">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

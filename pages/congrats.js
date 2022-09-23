@@ -171,7 +171,7 @@ const [width, height] = useWindowSize()
                                     height={128}
                                 />
                             </div>
-                            <div className="wa_dec">
+                            <div className="wa_dec whwa_dec">
                                 <h3>Condition Verification</h3>
                                 <p>We will match the vehicle condition you entered and conduct a quick test drive.</p>
                             </div>
@@ -188,7 +188,7 @@ const [width, height] = useWindowSize()
                                     height={128}
                                 />                              
                           </div>
-                          <div className="wa_dec">
+                          <div className="wa_dec whwa_dec">
                             <h3>Paperwork & Payment</h3>
                               <p>We will complete all proper paperwork (i.e. Vehicle Purchase Agreement) and issue a check on the spot!</p>
                           </div>
@@ -205,7 +205,7 @@ const [width, height] = useWindowSize()
                                     height={128}
                                 />   
                           </div>
-                          <div className="wa_dec">
+                          <div className="wa_dec whwa_dec">
                               <h3>SOLD!</h3>
                               <p>In less than a few minutes of your time!</p>
                           </div>
@@ -222,7 +222,7 @@ const [width, height] = useWindowSize()
                                 height={128}
                             />   
                           </div>
-                          <div className="wa_dec">
+                          <div className="wa_dec whwa_dec">
                             <h3>Picked Up</h3>
                               <p>No need to worry about your car anymore. We’ll handle pick up and you do not need to be there!</p>
                           </div>
@@ -239,7 +239,7 @@ const [width, height] = useWindowSize()
                   <div className="cf_head">
                       <h2>Any other questions?</h2>
                       <p>
-                          <span>Check out our <a href="#"> FAQ,</a> email us at <a href="#">support@whipflip.com</a> or contact us at  <a href="#">(888) 349-3189.</a></span>
+                          <span>Check out our <a href="#"> FAQ,</a> email us at <a href="#">support@whipflip.com</a> or contact us at  <a href="#"> (888) 349-3189.</a></span>
                       </p>
                   </div>
                   <div className="our_disclaimer">

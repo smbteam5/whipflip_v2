@@ -62,7 +62,7 @@ function HigherOfferModalWeb({showHigherOffer,handleCloseHigherOffer}) {
         </Modal.Header>
         <Modal.Body className='hom_body hofferBody'>
             <h2>Thanks!</h2>            
-            <p>We’ll get in touch shortly to try to match the offer and add that sweet $250 bonus check!</p>            
+            <p>We’ll get in touch shortly to try to match the offer and add that sweet $250 bonus!</p>            
         </Modal.Body>
         <div className="thanks_block_foo">
             <div className="form-group hoBtnsFooGrp hoBtnsFooGrp_web thanks_btn">

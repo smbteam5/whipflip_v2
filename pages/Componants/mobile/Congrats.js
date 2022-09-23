@@ -220,7 +220,7 @@ const [LOADED, setLoaded] = useState(false)
                     <p>
                         <span>Check out our <a href="#"> FAQ,</a> email us at </span>
                         <span><a href="#">support@whipflip.com</a> or contact us at </span>
-                        <span>(888) 349-3189.</span>
+                        <span className='phno_sp'>(888) 349-3189.</span>
                     </p>
                 </div>
                 <div className="our_disclaimer">

@@ -239,7 +239,7 @@ function index() {
                             <div className="form_top">
                               <div className="poweredBy">
                                 <Image
-                                  src="/images/jd.webp"
+                                  src="/images/jd.svg"
                                   alt="poweredBy"
                                   title="poweredBy"
                                   width={180}
@@ -385,7 +385,7 @@ function index() {
                                 </div>
                                 <div className="poweredBy">
                                   <Image
-                                    src="/images/jd.webp"
+                                    src="/images/jd.svg"
                                     alt="poweredBy"
                                     title="poweredBy"
                                     width={200}
@@ -774,8 +774,8 @@ function index() {
                     <div className="si-head">
                       <Image
                         src="/images/fgp.svg"
-                        alt="Fast & Guaranteed Payment"
-                        title="Fast & Guaranteed Payment"
+                        alt="Fast Guaranteed Payment"
+                        title="Fast Guaranteed Payment"
                         width={50}
                         height={50}
                       />
@@ -795,8 +795,8 @@ function index() {
                     <div className="si-head">
                       <Image
                         src="/images/ts.svg"
-                        alt="Trusted & Saf"
-                        title="Trusted & Saf"
+                        alt="Trusted Saf"
+                        title="Trusted  Saf"
                         width={50}
                         height={50}
                       />
@@ -806,9 +806,9 @@ function index() {
                       <p>
                         No 3rd parties, we are with you all the way. Full
                         breakdown of how your final offer was made and ways to
-                        maximize it. No more "fuzzy" trade-in math! Meet some of
-                        our Concierges!
-                      </p>
+                        maximize it. No more "fuzzy" trade-in math! 
+                      </p>                      
+                      <p><span className="meet_txt">Meet some of our Concierges!</span></p>
                     </div>
                   </div>
                 </div>
@@ -934,8 +934,8 @@ function index() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 colsciLeft">
-              <div className="sciLeft">
-                <h2>There has to be a better way to sell my car!</h2>
+              <div className="sciLeft sellCarTxt">
+                <h2><span>"There has to be a better</span><span> way to sell my car!"</span></h2>
                 <p>
                   The process of selling a car still remains very difficult and
                   I never understood why with all of the great technology we
