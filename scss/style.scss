@@ -64,6 +64,10 @@ span.infoBx{
             font-weight: 900;
             font-size: 56px;
             color:#fff;
+            @include responsive (tab-port-1024){
+                font-size: 55px;
+            }
+
             @include responsive(tab-port){
                 font-size: 44px;
             }
@@ -440,8 +444,11 @@ span.infoBx{
             font-size: 46px;
         }
         @include responsive(phone){
-            font-size: 34px;
+            font-size: 31px;
             line-height: 48px;
+            span.asked-questions{
+                display: block;
+            }
         }
         span{
             display: inline-block;
@@ -856,6 +863,10 @@ span.infoBx{
                 line-height: 40px;
                 color: #201F2D;
                 mix-blend-mode: normal;
+                @include responsive (tab-port-1024){
+                    font-size: 32px;
+                }
+
                 @include responsive(tab-port){
                     font-style: normal;
                     font-weight: 700;
@@ -3912,6 +3923,9 @@ canvas{
             @include responsive(phone){
                 font-size: 18px;
             }
+            @include responsive(Exsmall330){
+                font-size: 15px;
+            }
             span{
                 display: block;
             }
@@ -4383,7 +4397,7 @@ span.opicon{
                     h2{
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 24px;
+                        font-size: 22px;
                         line-height: 36px;
                         text-align: center;
                         color: #201F2D;
