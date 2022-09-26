@@ -139,7 +139,7 @@ function offer() {
                                             />
                                         </div>
                                         <div className="wci_right">
-                                            <p>Feel free to compare your free estimate to average trade-in values and you may see that your car might worth up to 14% higher than the national average!</p>
+                                            <p>Feel free to compare your free estimate to average trade-in values and you may see that your car might worth up to <b>14% higher than the national average!</b></p>
                                         </div>
                                     </div>
                                 </div>
