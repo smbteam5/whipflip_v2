@@ -355,7 +355,7 @@ function index() {
                         {showConfirmOffer && (
                           <div className="confirm_offer_banner">
                             <div className="cob_head">
-                              <span>Welcome back !</span>
+                              <span>Welcome back!</span>
                               <h2>
                                 <span>You’re only a click away from </span>{" "}
                                 <span>confirming your offer!.</span>
