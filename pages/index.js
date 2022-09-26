@@ -397,25 +397,25 @@ function index() {
                                   <div className="oe_time_left">
                                     <div className="oet_col">
                                       <div className="oet_col_in">
-                                        <span>06</span>
+                                        <span>05</span>
                                       </div>
                                       <span>DAYS</span>
                                     </div>
                                     <div className="oet_col">
                                       <div className="oet_col_in">
-                                        <span>06</span>
+                                        <span>00</span>
                                       </div>
                                       <span>hrs</span>
                                     </div>
                                     <div className="oet_col">
                                       <div className="oet_col_in">
-                                        <span>06</span>
+                                        <span>00</span>
                                       </div>
                                       <span>mins</span>
                                     </div>
                                     <div className="oet_col">
                                       <div className="oet_col_in">
-                                        <span>06</span>
+                                        <span>00</span>
                                       </div>
                                       <span>secs</span>
                                     </div>
