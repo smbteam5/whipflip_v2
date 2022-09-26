@@ -373,10 +373,7 @@ function Step2b() {
                                     </div>
                                 </div>  
                                 <div className="viewDetails">
-                                        {
-                                            issues === 1 && 
-                                            <></>
-                                        }
+                                       
                                         {
                                             issues === 2 && 
                                             <div className="viewDetail">
@@ -388,7 +385,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox1" value="Engine Modification" />
                                                                 <label htmlFor="checkbox1" className='labeltick'>
-                                                                    <span className='labeltickspan'>Accident History</span>
+                                                                    <span className='labeltickspan'>Doesn’t Start/Drive</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -402,7 +399,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
                                                                 <label htmlFor="checkbox2" className='labeltick'>
-                                                                    <span className='labeltickspan'>Structural Damage</span>
+                                                                    <span className='labeltickspan'>Battery/ Charging</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -416,7 +413,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
                                                                 <label htmlFor="checkbox3" className='labeltick'>
-                                                                    <span className='labeltickspan'>Lemon/Mfctr. Buyback</span>
+                                                                    <span className='labeltickspan'>Engine Noise (Ticking)</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -430,7 +427,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
                                                                 <label htmlFor="checkbox4" className='labeltick'>
-                                                                    <span className='labeltickspan'>Odometer Issue</span>
+                                                                    <span className='labeltickspan'>Engine Noise (Knocking)</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -444,7 +441,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
                                                                 <label htmlFor="checkbox5" className='labeltick'>
-                                                                    <span className='labeltickspan'>Theft Recovered</span>
+                                                                    <span className='labeltickspan'>Oil/Fluid Leak</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -459,7 +456,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox6" value="Aftermarket Body Panels" />
                                                                 <label htmlFor="checkbox6" className='labeltick'>
-                                                                    <span className='labeltickspan'>Previous Canadian</span>
+                                                                    <span className='labeltickspan'>Overheats</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -473,105 +470,7 @@ function Step2b() {
                                                             <li className='col-6 p-0 ci_col'>
                                                                 <input type="checkbox" id="checkbox7" value="Aftermarket Body Panels" />
                                                                 <label htmlFor="checkbox7" className='labeltick'>
-                                                                    <span className='labeltickspan'>Theft</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox8" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox8" className='labeltick'>
-                                                                    <span className='labeltickspan'>Repossession</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox9" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox9" className='labeltick'>
-                                                                    <span className='labeltickspan'>Fire Damage</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox10" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox10" className='labeltick'>
-                                                                    <span className='labeltickspan'>Flood Damage</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox11" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox11" className='labeltick'>
-                                                                    <span className='labeltickspan'>Reconstructed</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox12" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox12" className='labeltick'>
-                                                                    <span className='labeltickspan'>Salvage</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox13" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox13" className='labeltick'>
-                                                                    <span className='labeltickspan'>Hail Damage</span>
-                                                                    <span className='spanicon'>
-                                                                        <span className="plus">
-                                                                            <i className="fa-solid fa-plus"></i>
-                                                                        </span>
-                                                                        <span className="checked">
-                                                                            <i className="fa-solid fa-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox14" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox14" className='labeltick'>
-                                                                    <span className='labeltickspan'>Police/Taxi</span>
+                                                                    <span className='labeltickspan'>Transmission</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
                                                                             <i className="fa-solid fa-plus"></i>
@@ -586,9 +485,9 @@ function Step2b() {
                                                     </div>
                                                 </div>
                                                 </div>  
-                                            </div>                                  
+                                            </div>
                                         }
-                                </div>  
+                                </div>   
                             </div>
                         </div>
                         {/*  */}
