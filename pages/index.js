@@ -358,7 +358,7 @@ function index() {
                               <span>Welcome back!</span>
                               <h2>
                                 <span>You’re only a click away from </span>{" "}
-                                <span>confirming your offer!.</span>
+                                <span>confirming your offer!</span>
                               </h2>
                             </div>
                             <div className="cob_body">
