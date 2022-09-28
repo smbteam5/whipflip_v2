@@ -397,7 +397,7 @@ function index() {
                                   <div className="oe_time_left">
                                     <div className="oet_col">
                                       <div className="oet_col_in">
-                                        <span>05</span>
+                                        <span>04</span>
                                       </div>
                                       <span>DAYS</span>
                                     </div>

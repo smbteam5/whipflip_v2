@@ -9,7 +9,11 @@ function Step2b() {
     const [show, setShow] = useState(false);
     const [showfinal, setShowfinal] = useState(false);
     const [issues, setIssues] = useState(1);
-
+    const [modify, setModify] = useState(1);
+    const modifyHandler = (modify) => {
+        setModify(modify);
+        console.log("issue",modify);
+    };
     const handleClose = () => setShow(false);
 
     const handleShow = () => setShow(true);
@@ -490,22 +494,7 @@ function Step2b() {
                                 </div>   
                             </div>
                         </div>
-                        {/*  */}
-                        {/* <div className="form-group row ob_frm_row">
-                            <div className="col-lg-12 p-0">
-                                <label htmlFor="">Any engine and/or drivability issues?</label>
-                                <div className="chooseBlock selector row selectorRow">
-                                    <div className="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="radiono" name="selector__sel" className="selector-item_radio" defaultChecked  />
-                                        <label htmlFor="radiono" className="selector-item_label">Nope!</label>
-                                    </div>
-                                    <div className="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="radioyes" name="selector__sel" className="selector-item_radio" />
-                                        <label htmlFor="radioyes" className="selector-item_label">Yes</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                        
                         <div className="form-group row ob_frm_row">
                             <div className="col-lg-12 p-0">
                             <label htmlFor=""> Any dashboard warning lights or inoperable parts? (e.g. Check Engine, Airbag Light, A/C issue, etc.)</label>
@@ -703,7 +692,7 @@ function Step2b() {
                                 </div>  
                             </div>
                         </div>  
-                        <div className="form-group row ob_frm_row">
+                        {/* <div className="form-group row ob_frm_row">
                             <div className="col-lg-12 p-0">
                                 <label htmlFor="">Any aftermarket parts or modifications?</label>
                                 <div className="chooseBlock selector row selectorRow">
@@ -716,6 +705,112 @@ function Step2b() {
                                         <label htmlFor="mod2" className="selector-item_label">Yes</label>
                                     </div>
                                 </div>
+                            </div>
+                        </div> */}
+                        <div className="form-group row ob_frm_row">
+                            <div className="col-lg-12 p-0">
+                            <label htmlFor="">Any aftermarket parts or modifications?</label>
+                                <div className="chooseBlock selector row selectorRow">
+                                    <div className="selecotr-item col-lg-6 p-0">
+                                        <div className={modify === 1 ? "si-wrap": "si-wrap"} >
+                                            <input type="radio" id="selmod1" name="selector__mod" className={modify === 1 ? "selector-item_radio active": "selector-item_radio"} checked={modify === 1} onChange={(e) => modifyHandler(1)} />
+                                            <label htmlFor="selmod1" className="selector-item_label">Nope!</label>  
+                                        </div>
+                                    </div>
+                                    <div className="selecotr-item col-lg-6 pr-0">
+                                        <div className={modify === 2 ? "si-wrap active": "si-wrap"} >
+                                            <input type="radio" id="selmod2" name="selector__mod" className={modify === 2 ? "selector-item_radio active": "selector-item_radio"} checked={modify === 2} onChange={(e) => modifyHandler(2)}/>
+                                            <label htmlFor="selmod2" className="selector-item_label">Yes</label>
+                                        </div>                                             
+                                    </div>
+                                </div>  
+                                <div className="viewDetails">
+                                       
+                                        {
+                                            modify === 2 && 
+                                            <div className="viewDetail">
+                                        <div className='selectView vin'>
+                                            <div className="checkIssues">
+                                                <h3>Select all that apply.</h3>
+                                                <div className="chooseIssues">
+                                                    <ul className='ks-cboxtags row'>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox1" value="Engine Modification" />
+                                                            <label htmlFor="checkbox1" className='labeltick'>
+                                                                <span className='labeltickspan'>Engine Modification</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i className="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i className="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
+                                                            <label htmlFor="checkbox2" className='labeltick'>
+                                                                <span className='labeltickspan'>Drivetrain Modification</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i className="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i className="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
+                                                            <label htmlFor="checkbox3" className='labeltick'>
+                                                                <span className='labeltickspan'>Altered Suspension (Lowered)</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i className="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i className="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
+                                                            <label htmlFor="checkbox4" className='labeltick'>
+                                                                <span className='labeltickspan'>Altered Suspension (Lifted)</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i className="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i className="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li className='col-6 p-0 ci_col'>
+                                                            <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
+                                                            <label htmlFor="checkbox5" className='labeltick'>
+                                                                <span className='labeltickspan'>Aftermarket Body Panels</span>
+                                                                <span className='spanicon'>
+                                                                    <span className="plus">
+                                                                        <i className="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                    <span className="checked">
+                                                                        <i className="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                </div>  
+                                        }
+                                </div>   
                             </div>
                         </div>
                     </form>
