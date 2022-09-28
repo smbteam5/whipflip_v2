@@ -387,8 +387,8 @@ function Step2b() {
                                                     <div className="chooseIssues">
                                                         <ul className='ks-cboxtags row'>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox1" value="Engine Modification" />
-                                                                <label htmlFor="checkbox1" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox1is" value="Engine Modification" />
+                                                                <label htmlFor="checkbox1is" className='labeltick'>
                                                                     <span className='labeltickspan'>Doesn’t Start/Drive</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -401,8 +401,8 @@ function Step2b() {
                                                                 </label>
                                                             </li>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
-                                                                <label htmlFor="checkbox2" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox2is" value="Drivetrain Modification" />
+                                                                <label htmlFor="checkbox2is" className='labeltick'>
                                                                     <span className='labeltickspan'>Battery/ Charging</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -415,8 +415,8 @@ function Step2b() {
                                                                 </label>
                                                             </li>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
-                                                                <label htmlFor="checkbox3" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox3is" value="Altered Suspension (Lowered)" />
+                                                                <label htmlFor="checkbox3is" className='labeltick'>
                                                                     <span className='labeltickspan'>Engine Noise (Ticking)</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -429,8 +429,8 @@ function Step2b() {
                                                                 </label>
                                                             </li>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
-                                                                <label htmlFor="checkbox4" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox4is" value="Altered Suspension (Lifted)" />
+                                                                <label htmlFor="checkbox4is" className='labeltick'>
                                                                     <span className='labeltickspan'>Engine Noise (Knocking)</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -443,8 +443,8 @@ function Step2b() {
                                                                 </label>
                                                             </li>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox5" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox5is" value="Aftermarket Body Panels" />
+                                                                <label htmlFor="checkbox5is" className='labeltick'>
                                                                     <span className='labeltickspan'>Oil/Fluid Leak</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -458,8 +458,8 @@ function Step2b() {
                                                             </li>
                                                             {/* new */}
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox6" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox6" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox6is" value="Aftermarket Body Panels" />
+                                                                <label htmlFor="checkbox6is" className='labeltick'>
                                                                     <span className='labeltickspan'>Overheats</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -472,8 +472,8 @@ function Step2b() {
                                                                 </label>
                                                             </li>
                                                             <li className='col-6 p-0 ci_col'>
-                                                                <input type="checkbox" id="checkbox7" value="Aftermarket Body Panels" />
-                                                                <label htmlFor="checkbox7" className='labeltick'>
+                                                                <input type="checkbox" id="checkbox7is" value="Aftermarket Body Panels" />
+                                                                <label htmlFor="checkbox7is" className='labeltick'>
                                                                     <span className='labeltickspan'>Transmission</span>
                                                                     <span className='spanicon'>
                                                                         <span className="plus">
@@ -691,22 +691,8 @@ function Step2b() {
                                         }
                                 </div>  
                             </div>
-                        </div>  
-                        {/* <div className="form-group row ob_frm_row">
-                            <div className="col-lg-12 p-0">
-                                <label htmlFor="">Any aftermarket parts or modifications?</label>
-                                <div className="chooseBlock selector row selectorRow">
-                                    <div className="selecotr-item col-lg-6 p-0">
-                                        <input type="radio" id="mod1" name="selectormod" className="selector-item_radio" defaultChecked  />
-                                        <label htmlFor="mod1" className="selector-item_label">Nope!</label>
-                                    </div>
-                                    <div className="selecotr-item col-lg-6 pr-0">
-                                        <input type="radio" id="mod2" name="selectormod" className="selector-item_radio" />
-                                        <label htmlFor="mod2" className="selector-item_label">Yes</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                        </div> 
+                        
                         <div className="form-group row ob_frm_row">
                             <div className="col-lg-12 p-0">
                             <label htmlFor="">Any aftermarket parts or modifications?</label>
@@ -735,8 +721,8 @@ function Step2b() {
                                                 <div className="chooseIssues">
                                                     <ul className='ks-cboxtags row'>
                                                         <li className='col-6 p-0 ci_col'>
-                                                            <input type="checkbox" id="checkbox1" value="Engine Modification" />
-                                                            <label htmlFor="checkbox1" className='labeltick'>
+                                                            <input type="checkbox" id="checkbox1_mod" value="Engine Modification" />
+                                                            <label htmlFor="checkbox1_mod" className='labeltick'>
                                                                 <span className='labeltickspan'>Engine Modification</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
@@ -749,8 +735,8 @@ function Step2b() {
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
-                                                            <input type="checkbox" id="checkbox2" value="Drivetrain Modification" />
-                                                            <label htmlFor="checkbox2" className='labeltick'>
+                                                            <input type="checkbox" id="checkbox2_mod" value="Drivetrain Modification" />
+                                                            <label htmlFor="checkbox2_mod" className='labeltick'>
                                                                 <span className='labeltickspan'>Drivetrain Modification</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
@@ -763,8 +749,8 @@ function Step2b() {
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
-                                                            <input type="checkbox" id="checkbox3" value="Altered Suspension (Lowered)" />
-                                                            <label htmlFor="checkbox3" className='labeltick'>
+                                                            <input type="checkbox" id="checkbox3_mod" value="Altered Suspension (Lowered)" />
+                                                            <label htmlFor="checkbox3_mod" className='labeltick'>
                                                                 <span className='labeltickspan'>Altered Suspension (Lowered)</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
@@ -777,8 +763,8 @@ function Step2b() {
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
-                                                            <input type="checkbox" id="checkbox4" value="Altered Suspension (Lifted)" />
-                                                            <label htmlFor="checkbox4" className='labeltick'>
+                                                            <input type="checkbox" id="checkbox4_mod" value="Altered Suspension (Lifted)" />
+                                                            <label htmlFor="checkbox4_mod" className='labeltick'>
                                                                 <span className='labeltickspan'>Altered Suspension (Lifted)</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
@@ -791,8 +777,8 @@ function Step2b() {
                                                             </label>
                                                         </li>
                                                         <li className='col-6 p-0 ci_col'>
-                                                            <input type="checkbox" id="checkbox5" value="Aftermarket Body Panels" />
-                                                            <label htmlFor="checkbox5" className='labeltick'>
+                                                            <input type="checkbox" id="checkbox5_mod" value="Aftermarket Body Panels" />
+                                                            <label htmlFor="checkbox5_mod" className='labeltick'>
                                                                 <span className='labeltickspan'>Aftermarket Body Panels</span>
                                                                 <span className='spanicon'>
                                                                     <span className="plus">
