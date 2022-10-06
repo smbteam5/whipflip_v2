@@ -1130,8 +1130,8 @@ h2.happy_cus_mob{
                     @include responsive(phone){
                         line-height: 34px;
                     }
-                    @include responsive(){
-                        line-height: 34px;
+                    @include responsive(Forfold){
+                        font-size: 14px;
                     }
                 }
                 &.ss-icons{
