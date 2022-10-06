@@ -50,11 +50,59 @@ span{
 span.infoBx{
     padding-left: 3px;
 }
+.dropdown-toggle::after{
+    display: none !important;
+}
+.wf-nav-list{
+    .dropdown-item{
+        padding: 0.25rem 1rem;
+    }    
+    .nav-item:last-child{
+        .dropdown-menu{
+            position: absolute;
+            box-shadow: 0px 2px 12px rgba(32, 31, 45, 0.16), 0px 47px 46px -27px rgba(32, 31, 45, 0.06);
+            border-radius: 4px;
+            border: none;
+        }
+    }
+}
+
+.wf-nav-list{
+    a{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #353442 !important;
+    }
+    .nav-item.show{
+        > a{
+            background: rgba(67, 129, 192, 0.12);
+            border-radius: 4px;
+        }
+    }
+}
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0px 2px 12px rgba(32, 31, 45, 0.16), 0px 47px 46px -27px rgba(32, 31, 45, 0.06);
+    border-radius: 4px;
+    border: none;
+    left: inherit;
+    right: 0;
+    a{
+        color: #605F6E !important;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
 .bnr_left{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding-bottom: 340px;
+    @include responsive(tab-port){
+        padding-bottom: 0;
+    }
     .bnr_left_head{
         @include responsive(tab-port){
             text-align: center;
@@ -77,6 +125,9 @@ span.infoBx{
             @include responsive(Exsmall330){
                 font-size: 36px;
             }
+            @include responsive(Forfold){
+                font-size: 25px;
+            }
             & > span{
                 display: block;
             }
@@ -94,13 +145,19 @@ span.infoBx{
 .home-banner{
     position: relative;
     background-color: #4381C0;
-    background-image: url(/images/bannerBg3.webp);
+    background-image: url(/images/whipbg.png);
     z-index: 1;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 calc(100% - 40px);
+    background-position: 0 calc(100% - -1px);
     @include responsive(tab-port){
+        background-size: contain;
+        padding-bottom: 270px;
+        background-position: 0 calc(100%);
+    }
+    @include responsive(phone){
         background-size: 250%;
+        background-position: 0 calc(100%);
     }
     .hb_wrapper{
         height: 100%; 
@@ -297,6 +354,9 @@ span.infoBx{
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
+    @include responsive(phone){
+        font-size: 14px;
+    }
 }
 .home-form select {
     display: block;
@@ -336,6 +396,9 @@ span.infoBx{
             @include responsive(Exsmall330){
                 font-size: 16px;
             }
+            @include responsive(Forfold){
+                font-size: 14px;
+            }
         }
         p{
             font-weight: 400;
@@ -350,6 +413,9 @@ span.infoBx{
             }
             @include responsive(Exsmall330){
                 font-size: 14px;
+            }
+            @include responsive(Forfold){
+                font-size: 12px;
             }
         }
     }
@@ -433,6 +499,10 @@ span.infoBx{
         @include responsive(phone){
             font-size: 18px;
         }
+        @include responsive(Forfold){
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
     h2{
         font-weight: 900;
@@ -453,8 +523,23 @@ span.infoBx{
                 display: block;
             }
         }
+        @include responsive(Forfold){
+            font-size: 22px;
+            line-height: 36px;
+        }
         span{
             display: inline-block;
+        }
+    }
+}
+.faqWrapper{
+    .accordion-item{
+        h2{
+            button{
+                @include responsive(Forfold){
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
@@ -498,6 +583,9 @@ span.infoBx{
                 text-align: center;
                 color: #201F2D;
                 mix-blend-mode: normal;
+                @include responsive(tab-port){
+                   font-size: 24px;
+                }
             }
             p{
                 font-style: normal;
@@ -506,6 +594,9 @@ span.infoBx{
                 line-height: 30px;
                 text-align: center;
                 color: #4A4958;
+                @include responsive(tab-port){
+                    font-size: 18px;
+                 }
             }
         }
     }
@@ -605,6 +696,9 @@ span.infoBx{
                             line-height: 30px;
                             color: #356799;
                             mix-blend-mode: normal;
+                            @include responsive(Forfold){
+                                font-size: 16px;
+                            }
                         }
                         p{
                             font-style: normal;
@@ -612,6 +706,9 @@ span.infoBx{
                             font-size: 16px;
                             line-height: 24px;
                             color: #605F6E;
+                            @include responsive(Forfold){
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -685,6 +782,9 @@ span.infoBx{
 }
 .faq{
     padding-bottom: 50px;
+    @include responsive(phone){
+       padding-bottom: 25px;
+    }
     .faqLogo {
         margin-top: -80px;
         img{
@@ -775,6 +875,9 @@ span.infoBx{
     border: none;
     padding: 17px 36px;
     outline: 0;
+    @include responsive(Forfold){
+        font-size: 16px;
+    }
 }
 .rts-rtImg{
     position: relative;
@@ -838,6 +941,9 @@ span.infoBx{
             @include responsive(Exsmall330){
                 font-size: 36px;
             }
+            @include responsive(Forfold){
+                font-size: 30px;
+            }
         }
         p{
             color: #D1E0EF;
@@ -847,6 +953,9 @@ span.infoBx{
             font-size: 22px;
             @include responsive(tab-port){
                 font-size: 20px;
+            }
+            @include responsive(Forfold){
+                font-size: 18px;
             }
         }
     }
@@ -911,6 +1020,10 @@ span.infoBx{
                     font-size: 20px;
                     line-height: 30px;
                 }
+                @include responsive(Forfold){
+                    font-size: 16px;
+                    line-height: 22px;
+                }
             }
             p{
                 font-style: normal;
@@ -920,6 +1033,10 @@ span.infoBx{
                 color: #4A4958;
                 @include responsive(phone){
                     font-size: 18px;
+                }
+                @include responsive(Forfold){
+                    font-size: 14px;
+                    line-height: 22px;
                 }
             }
         }
@@ -965,6 +1082,10 @@ span.infoBx{
 h2.happy_cus_mob{
     font-size: 28px;
     line-height: 42px;
+    @include responsive(Forfold){
+        font-size: 22px;
+        line-height: 36px;
+    }
 }
 .headColIn{
     h2{
@@ -1009,6 +1130,9 @@ h2.happy_cus_mob{
                     @include responsive(phone){
                         line-height: 34px;
                     }
+                    @include responsive(){
+                        line-height: 34px;
+                    }
                 }
                 &.ss-icons{
                     display: flex;
@@ -1019,6 +1143,10 @@ h2.happy_cus_mob{
                             svg{
                                 width: 25px;
                                 height: 25px;
+                                @include responsive(phone){
+                                    width: 18px;
+                                    height: 18px;
+                                }
                             }
                         }
                     }
@@ -4907,6 +5035,9 @@ span.opicon{
 h2.hooray_hd{
     @include responsive(phone){
         font-size: 34px;
+    }
+    @include responsive(Forfold){
+        font-size: 28px;
     }
     .hooray_hd_span{
         @include responsive(phone){

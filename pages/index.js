@@ -213,11 +213,11 @@ function index() {
                   </div>
                   <div className="bnr_lin_bottom">
                     <div className="bnr_left_bottom desk-show">
-                      <img
+                      {/* <img
                         src="/images/customer.webp"
                         alt="customer"
                         title="customer"
-                      />
+                      /> */}
                       {/* <Image 
                         src="/images/customer.webp" 
                         alt="customer" 
@@ -577,11 +577,11 @@ function index() {
                       </div>
                     </div>
                     <div className="bnr_left_bottom mob-show bnr_left_bottom_mobile">
-                      <img
+                      {/* <img
                         src="/images/customer.webp"
                         alt="customer"
                         title="customer"
-                      />
+                      /> */}
                       {/* <Image 
                           src="/images/customer.webp" 
                           alt="customer" 

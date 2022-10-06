@@ -320,7 +320,7 @@ function Step2b() {
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group check-group">
-                                                                    <input type="checkbox" id="chk151_dr" />                                                                    
+                                                                    <input type="checkbox" id="chk151_dr" />
                                                                     <label htmlFor="chk151_dr">
                                                                     Oil/Fluid Leak</label>
                                                                 </div>

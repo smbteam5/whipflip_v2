@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Sidebar from './Sidebar';
 import Head from 'next/head';
+import Link from "next/link";
 //import logo from '../images/logo.png' // relative path to image 
 //import logo from "../images/logo.png";
 function Header() {
@@ -30,7 +31,7 @@ function Header() {
         <div className="whipflip-fluid">
             <div className={"menuNav " + (scroll ? "stickyMenu animated fadeInDown" : "staticMenu")}>
                 <Navbar expand="lg" className="whipflip_nav navBar">
-                    <Navbar.Brand href="#home">                   
+                    <Navbar.Brand href="/">                   
                         <Image src="/images/logo.png" alt="Vercel Logo" width={275} height={50} />
                     </Navbar.Brand>
                     {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
@@ -43,20 +44,22 @@ function Header() {
                         !scroll ?
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto wf-nav-list">
-                            <Nav.Link href="#home">About WhipFlip</Nav.Link>
-                            <Nav.Link href="#link">How it Works</Nav.Link>
-                            <Nav.Link href="#link2">Support</Nav.Link>
-                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                            </NavDropdown> */}
+                            <NavDropdown title="About WhipFlip" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/about">Company</NavDropdown.Item>
+                                <NavDropdown.Item href="/reviews">Customer Reviews</NavDropdown.Item>
+                                <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="How It Works" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/whysellyourcartous">Why Sell Your Car to Us?</NavDropdown.Item>
+                                <NavDropdown.Item href="/privatesale_vs_tradingin">Private Sale or Trading In?</NavDropdown.Item>
+                                <NavDropdown.Item href="/ourreferralprogram">Our Referral Program</NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Support" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/pagefaq">FAQ</NavDropdown.Item>
+                                <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Chat</NavDropdown.Item>
+                                <NavDropdown.Item href="/contactus">Contact Us</NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>:
                     <>
