@@ -578,9 +578,9 @@ function index() {
                     </div>
                     <div className="bnr_left_bottom mob-show bnr_left_bottom_mobile">
                       {/* <img
-                        src="/images/customer.webp"
-                        alt="customer"
-                        title="customer"
+                          src="/images/customer.webp"
+                          alt="customer"
+                          title="customer"
                       /> */}
                       {/* <Image 
                           src="/images/customer.webp" 
