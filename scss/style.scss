@@ -1099,6 +1099,15 @@ h2.happy_cus_mob{
         mix-blend-mode: normal;
     }
 }
+.vdnHd{
+    flex: 0 0 20%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .vdnHdIn{
+        text-align: left;
+    }
+}
 .footer{
     padding: 80px 0 60px;
     background: #EDF2F8;

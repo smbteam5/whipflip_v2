@@ -65,8 +65,10 @@ function Header() {
                     <>
                         <div className="vehicleDetailNav">
                             <div className="vdnHd">
-                                <span>Enter vehicle details</span> 
-                                <span>for an instant offer.</span>
+                                <div className="vdnHdIn">
+                                    <span>Enter vehicle details</span>
+                                    <span>for an instant offer.</span>
+                                </div>
                             </div>
                             <div className="vdnForm">
                                 <div className="vdnForm_fields">
