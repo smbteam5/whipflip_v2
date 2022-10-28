@@ -11,8 +11,8 @@ import OfferFactorsModal from './Componants/mobile/OfferFactorsModal';
 import Image from 'next/image'
 function offer() {
     const [activeTab, setActiveTab] = useState("tab1");
-    const [show, setShow] = React.useState(false) 
-    const [showOfmodal,setShowOfmodal] = useState(false); 
+    const [show, setShow] = React.useState(false);
+    const [showOfmodal,setShowOfmodal] = useState(false);
     const handleTab1 = () => {
         setActiveTab("tab1");
     };

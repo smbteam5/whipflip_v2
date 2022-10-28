@@ -2972,6 +2972,17 @@ label{
         }
     }
 }
+.retBtns{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 0 5px;
+    button{
+        border: 1px solid #D5D5DC;
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+}
 .offerProduct-mobi{
     display: flex;
     align-items: center;

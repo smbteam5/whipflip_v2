@@ -6,8 +6,10 @@ import HappyCustomersSlider from "./Componants/HappyCustomersSlider";
 import Header from "./Componants/Header";
 import Image from "next/image";
 import Link from "next/link";
+import RetrieveOffer from "./Componants/RetrieveOffer";
 function index() {
   const [showConfirmOffer, setShowConfirmOffer] = useState(false);
+  const [showRetriveOffer, setShowRetriveOffer] = useState(false);
   const handleShowConfirmOffer = (e) => {
     e.preventDefault();
     setShowConfirmOffer(true);
@@ -16,8 +18,18 @@ function index() {
     e.preventDefault();
     setShowConfirmOffer(false);
   };
-  return (
+  const handleRetriveOffer =(e)=>{
+    e.preventDefault();
+    setShowRetriveOffer(true);
+  }
+  const handleCloseRetriveOffer =()=>{
+    setShowRetriveOffer(false);
+  }
+  return (    
     <>
+    {
+    showRetriveOffer&&
+    <RetrieveOffer showRetriveOffer={showRetriveOffer} handleCloseRetriveOffer={handleCloseRetriveOffer}/>}
       <div className="cutomerCare">
         <div className="cc_left">
           <svg
@@ -344,7 +356,7 @@ function index() {
                                   <div className="col-lg-12 already_offer text-center">
                                     <p>
                                       Already have an offer?{" "}
-                                      <span>Retrieve it here</span>
+                                      <span onClick={handleRetriveOffer}>Retrieve it here</span>
                                     </p>
                                   </div>
                                 </div>
