@@ -1,6 +1,6 @@
 import SidebarItem from "./SidebarItem"
 import items from "../data/sidebar.json"
-
+import Link from "next/link";
 export default function Sidebar({openSideBar,setOpenSideBar}){
         
     return (
@@ -19,8 +19,8 @@ export default function Sidebar({openSideBar,setOpenSideBar}){
                 <div className="legal">
                     <span>Legal</span>
                     <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms and Conditions</li>
+                        <li><Link href="/privacypolicy">Privacy Policy</Link></li>
+                        <li><Link href="/termsofuse">Terms and Conditions</Link></li>
                     </ul>
                 </div>
                 <div className="fooColIn headColIn">

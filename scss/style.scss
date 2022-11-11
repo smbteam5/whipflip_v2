@@ -5196,6 +5196,11 @@ label.labelflexCenter.tclabel.tclabelMobi{
     ul{
         padding-left: 0;
         list-style: none;
+        li{
+            a{
+                color: #212529;
+            }
+        }
     }
     .legal{
         line-height: 42px;

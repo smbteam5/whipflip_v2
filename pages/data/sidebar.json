@@ -6,17 +6,17 @@
             {
                 "title": "Company",
                 "icon": "bi-house-fill",
-                "path": ""
+                "path": "/about"
             },
             {
                 "title": "Customer Reviews",
                 "icon": "bi-info-circle-fill",
-                "path": ""
+                "path": "/reviews"
             },
             {
                 "title": "Careers",
                 "icon": "bi-phone-fill",
-                "path": ""
+                "path": "/careers"
             }
         ]
     },
@@ -26,15 +26,15 @@
         "childs": [
             {
                 "title": "Why Sell to Us?",
-                "path": "/"
+                "path": "/whysellyourcartous"
             },
             {
                 "title": "Private Sale or Trading In?",
-                "path": "/"
+                "path": "/privatesale_vs_tradingin"
             },
             {
                 "title": "Referrals",
-                "path": "/"
+                "path": "/ourreferralprogram"
             }
         ]
     },
@@ -44,11 +44,11 @@
         "childs": [
             {
                 "title": "FAQ",
-                "path": "/"
+                "path": "/pagefaq"
             },
             {
                 "title": "Blog",
-                "path": "/"
+                "path": "/blog"
             },
             {
                 "title": "Chat",
@@ -56,7 +56,7 @@
             },
             {
                 "title": "Contact Us",
-                "path": "/"
+                "path": "/contactus"
             }
         ]
     }
