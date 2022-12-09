@@ -156,7 +156,6 @@ function blogs() {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   )
