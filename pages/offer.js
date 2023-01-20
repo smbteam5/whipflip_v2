@@ -9,10 +9,12 @@ import Header2 from './Componants/Header2';
 import ToLeaveModal from './Componants/ToLeaveModal';
 import OfferFactorsModal from './Componants/mobile/OfferFactorsModal';
 import Image from 'next/image'
+import CameraWebModal from './Componants/CameraWebModal';
 function offer() {
     const [activeTab, setActiveTab] = useState("tab1");
     const [show, setShow] = React.useState(false);
     const [showOfmodal,setShowOfmodal] = useState(false);
+    const [showCam, setShowCam] = React.useState(false)
     const handleTab1 = () => {
         setActiveTab("tab1");
     };
@@ -36,6 +38,14 @@ function offer() {
     const handleCloseOfmodal = (e) =>{
         setShowOfmodal(false)
     }
+    const handleCloseCam = () =>{
+        setShowCam(false);
+    }
+    const handleOpenCam = (e) =>{
+        e.preventDefault();
+        setShowCam(true);
+        console.log("log",showCam)
+    }
   return (
     <div>
         
@@ -45,6 +55,10 @@ function offer() {
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"/>
             </>
         </Head>
+        {
+            showCam &&
+            <CameraWebModal handleCloseCamera={handleCloseCam} showCamera={showCam}/>
+        }
         {
             show &&
             <ToLeaveModal handleClose={handleClose} show={show}/>
@@ -100,7 +114,7 @@ function offer() {
                                 <div className="itemInfo">
                                     <h2>2022 Ford Ranger</h2>
                                     <span>FWD, 4-Cyl, Standard, 2.0 Liter <span className='miles'>10,000 miles</span></span>
-                                    <a href="#" title='Not a car'>Not your car?</a>
+                                    <span title='Not a car' className='notCar' onClick={handleOpenCam}>Not your car?</span>
                                 </div>
                                 <div className="offer_factors">
                                     <h2>Your Offer Factors:</h2>
