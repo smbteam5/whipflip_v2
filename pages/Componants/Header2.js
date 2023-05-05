@@ -19,13 +19,19 @@ function Header2() {
         <div className="offer_header">
             <div className="offer_header_in">
               <div className="oh_logo">
-                  <Image 
-                    src="/images/offer-sell-header.svg" 
-                    alt="offer sell logo" 
-                    title='offer sell logo'
-                    width={250}
-                    height={40}
-                  />
+                  <div className="ohl_in">
+                    <span>Get a great</span>
+                    <span>
+                      <Image 
+                        src="/images/whiplogo2.png" 
+                        alt="offer sell logo" 
+                        title='offer sell logo'
+                        width={140}
+                        height={40}
+                      />
+                    </span>
+                    <span>Offer</span>
+                  </div>
               </div>
               <div className="hambergerMenu" onClick={handleShowSideBar}>
                 <span></span>

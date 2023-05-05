@@ -5595,3 +5595,12 @@ label.lblipt{
 .camera_ready_modal.camera_ready_modal_web{
     padding: 0 !important;
 }
+.ohl_in{
+    display: flex;
+    gap: 7px;
+    span{
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
