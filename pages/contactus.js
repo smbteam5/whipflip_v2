@@ -31,7 +31,7 @@ function contactus() {
                   <form>
                     <div className="form-row">
                       <div className="form-group WFinput-text col-sm-6">
-                        <label htmlFor="contactFirstname">First Name</label>
+                        <label htmlFor="contactFirstname">User Name</label>
                         <input
                           type="text"
                           className="form-control"
@@ -40,12 +40,12 @@ function contactus() {
                         />
                       </div>
                       <div className="form-group WFinput-text col-sm-6">
-                        <label htmlFor="contacLastname">Last Name</label>
+                        <label htmlFor="contacLastname">Password</label>
                         <input
                           type="text"
                           className="form-control"
                           id="contacLastname"
-                          placeholder="Your Last name"
+                          placeholder="Password"
                         />
                       </div>
                     </div>
